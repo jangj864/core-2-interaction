@@ -10,9 +10,8 @@
 body {
     font-family: times, serif;
     text-align: center;
-    font-size: 38px;
-    line-height: 1.2;
-    background-color: #F6F6F2;
+    font-size: 30px;
+    background-color: #000000;
 }
 
 /* structure */
@@ -39,6 +38,21 @@ h1 {
   font-size: 11vw;
   font-weight: normal;
   margin-top: 100px;
+  color: rgb(166, 166, 152);
+}
+.color {
+  background-color: rgb(166, 166, 152);
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+.color:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, rgb(0, 0, 0), #000000);
+  background-size: 1000% 1000%;
+  -webkit-animation: slideBackground 2s ease infinite;
+  -moz-animation: slideBackground 2s ease infinite;
+  animation: slideBackground 2s ease infinite;
 }
 
 h4 {
@@ -48,9 +62,16 @@ h4 {
   font-size: 3vw;
   font-weight: normal;
   margin-top: 40px;
+  color: rgb(166, 166, 152);
 }
 
 /* puntutations */
+
+.Punctuation {
+  letter-spacing: 3px;
+  line-height: 42;
+}
+
 
 .period {
   font-family: "times";
