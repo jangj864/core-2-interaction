@@ -1,8 +1,80 @@
+/* General Styles */
+
 html {
-    background-color: black;
+    background-color: rgb(25, 0, 255);
     color: aliceblue;
 }
 
+h1,h2,p{
+    margin: 0;
+}
+
+body {
+    max-width: 600px;
+    margin: auto; /*centerlize overall texts*/
+}
+
+/* Main Heather */
 .MainHeader {
     text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+/* Media Elements */
+
+img, video, audio, object {
+    width: 100%;
+    margin-top: 10px;
+}
+
+object {
+    aspect-ratio: 4/3;
+}
+
+/* Parts */
+.Part {
+    background-color: rgb(99, 99, 99);
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    margin : 50px 0px 50px 0px;
+}
+
+#PartOne {
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+/* #PartFive {
+    background-color: black;
+    color: rgb(255, 0, 0);
+} */
+
+[data-part="5"] {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+}
+
+
+/* Nav */
+
+/* a tag - 내부 내용
+} */
+
+.Nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.Nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Nav-item {
+    display: inline-block;
+    background: black;
+    padding: 5px;
 }

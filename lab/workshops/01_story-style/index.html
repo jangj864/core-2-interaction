@@ -9,22 +9,31 @@
 <body>
     <!--
         1. When I was 6, the Internet was essential to me.
+            (me.jpg)
+
         2. I had to visit our school webpage every evening. 
            All the homeworks was posted there. 
            That experience made the Internet more familiar to me.
+            (music.mp3)
+
         3. The online experience are related with offline. 
            In the days when there were no smartphones, 
            the experience of asking a friend what their homework was on days when 
            I was out and couldn't access the computer was special. 
+            (cpu1.jpg)
+
         4. Additionally, my childhood Internet experience has influenced me today. 
            As with other Internet services, an ID was required to access the school webpage and view postings. 
            That was the first online account 
            I created when I was young, and 
            I still use the ID I created then on various web pages.
+            (cpu2.jpg)
+
         5. And even as a college student, 
            I use online web pages to check and submit school assignments. 
            In modern times, access to the Internet has become easier, 
            and the impact of the digital age on learning has become greater and more diverse.
+           (liveforever.mp4)
     -->
     <header class="MainHeader">
         <h1>
@@ -34,8 +43,43 @@
             by Jinhyeok Jang
         </p>
     </header>
+    <nav class="Nav">
+        <ul class="Nav-list">
+            <li class="Nav-item">
+               <a href="#">
+                   Top
+                </a>
+            </li>
+           <li class="Nav-item">
+                <a href="#PartOne">
+                    Part One
+                 </a>
+            </li>
+            <li class="Nav-item">
+                <a href="#PartTwo">
+                    Part Two
+                 </a>
+            </li>
+            <li class="Nav-item">
+                <a href="#PartThree">
+                    Part Three
+                 </a>
+            </li>
+           </li>
+            <li class="Nav-item">
+               <a href="#PartFour">
+                    Part Four
+                 </a>
+            </li>
+            <li class="Nav-item">
+                <a href="#PartFive">
+                    Part Five
+                 </a>
+             </li>
+        </ul>
+    </nav>
     <main>
-        <section class="Part">
+        <section class="Part" id="PartOne">
             <header>
                 <h2>
                    1
@@ -47,7 +91,7 @@
                 </p>
             </section>
         </section>
-        <section class="Part">
+        <section class="Part" id="PartTwo">
             <header>
                 <h2>
                    2
@@ -59,9 +103,10 @@
                     All the homeworks was posted there. 
                     That experience made the Internet more familiar to me.
                 </p>
+                <audio src="./media/music.mp3" controls></audio>
             </section>
         </section>
-        <section class="Part">
+        <section class="Part" id="PartThree">
             <header>
                 <h2>
                    3
@@ -74,9 +119,10 @@
                     the experience of asking a friend what their homework was on days when 
                     I was out and couldn't access the computer was special. 
                 </p>
+                <object data="media/wave.pdf"></object>
             </section>
         </section>
-        <section class="Part">
+        <section class="Part" id="PartFour">
             <header>
                 <h2>
                    4
@@ -90,9 +136,11 @@
                     I created when I was young, and 
                     I still use the ID I created then on various web pages.
                 </p>
+                <img src="./media/cpu2.jpg" alt="">
             </section>
         </section>
-        <section class="Part">
+        <section class="Part" id="PartFive"
+        data-part="5">
             <header>
                 <h2>
                    5
@@ -105,6 +153,7 @@
                     In modern times, access to the Internet has become easier, 
                     and the impact of the digital age on learning has become greater and more diverse.
                 </p>
+                <video src="./media/liveforever.mp4" autoplay muted loop></video>
             </section>
         </section>
     </main>
