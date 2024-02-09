@@ -37,13 +37,13 @@ object {
     background-color: rgb(99, 99, 99);
     padding: 10px;
     border: 1px solid rgb(255, 255, 255);
-    margin : 50px 0px 50px 0px;
+    margin: 50px 0px 50px 0px;
 }
 
 #PartOne {
     background-color: rgb(204, 204, 204);
     color: rgb(0, 0, 0);
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 /* #PartFive {
@@ -83,4 +83,5 @@ object {
     display: inline-block;
     background: rgb(155, 155, 155);
     padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
 }
