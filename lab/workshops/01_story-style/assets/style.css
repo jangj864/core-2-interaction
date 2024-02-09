@@ -62,8 +62,14 @@ object {
 /* a tag - 내부 내용
 } */
 
+.Nav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
 .Nav a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -75,6 +81,6 @@ object {
 
 .Nav-item {
     display: inline-block;
-    background: black;
+    background: rgb(155, 155, 155);
     padding: 5px;
 }
