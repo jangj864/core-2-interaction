@@ -1,0 +1,204 @@
+
+
+#main-heading {
+  font-family: "doublebass", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  color: rgb(53, 80, 0);
+  text-align: center; 
+  letter-spacing: 0px;
+  word-spacing: -10px;
+  line-height: 130px;
+  margin: 10px
+}
+
+.em {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  text-align: left; 
+  letter-spacing :-1px;
+  word-spacing:-3px;
+  line-height:70px;
+  margin: 0
+}
+
+.section-heading {
+  font-family: "supersize-bk-box", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(255, 140, 0);
+  font-size: 33px;
+  text-align: center; 
+}
+
+.section-heading span {
+  color: rgb(110, 0, 146);
+}
+
+.section-heading2 {
+  font-family: "supersize-bk", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(110, 0, 146);
+  font-size: 50px;
+  text-align: right; 
+  letter-spacing :-3px;
+}
+
+.section-heading3 {
+  font-family: "supersize-bk", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(255, 140, 0);
+  font-size: 50px;
+  text-align: right; 
+  letter-spacing :-3px;
+}
+
+.h3{
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 60px;
+  text-align: center; 
+  letter-spacing :-1px;
+  word-spacing:-3px;
+  line-height:70px;
+  margin: 0
+}
+
+.h4{
+  font-family: "gardez", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center; 
+  letter-spacing :-1px;
+  word-spacing: 1px;
+  line-height:70px;
+  margin: 0
+}
+
+.h5{
+  font-family: "wausau", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  text-align: center; 
+  letter-spacing : 1px;
+  word-spacing: 3px;
+  line-height:80px;
+  margin: 0
+}
+
+.h6{
+  font-family: "blanket", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 45px;
+  text-align: center; 
+  letter-spacing :3px;
+  word-spacing:3px;
+  line-height:50px;
+  margin: 0
+}
+
+p{
+  font-size: 10px;
+  color: rgb(0, 0, 0); /* or any color you prefer */
+  text-shadow: 0px 0px #787878;
+  box-shadow: 0px;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  font-family: 'Arial', sans-serif !important; /* Use a common font to avoid discrepancies */
+  z-index: 1000;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased; /* Improves text rendering in Webkit browsers (Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Improves text rendering in Firefox */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  background-color: #33333300 !important; /* Ensures the background color is not overridden */
+  color: white !important; /* Ensures the text color is not overridden */
+  text-align: center;
+  font-family: 'Arial', sans-serif !important; /* Use a common font to avoid discrepancies */
+  font-size: 14px !important; /* Ensures the font size is not overridden */
+  z-index: 1000;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  text-shadow: 0px 0px #787878;
+  padding:  0px 0px -5px 0px;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased; /* Improves text rendering in Webkit browsers (Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Improves text rendering in Firefox */
+}
+
+footer p {
+  white-space: normal; /* Allows text to wrap normally */
+  margin-top: -9px;
+}
+
+
+#navstyle {
+  padding:  20px 30px 0px 25px;
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 40px; /* Creates 20px of space between each flex item */
+}
+
+
+.navstylebutton {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30%;
+  min-height: 20px;
+  min-width: 0;
+  outline: none;
+  padding: 13px 21px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.navstylebutton:disabled {
+  pointer-events: none;
+}
+
+.navstylebutton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.navstylebutton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

@@ -47,7 +47,7 @@ body {
 }
 
 #u2:hover {
-  color: rgb(34, 139, 34); /* Forest Green */
+  color: rgb(255, 165, 0); /* Orange */
 }
 
 #a:hover {
@@ -55,7 +55,7 @@ body {
 }
 
 #t2:hover {
-  color: rgb(255, 165, 0); /* Orange */
+  color: rgb(34, 139, 34); /* Forest Green */
 }
 
 #i:hover {
