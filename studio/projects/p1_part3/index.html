@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>On Punctuation</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" href="https://use.typekit.net/uar2okz.css">
+</head>
+    
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+     <center>
+     <h1 class="main-heading">ON
+       <span id="p">P</span><span id="u">U</span><span id="n">N</span><span id="c">C</span><span id="t">T</span><span id="u2">U</span><span id="a">A</span><span id="t2">T</span><span id="i">I</span><span id="o">O</span><span id="n2">N</span></h1>
+     </center>
+
+     <h2 class="section-heading">by Gertrude Stein</h2>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <marquee>
+       <em>Click the colored alphabet in the title to see various versions of On Punctuation.</em>
+     </marquee>
+
+<script>
+  // Get all the spans representing letters
+  var spans = document.querySelectorAll('.main-heading span');
+  
+  // Define the links corresponding to each letter
+  var links = {
+    'p': 'https://example.com/p',
+    'u': 'https://example.com/u',
+    'n': 'https://example.com/n',
+    'c': 'https://example.com/c',
+    't': 'https://example.com/t',
+    'u2': 'https://example.com/u',
+    'a': 'https://example.com/a',
+    't2': 'https://example.com/t',
+    'i': 'https://example.com/i',
+    'o': 'https://example.com/o',
+    'n2': 'https://example.com/n'
+  };
+  
+  // Add click event listener to each span
+  spans.forEach(function(span) {
+    span.addEventListener('click', function() {
+      // Get the id of the clicked span
+      var id = this.id;
+      // Get the corresponding link
+      var link = links[id];
+      // Open the link in a new tab
+      window.open(link, '_blank');
+    });
+  });
+</script>
+
+</body>
+</html>
