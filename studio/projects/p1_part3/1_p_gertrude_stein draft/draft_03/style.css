@@ -1,30 +1,28 @@
 body {
-  margin: 0;
+  margin: 5% 10% 0% 10%;
   padding: 0;
   font-family: Arial, sans-serif; /* Change the font family as needed */
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* 100% of the viewport height */
+  max-height: 60%; /* Maintain the max-height */
+  overflow-y: auto; /* Add scrollbar if content overflows */
 }
 
-/* Title On Punctuation */
+
+
 
 .main-heading {
   font-family: "sutro-open-initials", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 9vw; /* Responsive font size based on viewport width */
+  font-size: 3vw; /* Responsive font size based on viewport width */
   color: rgb(0, 0, 0);
   text-align: center;
   letter-spacing: 0px;
   word-spacing: -0.5vw; /* Responsive word spacing based on viewport width */
   line-height: 1;
-  margin: 0;
+  margin: 10px;
 }
 
 .main-heading span {
@@ -75,8 +73,6 @@ body {
   color: rgb(139, 0, 139); /* Dark Magenta */
 }
 
-/* sub title by*/
-
 .section-heading {
   font-family: "sutro", serif;
   font-weight: 300;
@@ -84,10 +80,8 @@ body {
   color: rgb(0, 0, 0);
   font-size: 2vw; /* Responsive font size based on viewport width */
   text-align: center;
-  margin: 40px 0; /* Adjust margin as needed */
+  margin: 10px 0 3 0; /* Adjust margin as needed */
 }
-
-/* footer */
 
 .em {
   font-family: 'Pacifico', cursive;
@@ -99,11 +93,10 @@ body {
   margin: 0;
 }
 
-
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
   .main-heading {
-    font-size: 8vw; /* Adjust font size for smaller screens */
+    font-size: 1%; /* Adjust font size for smaller screens */
     word-spacing: -1vw; /* Adjust word spacing for smaller screens */
   }
   
@@ -112,6 +105,6 @@ body {
   }
   
   .em {
-    font-size: 4vw; /* Adjust font size for smaller screens */
+    font-size: 1vw; /* Adjust font size for smaller screens */
   }
 }
