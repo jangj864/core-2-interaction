@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Punctuation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uar2okz.css">
+    
+    <style>
+      html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      }
+      
+      .container {
+          max-width: 800px;
+          margin: auto;
+          padding: 10px 20px; /* Reduced padding top and bottom */
+          overflow-y: auto;
+          text-align: left;
+          border: 3px solid rgb(128, 0, 128);;
+          background-color: rgb(211, 211, 211);
+          max-height: 60%; /* Adjusted max-height */
+          border-radius: 10px;
+      }
+      
+      .container::-webkit-scrollbar {
+          width: 10px;
+      }
+      
+      .container::-webkit-scrollbar-thumb {
+          background-color: rgb(128, 0, 128);
+          border-radius: 5px;
+          height: 10px; /* Adjust scrollbar height */
+      }
+      
+      .container::-webkit-scrollbar-track {
+          background-color: grey;
+          border-radius: 5px;
+          box-shadow: inset 0px 0px 1px rgb(0, 0, 0);
+          height: 10px; /* Adjust scrollbar height */
+      }
+      
+      /* Adjust scrollbar position */
+      .container::-webkit-scrollbar-thumb {
+          margin-right: 5px; /* Move scrollbar slightly to the left */
+      }
+      
+      .Part {
+          padding-bottom: 20px;
+      }
+      
+      .Part p {
+          margin: 0;
+          padding: 10px;
+      }
+  </style>
+
+</head>
+<body onload="showAlert()">
+  <br>
+    <center>
+        <h1 class="main-heading">ON
+            <span id="p">P</span><span id="u">U</span><span id="n">N</span><span id="c">C</span><span id="t">T</span><span id="u2">U</span><span id="a">A</span><span id="t2">T</span><span id="i">I</span><span id="o">O</span><span id="n2">N</span>
+        </h1>
+    </center>
+    <h2 class="section-heading">by Shant Melkonian</h2>
+
+    <div class="buttons">
+      <button id="btn1" onclick="window.location.href='../1_p_gertrude_stein/index.html'">Gertrude Stein</button>
+      <button id="btn2" onclick="window.location.href='../2_p_jinhyeok_jang/index.html'">Jinhyeok Jang</button>
+      <button id="btn3" onclick="window.location.href='../3_p_shant_melkonian/index.html'">Shant Melkonian</button>
+      <button id="btn4" onclick="window.location.href='https://example.com/hyeri'">Hyeri Jang</button>
+      <button id="btn5" onclick="window.location.href='https://example.com/mia'">Mia Jang</button>
+      <button id="btn6" onclick="window.location.href='https://example.com/injun'">Injun Hwang</button>
+      <button id="btn7" onclick="window.location.href='https://example.com/bongbong'">Jay Lim</button>
+      <button id="btn8" onclick="window.location.href='../8_p_snoop_dogg/index.html'">Snoop Dogg</button>
+      <button id="btn9" onclick="window.location.href='https://example.com/button9'">William Shakespeare</button>
+      <button id="btn10" onclick="window.location.href='https://example.com/button10'">Grammary</button>
+      <button id="btn11" onclick="window.location.href='../11_p_chat_gpt/index.html'">Chat GPT</button>
+      <button id="btn12" onclick="window.location.href='../index.html'">Home</button>
+    </div>
+
+
+    <div class="container">
+        <!-- All your sections go here -->
+      <section class="Part" id="PartOne">
+        <object data="On_Punctuation.pdf"></object>
+      </section>
+    </div>
+    <!-- Scrollbar Style -->
+    <!-- Your Styles go here -->
+    <br>
+    <em>
+        <center>
+          "He doesn't want you reading this on a monitor. Recommend printing it out and checking it on paper."
+        </center>
+    </em>
+
+    <script>
+      function showAlert() {
+        alert("He doesn't want you reading this on a monitor. Recommend printing it out and checking it on paper.");
+      }
+    </script>
+</body>
+</html>
