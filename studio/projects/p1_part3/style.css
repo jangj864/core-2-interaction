@@ -15,8 +15,8 @@ body {
 /* Title On Punctuation */
 
 .main-heading {
-  font-family: "sutro-open-initials", sans-serif;
-  font-weight: 400;
+  font-family: "altivo", sans-serif;
+  font-weight: 800;
   font-style: normal;
   font-size: 9vw; /* Responsive font size based on viewport width */
   color: rgb(0, 0, 0);
