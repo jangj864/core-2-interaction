@@ -22,6 +22,11 @@ body {
   margin: 10px;
 }
 
+
+.main-heading span {
+  color: rgb(0, 0, 0);
+}
+
 .main-heading span {
   color: rgb(0, 0, 0);
 }
@@ -31,39 +36,39 @@ body {
 }
 
 #u:hover {
-  color: rgb(255, 0, 0); /* Cyan */
+  color: rgb(255, 0, 0); 
 }
 
 #n:hover {
-  color: rgb(128, 0, 128); /* Purple */
+  color: rgb(128, 0, 128); 
 }
 
 #c:hover {
-  color: rgb(255, 215, 0); /* Gold */
+  color: rgb(255, 215, 0); 
 }
 
 #t:hover {
-  color: rgb(0, 0, 255); /* Blue */
+  color: #ff8eff;
 }
 
 #u2:hover {
-  color: rgb(255, 165, 0); /* Orange */
+  color: rgb(0, 42, 94);
 }
 
 #a:hover {
-  color: rgb(255, 0, 0); /* Black */
+  color: rgb(255, 132, 0); 
 }
 
 #t2:hover {
-  color: rgb(34, 139, 34); /* Forest Green */
+  color: rgb(34, 139, 34); 
 }
 
 #i:hover {
-  color: rgb(255, 20, 147); /* Deep Pink */
+  color: Sienna;
 }
 
 #o:hover {
-  color: rgb(255, 192, 203); /* Pink */
+  color: rgb(21, 194, 154);
 }
 
 #n2:hover {
@@ -102,8 +107,8 @@ body {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ff0000;
-  color: #fff;
+  background-color: rgb(0, 42, 94);
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -111,28 +116,28 @@ button {
 }
 
 button:hover {
-  background-color: #b30000;
+  background-color: #030022;
 }
 
 /* Selected Button*/
 
-#btn2 {
+#btn6 {
   padding: 10px 20px;
-    color: rgb(255, 36, 153);
-  filter: drop-shadow(0 0 2px rgba(255, 36, 193, 0.7))
-    drop-shadow(0 0 5px rgba(255, 36, 109, 0.7))
-    drop-shadow(0 0 15px rgba(255, 36, 138, 0.7));
+    color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 2px rgba(36, 40, 255, 0.7))
+    drop-shadow(0 0 5px rgba(65, 36, 255, 0.7))
+    drop-shadow(0 0 15px rgba(72, 36, 255, 0.7));
   font-size: 16px;
-  background-color: #ff0000;
-  color: #fff;
+  background-color: rgb(11, 0, 94);
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-#btn2:hover {
-  background-color: #b30000;
+#btn6:hover {
+  background-color: #030022;
 }
 
 /* Button 12 Home button */

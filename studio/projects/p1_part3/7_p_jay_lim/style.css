@@ -106,8 +106,8 @@ body {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ff0000;
-  color: #fff;
+  background-color: rgb(255, 132, 0);
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -115,28 +115,28 @@ button {
 }
 
 button:hover {
-  background-color: #b30000;
+  background-color: #6d2d00;
 }
 
 /* Selected Button*/
 
-#btn2 {
+#btn7 {
   padding: 10px 20px;
-    color: rgb(255, 36, 153);
-  filter: drop-shadow(0 0 2px rgba(255, 36, 193, 0.7))
-    drop-shadow(0 0 5px rgba(255, 36, 109, 0.7))
-    drop-shadow(0 0 15px rgba(255, 36, 138, 0.7));
+    color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 2px rgba(255, 142, 36, 0.7))
+    drop-shadow(0 0 5px rgba(255, 120, 36, 0.7))
+    drop-shadow(0 0 15px rgba(255, 164, 36, 0.7));
   font-size: 16px;
-  background-color: #ff0000;
-  color: #fff;
+  background-color: rgb(255, 132, 0);
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-#btn2:hover {
-  background-color: #b30000;
+#btn7:hover {
+  background-color: #6d2d00;
 }
 
 /* Button 12 Home button */

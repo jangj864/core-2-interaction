@@ -22,6 +22,11 @@ body {
   margin: 10px;
 }
 
+
+.main-heading span {
+  color: rgb(0, 0, 0);
+}
+
 .main-heading span {
   color: rgb(0, 0, 0);
 }
@@ -31,15 +36,15 @@ body {
 }
 
 #u:hover {
-  color: rgb(255, 0, 0); /* Cyan */
+  color: rgb(255, 0, 0); 
 }
 
 #n:hover {
-  color: rgb(128, 0, 128); /* Purple */
+  color: rgb(128, 0, 128); 
 }
 
 #c:hover {
-  color: rgb(255, 215, 0); /* Gold */
+  color: rgb(255, 215, 0); 
 }
 
 #t:hover {
@@ -47,23 +52,23 @@ body {
 }
 
 #u2:hover {
-  color: rgb(255, 165, 0); /* Orange */
+  color: rgb(0, 42, 94);
 }
 
 #a:hover {
-  color: rgb(255, 0, 0); /* Black */
+  color: rgb(255, 132, 0); 
 }
 
 #t2:hover {
-  color: rgb(34, 139, 34); /* Forest Green */
+  color: rgb(34, 139, 34); 
 }
 
 #i:hover {
-  color: rgb(255, 20, 147); /* Deep Pink */
+  color: Sienna;
 }
 
 #o:hover {
-  color: rgb(255, 192, 203); /* Pink */
+  color: rgb(21, 194, 154);
 }
 
 #n2:hover {
