@@ -43,7 +43,7 @@ body {
 }
 
 #t:hover {
-  color: #ff8eff;
+  color: rgb(0, 0, 255); /* Blue */
 }
 
 #u2:hover {
