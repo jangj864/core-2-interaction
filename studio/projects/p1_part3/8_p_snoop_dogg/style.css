@@ -111,7 +111,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(34, 139, 34);
+  background-color: rgb(16, 68, 16);
 }
 
 /* Selected Button*/
@@ -132,7 +132,7 @@ button:hover {
 }
 
 #btn8:hover {
-  background-color: rgb(34, 139, 34);
+  background-color: rgb(16, 68, 16);
 }
 
 /* Button 12 Home button */
