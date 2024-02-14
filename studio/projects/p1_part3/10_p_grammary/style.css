@@ -102,7 +102,7 @@ body {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ff0000;
+  background-color: rgb(116, 170, 156);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -116,7 +116,7 @@ button:hover {
 
 /* Selected Button*/
 
-#btn2 {
+#btn11 {
   padding: 10px 20px;
     color: rgb(255, 36, 153);
   filter: drop-shadow(0 0 2px rgba(255, 36, 193, 0.7))
@@ -131,7 +131,7 @@ button:hover {
   transition: background-color 0.3s ease;
 }
 
-#btn2:hover {
+#btn11:hover {
   background-color: #b30000;
 }
 
