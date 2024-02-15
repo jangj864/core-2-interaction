@@ -4,6 +4,15 @@ body {
   font-family: Arial, sans-serif; /* Change the font family as needed */
 }
 
+.Part p span.highlight {
+  color:  rgb(255, 0, 0); 
+}
+
+.highlight {
+  color: red; /* Change the color to your desired color */
+}
+
+
 .container {
   max-height: 60%; /* Maintain the max-height */
   overflow-y: auto; /* Add scrollbar if content overflows */
