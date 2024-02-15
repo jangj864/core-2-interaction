@@ -4,6 +4,10 @@ body {
   font-family: Arial, sans-serif; /* Change the font family as needed */
 }
 
+.Part p span.highlight {
+  color: #007fff; /* Change the color to your desired color */
+}
+
 .container {
   max-height: 60%; /* Maintain the max-height */
   overflow-y: auto; /* Add scrollbar if content overflows */
