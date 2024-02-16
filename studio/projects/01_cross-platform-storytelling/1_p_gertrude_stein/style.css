@@ -9,11 +9,6 @@ body {
   color: #007fff; /* Change the color to your desired color */
 }
 
-.container {
-  max-height: 60%; /* Maintain the max-height */
-  overflow-y: auto;
-}
-
 .main-heading {
   font-family: "altivo", sans-serif;
   font-weight: 800;
@@ -181,14 +176,6 @@ button:hover {
   
   .em {
     font-size: 0.1vw; 
-  }
-
-  .container {
-    max-height: 60%; /* Maintain the max-height */
-    overflow-y: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
   }
 
 }
