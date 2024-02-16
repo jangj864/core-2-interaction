@@ -4,7 +4,7 @@
 body {
     color: #000; /* 글자색 */
     background-color: #c4c4c4; /* 배경색 */
-    font-family: "Arial", sans-serif; /* 옛날 윈도우 스타일과 비슷한 폰트 */
+    font-family: "Arial", sans-serif;
 }
 
 /* 헤더 */
@@ -35,7 +35,7 @@ body {
 }
 
 .Nav-link {
-    color: #e3e3e3; /* 내비게이션 링크 글자색 */
+    color: #dadada; /* 내비게이션 링크 글자색 */
     text-decoration: none;
 }
 
