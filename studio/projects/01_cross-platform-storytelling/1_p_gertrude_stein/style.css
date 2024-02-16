@@ -176,7 +176,7 @@ button:hover {
   }
 
   button {
-    font-size: 4px;
+    font-size: 14px;
   }
   
   .em {
@@ -186,7 +186,9 @@ button:hover {
   .container {
     max-height: 60%; /* Maintain the max-height */
     overflow-y: auto;
-    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
   }
 
 }
