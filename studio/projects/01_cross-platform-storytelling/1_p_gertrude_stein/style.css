@@ -2,6 +2,7 @@ body {
   margin: 5% 10% 0% 10%;
   padding: 0;
   font-family: Arial, sans-serif; /* Change the font family as needed */
+  font-size: 20px;
 }
 
 .Part p span.highlight {
@@ -10,14 +11,14 @@ body {
 
 .container {
   max-height: 60%; /* Maintain the max-height */
-  overflow-y: auto; /* Add scrollbar if content overflows */
+  overflow-y: auto;
 }
 
 .main-heading {
   font-family: "altivo", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 3vw; /* Responsive font size based on viewport width */
+  font-size: 48px; /* Responsive font size based on viewport width */
   color: rgb(0, 0, 0);
   text-align: center;
   letter-spacing: 0px;
@@ -108,6 +109,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 845px;
+  padding: 10px;
 }
 
 button {
@@ -133,7 +135,6 @@ button:hover {
   filter: drop-shadow(0 0 2px rgba(36, 160, 255, 0.7))
     drop-shadow(0 0 5px rgba(36, 149, 255, 0.7))
     drop-shadow(0 0 15px rgba(36, 76, 255, 0.7));
-  font-size: 16px;
   background-color: #007fff;
   color: #fff;
   border: none;
@@ -160,21 +161,32 @@ button:hover {
 }
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .main-heading {
-    font-size: 10vw; /* Adjust font size for smaller screens */
-    word-spacing: -1vw; /* Adjust word spacing for smaller screens */
+    font-size: 6vw; 
+    word-spacing: -1vw; 
   }
   
   .section-heading {
-    font-size: 2vw; /* Adjust font size for smaller screens */
+    font-size: 2vw; 
   }
 
   .buttons {
     grid-template-columns: repeat(4, 4fr);
   }
+
+  button {
+    font-size: 4px;
+  }
   
   .em {
-    font-size: 1vw; /* Adjust font size for smaller screens */
+    font-size: 0.1vw; 
   }
+
+  .container {
+    max-height: 60%; /* Maintain the max-height */
+    overflow-y: auto;
+    width: 430px;
+  }
+
 }
