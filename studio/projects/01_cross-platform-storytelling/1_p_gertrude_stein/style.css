@@ -103,8 +103,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   grid-gap: 10px;
-  margin: 20px auto;
-  max-width: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 845px;
 }
 
 button {
@@ -156,24 +159,19 @@ button:hover {
   background-color: #525252;
 }
 
-
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-  .buttons {
-    grid-template-columns: repeat(4, 4fr);
-  }
-}
-
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
   .main-heading {
-    font-size: 1%; /* Adjust font size for smaller screens */
+    font-size: 10vw; /* Adjust font size for smaller screens */
     word-spacing: -1vw; /* Adjust word spacing for smaller screens */
   }
   
   .section-heading {
     font-size: 2vw; /* Adjust font size for smaller screens */
+  }
+
+  .buttons {
+    grid-template-columns: repeat(4, 4fr);
   }
   
   .em {
