@@ -1,4 +1,98 @@
-html {
-    color: rgb(255, 255, 255);
-    background-color: black;
+/* style.css */
+
+/* 전체 페이지 스타일 */
+body {
+    color: #000; /* 글자색 */
+    background-color: #c4c4c4; /* 배경색 */
+    font-family: "Arial", sans-serif; /* 옛날 윈도우 스타일과 비슷한 폰트 */
+}
+
+/* 헤더 */
+.Header {
+    background-color: #008080; /* 헤더 배경색 */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.Header-title h1 {
+    margin: 0;
+    color: #fff; /* 헤더 타이틀 글자색 */
+}
+
+/* 내비게이션 */
+.Nav {
+    margin-top: 20px;
+}
+
+.Nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.Nav-link {
+    color: #fff; /* 내비게이션 링크 글자색 */
+    text-decoration: none;
+}
+
+/* 페이지 내용 */
+.Page {
+    background-color: #fff; /* 페이지 배경색 */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #000; /* 테두리 추가 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.Page-header h1 {
+    margin-top: 0;
+}
+
+/* 포스트 목록 */
+.PostList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.PostList-item {
+    background-color: #f0f0f0; /* 포스트 목록 배경색 */
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.PostList-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.PostList-link {
+    color: #000; /* 포스트 목록 링크 글자색 */
+    text-decoration: none;
+}
+
+/* 푸터 */
+.Footer {
+    background-color: #008080; /* 푸터 배경색 */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.StudentNav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.StudentNav a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.StudentNav img {
+    vertical-align: middle;
 }
