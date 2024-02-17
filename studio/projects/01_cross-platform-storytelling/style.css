@@ -99,16 +99,15 @@ body {
 
 /* footer */
 
-.em {
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
+.comment {
+  font-family: "bilo", sans-serif;
+  font-weight: 300;
   font-style: italic;
-  font-size: 0.5vw; /* Responsive font size based on viewport width */
-  color: rgb(239, 239, 239);
-  text-align: left;
-  margin: 0;
+  font-size: 1vw; /* Responsive font size based on viewport width */
+  color: rgb(106, 106, 106);
+  text-align: center;
+  margin: 8px 0 3px 0;
 }
-
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {

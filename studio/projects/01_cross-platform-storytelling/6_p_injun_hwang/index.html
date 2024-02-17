@@ -10,7 +10,7 @@
     <style>
       html, body {
           height: 100%;
-          margin: 0;
+          margin: 10px;
           padding: 0;
       }
       
@@ -22,8 +22,9 @@
           text-align: left;
           border: 3px solid rgb(0, 42, 94);
           background-color: rgb(211, 211, 211);
-          max-height: 60%; /* Adjusted max-height */
+          max-height: 50%; /* Adjusted max-height */
           border-radius: 10px;
+          overflow-y: auto;
       }
       
       .container::-webkit-scrollbar {
@@ -68,11 +69,9 @@
     </center>
     <h2 class="section-heading">by Injun Hwang</h2>
     
-    <em>
-      <center>
+    <h5 class="comment">
         “Punctuations are more than that. You can use it as an emoji."
-      </center>
-    </em>
+      </h5>
 
     <div class="buttons">
       <button id="btn1" onclick="window.location.href='../1_p_gertrude_stein/index.html'">Gertrude Stein</button>
@@ -194,9 +193,6 @@
         </p>
       </section>
     </div>
-    <!-- Scrollbar Style -->
-    <!-- Your Styles go here -->
-    <br>
     <br>
     <br>
 </body>

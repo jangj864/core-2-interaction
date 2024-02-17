@@ -10,7 +10,7 @@
     <style>
       html, body {
           height: 100%;
-          margin: 0;
+          margin: 10px;
           padding: 0;
       }
       
@@ -22,10 +22,11 @@
           text-align: left;
           border: 3px solid rgb(34, 139, 34);
           background-color: rgb(211, 211, 211);
-          max-height: 60%; /* Adjusted max-height */
+          max-height: 50%; /* Adjusted max-height */
           border-radius: 10px;
+          overflow-y: auto;
       }
-      
+
       .container::-webkit-scrollbar {
           width: 10px;
       }
@@ -68,11 +69,9 @@
     </center>
     <h2 class="section-heading">by Snoop Dogg</h2>
 
-    <em>
-      <center>
+    <h5 class="comment">
         "Spitting is easier than Reading."
-      </center>
-    </em>
+     </h5>
 
     <div class="buttons">
       <button id="btn1" onclick="window.location.href='../1_p_gertrude_stein/index.html'">Gertrude Stein</button>
