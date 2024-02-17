@@ -170,3 +170,30 @@ button:hover {
   }
   
 }
+
+/* Media Query for mobile screens (iphone)*/
+@media screen and (max-width: 500px) {
+  button {
+    font-size: 8px;
+  }
+}
+
+/* Media Query for mobile screens (galaxy s8+)*/
+@media screen and (max-width: 360px) {
+  button {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  button {
+    font-size: 4.8px;
+  }
+}
+
+/* Media Query for mobile screens (galaxy fold)*/
+@media screen and (max-width: 280px) {
+  button {
+    font-size: 2.5px;
+  }
+}
