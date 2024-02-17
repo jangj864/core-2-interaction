@@ -18,7 +18,6 @@ body {
   margin: 8px;
 }
 
-
 .main-heading span {
   color: rgb(0, 0, 0);
 }
@@ -26,6 +25,7 @@ body {
 .main-heading span {
   color: rgb(0, 0, 0);
 }
+
 
 #p:hover {
   color: rgba(0, 127, 255);
@@ -36,31 +36,31 @@ body {
 }
 
 #n:hover {
-  color: rgb(128, 0, 128); 
-}
-
-#c:hover {
-  color: rgb(255, 215, 0); 
-}
-
-#t:hover {
   color: #ff8eff;
 }
 
-#u2:hover {
+#c:hover {
   color: rgb(0, 42, 94);
 }
 
-#a:hover {
+#t:hover {
   color: rgb(255, 132, 0); 
 }
 
+#u2:hover {
+  color: rgb(255, 215, 0); 
+}
+
+#a:hover {
+  color: Sienna;
+}
+
 #t2:hover {
-  color: rgb(34, 139, 34); 
+  color: rgb(128, 0, 128); 
 }
 
 #i:hover {
-  color: Sienna;
+  color: rgb(34, 139, 34); 
 }
 
 #o:hover {
@@ -106,8 +106,8 @@ body {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: rgb(0, 42, 94);
-  color: #ffffff;
+  background-color: rgb(128, 0, 128);
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -115,27 +115,27 @@ button {
 }
 
 button:hover {
-  background-color: #030022;
+  background-color: #470040;
 }
 
 /* Selected Button*/
 
-#btn6 {
+#btn3 {
   padding: 10px 20px;
-    color: rgb(255, 255, 255);
-  filter: drop-shadow(0 0 2px rgba(36, 40, 255, 0.7))
-    drop-shadow(0 0 5px rgba(65, 36, 255, 0.7))
-    drop-shadow(0 0 15px rgba(72, 36, 255, 0.7));
-  background-color: rgb(11, 0, 94);
-  color: #ffffff;
+    color: rgb(128, 0, 128);
+  filter: drop-shadow(0 0 2px rgba(211, 36, 255, 0.7))
+    drop-shadow(0 0 5px rgba(211, 36, 255, 0.7))
+    drop-shadow(0 0 15px rgba(229, 36, 255, 0.7));
+  background-color: rgb(128, 0, 128);
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-#btn6:hover {
-  background-color: #030022;
+#btn3:hover {
+  background-color: #470040;
 }
 
 /* Button 12 Home button */
@@ -149,6 +149,14 @@ button:hover {
 
 #btn12:hover {
   background-color: #525252;
+}
+
+
+object {
+  aspect-ratio: 4/3;
+  position: center;
+  width: 100%;
+  margin: auto;
 }
 
 
@@ -170,7 +178,6 @@ button:hover {
   button {
     font-size: 14px;
   }
-  
 }
 
 /* Media Query for mobile screens (iphone)*/
