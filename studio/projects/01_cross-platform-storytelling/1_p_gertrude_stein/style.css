@@ -6,7 +6,8 @@ body {
 }
 
 .Part p span.highlight {
-  color: #007fff; /* Change the color to your desired color */
+  color: #007fff; 
+  filter: drop-shadow(0.5px 0.5px 0.5px rgba(255, 255, 255, 0.7))
 }
 
 .main-heading {

@@ -5,6 +5,10 @@ body {
   font-size: 20px;
 }
 
+.Part p span.highlight {
+  color: rgb(21, 194, 154);
+}
+
 .main-heading {
   font-family: "altivo", sans-serif;
   font-weight: 800;

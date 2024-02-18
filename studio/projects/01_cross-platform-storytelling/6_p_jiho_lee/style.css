@@ -5,6 +5,11 @@ body {
   font-size: 20px;
 }
 
+.Part p span.highlight {
+  color: rgb(255, 215, 0); 
+  filter: drop-shadow(0.5px 0.5px 0.5px rgba(255, 153, 0, 0.7))
+}
+
 .main-heading {
   font-family: "altivo", sans-serif;
   font-weight: 800;
@@ -120,7 +125,7 @@ button:hover {
 
 /* Selected Button*/
 
-#btn4 {
+#btn6 {
   padding: 10px 20px;
     color: rgb(255, 215, 0);
   filter: drop-shadow(0 0 2px rgba(255, 226, 36, 0.7))
@@ -134,7 +139,7 @@ button:hover {
   transition: background-color 0.3s ease;
 }
 
-#btn4:hover {
+#btn6:hover {
   background-color: rgb(130, 100, 0);
 }
 

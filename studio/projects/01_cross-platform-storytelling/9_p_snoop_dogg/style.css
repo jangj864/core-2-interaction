@@ -120,7 +120,7 @@ button:hover {
 
 /* Selected Button*/
 
-#btn8 {
+#btn9 {
   padding: 10px 20px;
     color: rgb(54, 255, 36);
   filter: drop-shadow(0 0 2px rgba(36, 255, 58, 0.7))
@@ -134,7 +134,7 @@ button:hover {
   transition: background-color 0.3s ease;
 }
 
-#btn8:hover {
+#btn9:hover {
   background-color: rgb(16, 68, 16);
 }
 
