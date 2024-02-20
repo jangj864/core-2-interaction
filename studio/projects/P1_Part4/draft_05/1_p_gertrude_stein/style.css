@@ -5,7 +5,6 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  background-color: black;
   word-spacing: -4px;
 }
 
@@ -19,7 +18,7 @@ body {
   font-weight: 800;
   font-style: normal;
   font-size: 48px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   letter-spacing: 0px;
   word-spacing: -0.5vw; 
@@ -28,11 +27,11 @@ body {
 }
 
 .main-heading span {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .main-heading span {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 #p:hover {
@@ -83,10 +82,10 @@ body {
   font-family: "sutro", serif;
   font-weight: 300;
   font-style: italic;
-  color: rgb(163, 163, 163);
-  font-size: 1.5vw;
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw; 
   text-align: center;
-  margin: 0.7% 0 1% 0; 
+  margin: 0.7% 0 1% 0;
   word-spacing: 0px;
 }
 
@@ -94,7 +93,7 @@ body {
   font-family: "bilo", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 1vw; /* Responsize font size based on viewport width */
+  font-size: 1vw; 
   color: rgb(106, 106, 106);
   text-align: center;
   margin: 1% 0 2% 0;

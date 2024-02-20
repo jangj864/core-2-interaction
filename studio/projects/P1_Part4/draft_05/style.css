@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: black;
+  font-family: Arial, sans-serif; /* Change the font family as needed */
 }
 
 .container {
@@ -20,7 +19,7 @@ body {
   font-weight: 800;
   font-style: normal;
   font-size: 9vw; /* Responsive font size based on viewport width */
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   letter-spacing: 0px;
   word-spacing: -0.5vw; /* Responsive word spacing based on viewport width */
@@ -30,7 +29,7 @@ body {
 
 .main-heading a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 .main-heading a:hover,
@@ -93,7 +92,7 @@ body {
   font-family: "sutro", serif;
   font-weight: 300;
   font-style: italic;
-  color: rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
   font-size: 2vw; /* Responsive font size based on viewport width */
   text-align: center;
   margin-top: 40px; /* Adjust margin as needed */
