@@ -5,9 +5,11 @@ body {
   font-size: 20px;
 }
 
+.in { text-indent: 10px;}
+
 .Part p span.highlight {
   color: rgb(255, 215, 0); 
-  filter: drop-shadow(0.5px 0.5px 0.5px rgba(255, 153, 0, 0.7))
+  filter: drop-shadow(1px 1px 1px rgba(62, 38, 0, 0.7))
 }
 
 .main-heading {
