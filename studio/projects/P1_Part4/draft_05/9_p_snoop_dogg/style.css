@@ -1,0 +1,206 @@
+body {
+  margin: 5% 10% 0% 10%;
+  padding: 0;
+  font-family: "input-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  background-color: black;
+  word-spacing: -4px;
+}
+
+.main-heading {
+  font-family: "altivo", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px; /* Responsive font size based on viewport width */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 0px;
+  word-spacing: -0.5vw; /* Responsive word spacing based on viewport width */
+  line-height: 1;
+  margin: 8px;
+}
+
+.main-heading span {
+  color: rgb(255, 255, 255);
+}
+
+.main-heading span {
+  color: rgb(255, 255, 255);
+}
+
+
+#p:hover {
+  color: rgba(0, 127, 255);
+}
+
+#u:hover {
+  color: rgb(255, 0, 0); 
+}
+
+#n:hover {
+  color: #ff8eff;
+}
+
+#c:hover {
+  color: rgb(0, 42, 94);
+}
+
+#t:hover {
+  color: rgb(255, 132, 0); 
+}
+
+#u2:hover {
+  color: rgb(255, 215, 0); 
+}
+
+#a:hover {
+  color: Sienna;
+}
+
+#t2:hover {
+  color: rgb(128, 0, 128); 
+}
+
+#i:hover {
+  color: rgb(34, 139, 34); 
+}
+
+#o:hover {
+  color: rgb(21, 194, 154);
+}
+
+#n2:hover {
+  color: rgb(116, 170, 156);
+}
+
+.section-heading {
+  font-family: "sutro", serif;
+  font-weight: 300;
+  font-style: italic;
+  color: rgb(163, 163, 163);
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 0.7% 0 1% 0; 
+  word-spacing: 0px;
+}
+
+.comment {
+  font-family: "bilo", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1vw; /* Responsize font size based on viewport width */
+  color: rgb(106, 106, 106);
+  text-align: center;
+  margin: 1% 0 2% 0;
+  word-spacing: 0px;
+}
+
+/* Buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 845px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(34, 139, 34);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(16, 68, 16);
+}
+
+/* Selected Button*/
+
+#btn9 {
+  padding: 10px 20px;
+    color: rgb(54, 255, 36);
+  filter: drop-shadow(0 0 2px rgba(36, 255, 58, 0.7))
+    drop-shadow(0 0 5px rgba(43, 255, 36, 0.7))
+    drop-shadow(0 0 15px rgba(83, 255, 36, 0.7));
+  background-color: rgb(34, 139, 34);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn9:hover {
+  background-color: rgb(16, 68, 16);
+}
+
+/* Button 12 Home button */
+
+#btn12 {
+  background-color: rgb(187, 187, 187);
+  border-radius: 5px;
+  border: 1px solid #a2a2a2; /* Add border width, style, and color */
+  color: #000000;
+}
+
+#btn12:hover {
+  background-color: #525252;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 800px) {
+  .main-heading {
+    font-size: 6vw; 
+    word-spacing: -1vw; 
+  }
+  
+  .section-heading {
+    font-size: 1.5vw; 
+  }
+
+  .buttons {
+    grid-template-columns: repeat(4, 4fr);
+  }
+
+  button {
+    font-size: 14px;
+  }
+  
+}
+
+/* Media Query for mobile screens (iphone)*/
+@media screen and (max-width: 500px) {
+  button {
+    font-size: 8px;
+  }
+}
+
+/* Media Query for mobile screens (galaxy s8+)*/
+@media screen and (max-width: 360px) {
+  button {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  button {
+    font-size: 4.8px;
+  }
+}
+
+/* Media Query for mobile screens (galaxy fold)*/
+@media screen and (max-width: 280px) {
+  button {
+    font-size: 2.5px;
+  }
+}
