@@ -1,7 +1,7 @@
 body {
   margin: 5% 10% 0% 10%;
   padding: 0;
-  font-family: Arial, sans-serif; /* Change the font family as needed */
+  font-family: Arial, sans-serif; 
   font-size: 20px;
 }
 
@@ -14,11 +14,11 @@ body {
   font-family: "altivo", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 48px; /* Responsive font size based on viewport width */
+  font-size: 48px;
   color: rgb(0, 0, 0);
   text-align: center;
   letter-spacing: 0px;
-  word-spacing: -0.5vw; /* Responsive word spacing based on viewport width */
+  word-spacing: -0.5vw; 
   line-height: 1;
   margin: 8px;
 }
@@ -80,16 +80,16 @@ body {
   font-weight: 300;
   font-style: italic;
   color: rgb(0, 0, 0);
-  font-size: 1.5vw; /* Responsive font size based on viewport width */
+  font-size: 1.5vw; 
   text-align: center;
-  margin: 0.7% 0 1% 0; /* Adjust margin as needed */
+  margin: 0.7% 0 1% 0; 
 }
 
 .comment {
   font-family: "bilo", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 1vw; /* Responsize font size based on viewport width */
+  font-size: 1vw; 
   color: rgb(106, 106, 106);
   text-align: center;
   margin: 1% 0 2% 0;
