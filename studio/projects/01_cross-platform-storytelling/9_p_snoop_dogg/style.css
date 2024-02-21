@@ -85,8 +85,8 @@ body {
   font-family: "bilo", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 1vw; /* Responsize font size based on viewport width */
-  color: rgb(106, 106, 106);
+  font-size: 2vw; /* Responsize font size based on viewport width */
+  color: rgb(34, 139, 34); 
   text-align: center;
   margin: 1% 0 2% 0;
 }

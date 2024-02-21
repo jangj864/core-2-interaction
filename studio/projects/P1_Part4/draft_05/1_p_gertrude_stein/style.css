@@ -1,11 +1,8 @@
 body {
   margin: 5% 10% 0% 10%;
   padding: 0;
-  font-family: "input-sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: Arial, sans-serif; 
   font-size: 20px;
-  word-spacing: -4px;
 }
 
 .Part p span.highlight {
@@ -85,8 +82,7 @@ body {
   color: rgb(0, 0, 0);
   font-size: 1.5vw; 
   text-align: center;
-  margin: 0.7% 0 1% 0;
-  word-spacing: 0px;
+  margin: 0.7% 0 1% 0; 
 }
 
 .comment {
@@ -97,7 +93,6 @@ body {
   color: rgb(106, 106, 106);
   text-align: center;
   margin: 1% 0 2% 0;
-  word-spacing: 0px;
 }
 
 /* Buttons */

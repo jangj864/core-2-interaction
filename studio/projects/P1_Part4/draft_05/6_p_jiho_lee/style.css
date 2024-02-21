@@ -1,11 +1,8 @@
 body {
   margin: 5% 10% 0% 10%;
   padding: 0;
-  font-family: "input-sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: Arial, sans-serif; /* Change the font family as needed */
   font-size: 20px;
-  word-spacing: -4px;
 }
 
 .in { text-indent: 10px;}
@@ -89,7 +86,6 @@ body {
   font-size: 1.5vw; /* Responsive font size based on viewport width */
   text-align: center;
   margin: 0.7% 0 1% 0; /* Adjust margin as needed */
-  word-spacing: 0px;
 }
 
 .comment {
@@ -100,7 +96,6 @@ body {
   color: rgb(106, 106, 106);
   text-align: center;
   margin: 1% 0 2% 0;
-  word-spacing: 0px;
 }
 
 /* Buttons */
