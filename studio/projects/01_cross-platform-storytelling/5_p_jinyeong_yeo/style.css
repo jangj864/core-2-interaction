@@ -1,8 +1,21 @@
 body {
   margin: 5% 10% 0% 10%;
   padding: 0;
-  font-family: Arial, sans-serif; /* Change the font family as needed */
+  font-family: Arial, sans-serif; 
   font-size: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px 20px; /* Reduced padding top and bottom */
+  overflow-y: auto;
+  text-align: left;
+  border: 3px solid rgb(255, 132, 0);
+  background-color: rgb(211, 211, 211);
+  max-height: 50%; /* Adjusted max-height */
+  border-radius: 10px;
+  overflow-y: auto;
 }
 
 .Part p span.highlight {
@@ -14,11 +27,11 @@ body {
   font-family: "altivo", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 48px; /* Responsive font size based on viewport width */
+  font-size: 48px;
   color: rgb(0, 0, 0);
   text-align: center;
   letter-spacing: 0px;
-  word-spacing: -0.5vw; /* Responsive word spacing based on viewport width */
+  word-spacing: -0.5vw; 
   line-height: 1;
   margin: 8px;
 }
@@ -30,7 +43,6 @@ body {
 .main-heading span {
   color: rgb(0, 0, 0);
 }
-
 
 #p:hover {
   color: rgba(0, 127, 255);
@@ -76,24 +88,25 @@ body {
   color: rgb(116, 170, 156);
 }
 
+
 .section-heading {
   font-family: "sutro", serif;
   font-weight: 300;
   font-style: italic;
   color: rgb(0, 0, 0);
-  font-size: 1.5vw; /* Responsive font size based on viewport width */
+  font-size: 29px; 
   text-align: center;
-  margin: 0.7% 0 1% 0; /* Adjust margin as needed */
+  margin: 0.7% 0 1% 0; 
 }
 
 .comment {
   font-family: "bilo", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 2vw; /* Responsize font size based on viewport width */
+  font-size: 28px; 
   color: rgb(255, 132, 0);
   text-align: center;
-  margin: 1% 0 2% 0;
+  margin: 1% 0 0% 0;
 }
 
 /* Buttons */
@@ -110,7 +123,7 @@ body {
 
 button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   background-color: rgb(255, 132, 0);
   color: #ffffff;
   border: none;
@@ -157,14 +170,80 @@ button:hover {
 }
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .main-heading {
     font-size: 6vw; 
     word-spacing: -1vw; 
   }
   
   .section-heading {
-    font-size: 1.5vw; 
+    font-size: 25px; 
+  }
+
+  .comment {
+    font-size: 20px; 
+    margin: 0px -10px -3px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+
+  .buttons {
+    grid-template-columns: repeat(4, 4fr);
+  }
+
+  button {
+    font-size: 20px;
+  }
+  
+}
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 809px) {
+  .main-heading {
+    font-size: 6vw; 
+    word-spacing: -1vw; 
+  }
+  
+  .section-heading {
+    font-size: 25px; 
+  }
+
+  .comment {
+    font-size: 20px; 
+    margin: 0px -10px -3px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+
+  .buttons {
+    grid-template-columns: repeat(4, 4fr);
+  }
+
+  button {
+    font-size: 20px;
+  }
+
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 800px) {
+  .main-heading {
+    font-size: 6vw; 
+    word-spacing: -1vw; 
+  }
+
+  .section-heading {
+    font-size: 25px; 
+  }
+
+  .comment {
+    font-size: 18px; 
+    margin: 0px -10px -3px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
   }
 
   .buttons {
@@ -172,34 +251,234 @@ button:hover {
   }
 
   button {
-    font-size: 14px;
+    font-size: 20px;
   }
 
 }
 
 /* Media Query for mobile screens (iphone)*/
 @media screen and (max-width: 500px) {
-  button {
-    font-size: 8px;
+  .buttons {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    display: grid;
+    grid-gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
+  button {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+  .comment {
+    font-size: 18px; 
+    margin: 0px -10px -3px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+  body {
+    margin: 5% 10% 0% 10%;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
+  }
+  .section-heading {
+    font-size: 20px; 
+  }
+  .container {
+    margin-top: -10px;
+    max-height: 55%; /* Adjusted max-height */
+}
+  }
+
+
+
+@media screen and (max-width: 456px) {
+
+  .main-heading {
+    margin-top: -10px;
+  }
+
+  .section-heading {
+    margin-top: 10px;
+    font-size: 15px; 
+  }
+
+  .comment {
+    font-size: 18px; 
+    margin: 9px -10px -3px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+  
+  .buttons {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    display: grid;
+    grid-gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+
+  body {
+    margin: 5% 10% 0% 10%;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
+  }
+
+  .container {
+    margin-top: -7px;
+    max-height: 55%; /* Adjusted max-height */
+}
+  
+}
+
+/* Media Query for mobile screens (iphone se)*/
+@media screen and (max-width: 375px) {
+  .main-heading {
+    margin-top: -10px;
+  }
+
+  .section-heading {
+    font-size: 18px; 
+  }
+
+  .comment {
+    font-size: 18px; 
+    margin: 7px -10px -8px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    display: grid;
+    grid-gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  body {
+    margin: 5% 10% 0% 10%;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
+  }
+  .container {
+    margin-top: -10px;
+    max-height: 44%; /* Adjusted max-height */
+}
 }
 
 /* Media Query for mobile screens (galaxy s8+)*/
 @media screen and (max-width: 360px) {
+
+  .section-heading {
+    font-size: 18px; 
+  }
+
+  .comment {
+    font-size: 18px; 
+    margin: 0px -10px -3px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    display: grid;
+    grid-gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   button {
-    font-size: 7px;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  body {
+    margin: 5% 10% 0% 10%;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .buttons {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    display: grid;
+    grid-gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   button {
-    font-size: 4.8px;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .comment {
+    font-size: 18px; 
+    margin: 0px -10px -3px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+  body {
+    margin: 5% 10% 0% 10%;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
+  }
+  .section-heading {
+    font-size: 15px; 
   }
 }
 
 /* Media Query for mobile screens (galaxy fold)*/
 @media screen and (max-width: 280px) {
-  button {
-    font-size: 2.5px;
+  .buttons {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    display: grid;
+    grid-gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
+  button {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .comment {
+    font-size: 18px; 
+    margin: 0px -10px -3px -10px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+  body {
+    margin: 5% 10% 0% 10%;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
+  }
+  .section-heading {
+    font-size: 15px; 
+  }
+
+  }
