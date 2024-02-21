@@ -90,12 +90,11 @@ body {
   font-family: "bilo", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 1vw; /* Responsize font size based on viewport width */
+  font-size: 2vw; 
   color: rgb(106, 106, 106);
   text-align: center;
-  margin: 1% 0 2% 0;
+  margin: 1.5% 0 2% 0;
 }
-
 
 /* Buttons */
 .buttons {
