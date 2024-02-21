@@ -1,15 +1,9 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif; /* Change the font family as needed */
-}
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* 100% of the viewport height */
+  height: 100vh;
 }
 
 /* Title On Punctuation */
@@ -95,30 +89,6 @@ body {
   color: rgb(0, 0, 0);
   font-size: 2vw; /* Responsive font size based on viewport width */
   text-align: center;
-  margin-top: 40px; /* Adjust margin as needed */
-}
-
-/* comment */
-
-.comment {
-  font-family: "bilo", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 1vw; /* Responsize font size based on viewport width */
-  color: rgb(106, 106, 106);
-  text-align: center;
-  margin: 1% 0 2% 0;
-}
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-  .main-heading {
-    font-size: 8vw; /* Adjust font size for smaller screens */
-    word-spacing: -1vw; /* Adjust word spacing for smaller screens */
-  }
-  
-  .section-heading {
-    font-size: 2vw; /* Adjust font size for smaller screens */
-  }
-
+  margin-top: 30px; /* Adjust margin as needed */
+  margin-bottom: 150px;
 }
