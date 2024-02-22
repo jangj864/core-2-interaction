@@ -88,7 +88,6 @@ body {
   color: rgb(116, 170, 156);
 }
 
-
 .section-heading {
   font-family: "sutro", serif;
   font-weight: 300;
@@ -168,7 +167,6 @@ button:hover {
 #btn12:hover {
   background-color: #525252;
 }
-
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 989px) {

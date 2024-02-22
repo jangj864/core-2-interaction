@@ -36,6 +36,7 @@ body {
   margin: 8px;
 }
 
+
 .main-heading span {
   color: rgb(0, 0, 0);
 }
@@ -87,7 +88,6 @@ body {
 #n2:hover {
   color: rgb(116, 170, 156);
 }
-
 
 .section-heading {
   font-family: "sutro", serif;
