@@ -36,6 +36,12 @@ body {
     text-decoration: none;
 }
 
+.Nav-link,
+.Nav-link:visited {
+    color: #008080; /* 원하는 방문한 링크 색상 */
+    text-decoration: none;
+}
+
 /* 페이지 내용 */
 .Page {
     background-color: #fff; 
