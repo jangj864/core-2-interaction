@@ -48,48 +48,8 @@ body {
   color: rgb(0, 0, 0);
 }
 
-#p:hover {
-  color: rgba(0, 127, 255);
-}
-
-#u:hover {
+#u {
   color: rgb(255, 0, 0); 
-}
-
-#n:hover {
-  color: #ff8eff;
-}
-
-#c:hover {
-  color: rgb(0, 42, 94);
-}
-
-#t:hover {
-  color: rgb(255, 132, 0); 
-}
-
-#u2:hover {
-  color: rgb(255, 215, 0); 
-}
-
-#a:hover {
-  color: Sienna;
-}
-
-#t2:hover {
-  color: rgb(128, 0, 128); 
-}
-
-#i:hover {
-  color: rgb(34, 139, 34); 
-}
-
-#o:hover {
-  color: rgb(21, 194, 154);
-}
-
-#n2:hover {
-  color: rgb(116, 170, 156);
 }
 
 .section-heading {
