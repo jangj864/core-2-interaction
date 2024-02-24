@@ -1,0 +1,101 @@
+body {
+    color: #000; 
+    background-color: #c4c4c4;
+    font-family: "Arial", sans-serif;
+}
+
+/* 헤더 */
+.Header {
+    background-color: #008080; 
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.Header-title h1 {
+    margin: 0;
+    color: #fff; 
+}
+
+/* 내비게이션 */
+.Nav {
+    margin-top: 20px;
+}
+
+.Nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.Nav-link {
+    color: #dadada;
+    text-decoration: none;
+}
+
+
+/* 페이지 내용 */
+.Page {
+    background-color: #fff; 
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Page-header h1 {
+    margin-top: 0;
+}
+
+/* 포스트 목록 */
+.PostList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.PostList-item {
+    background-color: #f0f0f0; 
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.PostList-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.PostList-link {
+    color: #000; 
+    text-decoration: none;
+}
+
+.PostList-link:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* 푸터 */
+.Footer {
+    background-color: #008080; 
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.StudentNav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.StudentNav a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.StudentNav img {
+    vertical-align: middle;
+}
