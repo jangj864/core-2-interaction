@@ -1,9 +1,8 @@
 body {
   font-family: arial, sans-serif;
   text-align: center;
-  font-size: 30px;
   line-height: 1.4;
-  background-image: url(assets/background.jpg);
+  background-image: url(../assets/background.jpg);
   background-color: #000;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,10 +15,27 @@ body {
 .responsive-image {
   width: 100%;
   height: auto;
-  max-width: 50%;
-  margin-top: 3%;
-  margin-bottom: -3%;
+  max-width: 400px;
   align-items: center;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 30px;
+}
+
+.explanation
+{
+  color: #eaeaea;
+  font-size: 20px;
+  letter-spacing: -0.5pt;
+}
+
+.metadata {
+  color: #d4d4d4;
+  font-size: 15px;
+  margin: 20px;
 }
 
 .entry {
@@ -101,34 +117,6 @@ body {
 @media (min-width: 0px) {
   .entry {
     grid-template-columns: repeat(3, 5fr); 
-  }
-}
-
-/* Tablet breakpoint */
-@media (min-width: 768px) {
-  .entry {
-    grid-template-columns: repeat(3, 5fr); 
-  }
-}
-
-/* Desktop breakpoint */
-@media (min-width: 992px) {
-  .entry {
-    grid-template-columns: repeat(5, 3fr); 
-  }
-}
-
-/* Wide screen breakpoint */
-@media (min-width: 1200px) {
-  .entry {
-    grid-template-columns: repeat(5, 3fr); 
-  }
-}
-
-/* Wide screen breakpoint */
-@media (min-width: 1500px) {
-  .entry {
-    grid-template-columns: repeat(8, 2fr); 
   }
 }
 
