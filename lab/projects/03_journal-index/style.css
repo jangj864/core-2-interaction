@@ -37,17 +37,25 @@ body {
   padding-top: -100px;
 }
 
+
+
+
 .button {
-    width: 100px;
-    height: 90px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #11111153;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+  width: 150px; /* Increased button width */
+  height: 120px; /* Adjusted button height */
+  position: relative;
+  overflow: hidden; /* Ensures the image stays within the button */
+  border-radius: 10px;
+  background: #11111153;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the button */
 }
 
 .button:before {
