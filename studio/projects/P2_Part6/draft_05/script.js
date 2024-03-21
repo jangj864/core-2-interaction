@@ -31,17 +31,20 @@ function updateCircleValue(link, selectedValue, type) {
                 case '2D':
                     calculatedValue = 3;
                     break;
+                case 'DolbyAtmos':
+                    calculatedValue = 5;
+                    break;
                 case 'IMAX2D':
-                    calculatedValue = 107;
+                    calculatedValue = 7;
                     break;
                 case 'IMAX3D':
-                    calculatedValue = 100;
+                    calculatedValue = 9;
                     break;
                 case '4DX':
-                    calculatedValue = 100;
+                    calculatedValue = 10;
                     break;
                 case 'ScreenX':
-                    calculatedValue = 100;
+                    calculatedValue = 11;
                     break;
             }
             break;
