@@ -95,7 +95,7 @@ h1 {
 }
 
 .selectedValue {
-  font-size: 10px; /* 0의 폰트 크기 */
+  font-size: 20px; /* 0의 폰트 크기 */
 }
 
 .value-container span {

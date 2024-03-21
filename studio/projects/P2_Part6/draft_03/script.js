@@ -1,4 +1,7 @@
 function updateCircleValue(link, selectedValue, type) {
+    // 현재 이벤트의 기본 동작을 중지합니다.
+    event.preventDefault();
+    
     const circle = link.closest('.circle');
     const circleValueContainer = circle.querySelector(".selectedValue");
     let calculatedValue = 0;
@@ -7,67 +10,70 @@ function updateCircleValue(link, selectedValue, type) {
         case 'theater':
             switch (selectedValue) {
                 case 'Total':
-                    calculatedValue = 260;
+                    calculatedValue = 295;
                     break;
                 case 'AMC':
                     calculatedValue = 3;
                     break;
                 case 'CGV':
-                    calculatedValue = 107;
+                    calculatedValue = 268;
                     break;
                 case 'Megabox':
-                    calculatedValue = 100;
+                    calculatedValue = 24;
                     break;
             }
             break;
         case 'format':
             switch (selectedValue) {
                 case 'Total':
-                    calculatedValue = 260;
+                    calculatedValue = 295;
                     break;
                 case '2D':
-                    calculatedValue = 3;
+                    calculatedValue = 181;
+                    break;
+                case 'DolbyAtmos':
+                    calculatedValue = 7;
                     break;
                 case 'IMAX2D':
-                    calculatedValue = 107;
+                    calculatedValue = 47;
                     break;
                 case 'IMAX3D':
-                    calculatedValue = 100;
+                    calculatedValue = 21;
                     break;
                 case '4DX':
-                    calculatedValue = 100;
+                    calculatedValue = 27;
                     break;
                 case 'ScreenX':
-                    calculatedValue = 100;
+                    calculatedValue = 9;
                     break;
             }
             break;
         case 'with':
             switch (selectedValue) {
                 case 'Total':
-                    calculatedValue = 260;
+                    calculatedValue = 295;
                     break;
                 case 'Alone':
-                    calculatedValue = 3;
+                    calculatedValue = 126;
                     break;
                 case 'Friend':
-                    calculatedValue = 107;
+                    calculatedValue = 126;
                     break;
                 case 'Family':
-                    calculatedValue = 100;
+                    calculatedValue = 43;
                     break;
             }
             break;
         case 'feeling':
             switch (selectedValue) {
                 case 'Total':
-                    calculatedValue = 260;
+                    calculatedValue = 295;
                     break;
                 case 'Reasonable':
-                    calculatedValue = 3;
+                    calculatedValue = 223;
                     break;
                 case 'Regrettable':
-                    calculatedValue = 107;
+                    calculatedValue = 72;
                     break;
             }
             break;
