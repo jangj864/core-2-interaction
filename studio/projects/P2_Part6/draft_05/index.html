@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>260HOURS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="header">
+        <h1>260HOURS</h1>
+        <h2>Total Amount of Time Watching a Movie</h2>
+    </div>
+
+    <br>
+    <ul class="stuff">
+        <br>
+        <i class="material-symbols-outlined">expand_more</i>
+    </ul>
+    <br>
+
+    <hr>
+    <div id="subtitle">
+        <h2>Analysis</h2>
+    <hr>
+    <br>
+    <br>
+        <div class="circle-container">
+            <div class="circle">         
+                <h2>Total</h2>
+                <div class="value-container">      
+                    <span class="selectedValue">260</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of time <br> watching a movie</p>
+            </div>
+
+            
+            <div class="circle">
+                <h2>Theater</h2>  
+                <div class="value-container">
+                    <span class="selectedValue">0</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of<br> time at</p>
+                <h3 class="selectedTheater">Theater</h3>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(this)">
+                        <i class="material-symbols-outlined">expand_more</i>
+                    </button>
+                    <div id="myDropdownTheater" class="dropdown-content">
+                        <a href="#" onclick="updateCircleValue(this, 'Total', 'theater')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'AMC', 'theater')">AMC</a>
+                        <a href="#" onclick="updateCircleValue(this, 'CGV', 'theater')">CGV</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Megabox', 'theater')">Megabox</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="circle">
+                <h2>Format</h2>
+                <div class="value-container">
+                    <span class="selectedValue">0</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of <br>time in</p>
+                <h3 class="selectedFormat">Format</h3>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(this)">
+                        <i class="material-symbols-outlined">expand_more</i>
+                    </button>
+                    <div id="myDropdownFormat" class="dropdown-content">
+                        <a href="#" onclick="updateCircleValue(this, 'Total', 'format')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, '2D', 'format')">2D</a>
+                        <a href="#" onclick="updateCircleValue(this, 'IMAX2D', 'format')">IMAX 2D</a>
+                        <a href="#" onclick="updateCircleValue(this, 'IMAX3D', 'format')">IMAX 3D</a>
+                        <a href="#" onclick="updateCircleValue(this, '4DX', 'format')">4DX</a>
+                        <a href="#" onclick="updateCircleValue(this, 'ScreenX', 'format')">ScreenX</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="circle">
+                <h2>With</h2>
+                <div class="value-container">
+                    <span class="selectedValue">0</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of <br>time with</p>
+                <h3 class="selectedWith">With</h3>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(this)">
+                        <i class="material-symbols-outlined">expand_more</i>
+                    </button>
+                    <div id="myDropdownWith" class="dropdown-content">
+                        <a href="#" onclick="updateCircleValue(this, 'Total', 'with')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Alone', 'with')">Alone</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Friend', 'with')">with Friend</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Family', 'with')">with Family</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle">
+                <h2>Feeling</h2>
+                <div class="value-container">
+                    <span class="selectedValue">0</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of <br>time of</p>
+                <h3 class="selectedFeeling">Feeling</h3>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(this)">
+                        <i class="material-symbols-outlined">expand_more</i>
+                    </button>
+                    <div id="myDropdownFeeling" class="dropdown-content">
+                        <a href="#" onclick="updateCircleValue(this, 'Total', 'feeling')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Reasonable', 'feeling')">Reasonable</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Regrettable', 'feeling')">Regrettable</a>
+                    </div>
+                </div>
+         </div>
+        </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<div id="subtitle">
+    <h2>Analysis</h2>
+<hr>
+<br>
+<br>
+
+                <script src="script.js"></script>
+            </body>
+            </html>
+                

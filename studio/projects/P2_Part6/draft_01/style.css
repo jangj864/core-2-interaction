@@ -1,0 +1,83 @@
+body {
+  background-color: #252525;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 15vw;
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+#header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#analysis {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+
+.circle {
+  position: relative;
+}
+
+.circle svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle svg circle {
+  stroke: white;
+  stroke-width: 3px; /* 테두리 두께 설정 */
+}
+
+.circle p {
+  margin-top: 10px;
+}
+
+.circle h2 {
+  font-size: 24px;
+}
+
+.circle span {
+  font-size: 36px;
+}
+
+
+.triangle-icon {
+  cursor: pointer;
+}
+
+.table-container {
+  display: none;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px 16px;
+}
