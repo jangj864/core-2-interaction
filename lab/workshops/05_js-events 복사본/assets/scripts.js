@@ -1,11 +1,19 @@
+// SELECTING ANY HTML ELEMENT
+// --------------------------------------------
+
 var containerElement = document.querySelector('.Container');
 
 
-// select our container element
+// INSERT ALL COSTUMES
+// --------------------------------------------
+
+// color swatch function
 function insertColorSwatches(costume) {
 
+	// get the relevant kirby element using the data-costume html attribute
 	var kirbyElement = document.querySelector(`.Kirby[data-costume="${ costume.title }"]`);
 
+	// add swatches to kirby element HTML
 	costume['colors'].forEach((color) => {
 		kirbyElement.innerHTML += `
 			<div class="Swatch" style="background: ${ color }"></div>
@@ -13,8 +21,10 @@ function insertColorSwatches(costume) {
 	});
 }
 
+// single costume function
 function insertCostume(costume) {
 
+	// add to the container HTML
 	containerElement.innerHTML += `
 		<article class="Kirby" data-costume="${ costume['title'] }">
 			<h2>${ costume['title'] }</h2>
@@ -23,25 +33,25 @@ function insertCostume(costume) {
 		</article>
 	`;
 
+	// insert color swatches
 	insertColorSwatches(costume);
 
 }
 
-//insert all costumes function definition
+// multiple costume function
 function insertCostumes(costumes) {
 
 	// empty the container element
 	containerElement.innerHTML = '';
 
-	// for each costume...
+	// run function to insert a single costume
 	costumes.forEach((costume) => {
-		// insert costume
 		insertCostume(costume);
 	});
 
 }
 
-//insert all costumes into the DOM
+// run function to insert multiple costumes
 insertCostumes(costumes);
 
 
@@ -62,19 +72,23 @@ insertCostumes(costumes);
 // 	return costume['colors'].includes('green');
 // });
 
-
+// define color filter function
 function getCostumesWithColor(color) {
 
-
+	// define the variable
 	var costumesWithColor = costumes.filter((costume) => {
 		return costume['colors'].includes(color);
 	});
 
-
+	// return the results
 	return costumesWithColor;
 }
 
 
+// BUTTON EVENT LISTENER
+// --------------------------------------------
+
+// get all of the button elements
 var colorButtonElements = document.querySelectorAll('.ColorControls input');
 
 colorButtonElements.forEach((button) => {
