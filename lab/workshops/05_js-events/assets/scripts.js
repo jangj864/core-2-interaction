@@ -1,20 +1,27 @@
+
 var containerElement = document.querySelector('.Container');
 
 
 // select our container element
 function insertColorSwatches(costume) {
 
+	// select the kirby elemnt
 	var kirbyElement = document.querySelector(`.Kirby[data-costume="${ costume.title }"]`);
 
+	// for each color in the costume	
 	costume['colors'].forEach((color) => {
+
+		// add the swatch HTML with background color
 		kirbyElement.innerHTML += `
 			<div class="Swatch" style="background: ${ color }"></div>
 		`;
 	});
 }
 
+// insert single costume function
 function insertCostume(costume) {
 
+	// put costume into html
 	containerElement.innerHTML += `
 		<article class="Kirby" data-costume="${ costume['title'] }">
 			<h2>${ costume['title'] }</h2>
@@ -23,6 +30,7 @@ function insertCostume(costume) {
 		</article>
 	`;
 
+	// insert color swatches function definition
 	insertColorSwatches(costume);
 
 }
@@ -41,46 +49,48 @@ function insertCostumes(costumes) {
 
 }
 
-//insert all costumes into the DOM
+// insert all costumes into the DOM
 insertCostumes(costumes);
 
 
 // FILTER COSTUMES BY COLOR
 // --------------------------------------------
 
-// detect if a costume includes colors
-// console.log(costumes[0]['colors'].includes('red'));
-
 // get all costumes with a single color
 // var redCostumes = costumes.filter((costume) => {
-// 	return costume['colors'].includes('red');
+// // test for the color red
+// return costume['colors'].includes('red');
 // });
-// var blueCostumes = costumes.filter((costume) => {
-// 	return costume['colors'].includes('blue');
-// });
-// var greenCostumes = costumes.filter((costume) => {
-// 	return costume['colors'].includes('green');
-// });
-
 
 function getCostumesWithColor(color) {
 
+	// define the variable
+    var costumesWithColor = costumes.filter((costume) => {
+        return costume['colors'].includes(color);
+    });
 
-	var costumesWithColor = costumes.filter((costume) => {
-		return costume['colors'].includes(color);
-	});
-
-
+	// return the variable
 	return costumesWithColor;
+
 }
 
+	var redCostumes = getCostumesWithColor('red');
 
-var colorButtonElements = document.querySelectorAll('.ColorControls input');
 
+// EVENT LISTENERS
+//-------------------
+
+// get all button elements
+
+var colorButtonElements = document.querySelectorAll('.ColorControls input')
+
+
+// for each button...
 colorButtonElements.forEach((button) => {
-	button.addEventListener('click', (event) => {
-		var color = event.target.value;
-		var costumes = getCostumesWithColor(color);
-		insertCostumes(costumes);
-	});
+    button.addEventListener('click', () => {
+		var color = button.value;
+		var costumesWithColor = getCostumesWithColor(color);
+		// console.log(costumesWithColor);
+		insertCostumes(costumesWithColor);
+    });;
 });

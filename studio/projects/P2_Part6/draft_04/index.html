@@ -29,6 +29,9 @@
         <div class="circle-container">
             <div class="circle">         
                 <h2>Total</h2>
+                <svg class="value-circle" width="100" height="100">
+                    <circle cx="50" cy="50" r="55" stroke="white" stroke-width="3" fill="transparent" />
+                </svg>
                 <div class="value-container">      
                     <span class="selectedValue">295</span>
                     <br>
@@ -138,10 +141,63 @@
 <hr>
 <div id="subtitle">
     <h2>Showtimes</h2>
-<hr>
-<br>
-<br>
-
+    <hr>
+    <table id="moviesTable">
+        <thead>
+            <tr>
+                <th>View
+                </th>
+                <th>Title</th>
+                <th>Run time (minutes)  
+                </th>  
+                <th>Time
+                    <select id="timeFilter">
+                        <option value="all">All</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                    </select>  
+                </th>
+                <th>Theater
+                    <select id="theaterFilter">
+                        <option value="all">All</option>
+                        <option value="AMC">AMC</option>
+                        <option value="CGV">CGV</option>
+                        <option value="Megabox">Megabox</option>
+                    </select>
+                </th>
+                <th>Format
+                    <select id="formatFilter">
+                        <option value="all">All</option>
+                        <option value="2D">2D</option>
+                        <option value="Dolby Atmos">Dolby Atmos</option>
+                        <option value="IMAX">IMAX</option>
+                        <option value="IMAX 2D">IMAX 2D</option>
+                        <option value="IMAX 3D">IMAX 3D</option>
+                        <option value="4DX">4DX</option>
+                        <option value="Screen X">Screen X</option>
+                    </select>
+                </th>
+                <th>With
+                    <select id="withFilter">
+                        <option value="all">All</option>
+                        <option value="Alone">Alone</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Family">Family</option>
+                    </select>
+                </th>
+            </tr>
+        </thead>
+            <tbody>
+                <!-- JavaScript가 동적으로 행을 추가할 부분 -->
+            </tbody>
+        </table>
+        
+  </table>
+  
                 <script src="script.js"></script>
             </body>
             </html>

@@ -124,3 +124,30 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* table */
+
+table {
+  font-family: Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f200;
+}
+
+tr:hover {
+  background-color: #34343412;
+}
+
+
+.hide {
+  display: none;
+}

@@ -1,90 +1,3 @@
-function updateCircleValue(link, selectedValue, type) {
-    // 현재 이벤트의 기본 동작을 중지합니다.
-    event.preventDefault();
-    
-    const circle = link.closest('.circle');
-    const circleValueContainer = circle.querySelector(".selectedValue");
-    let calculatedValue = 0;
-
-    switch (type) {
-        case 'theater':
-            switch (selectedValue) {
-                case 'Total':
-                    calculatedValue = 295;
-                    break;
-                case 'AMC':
-                    calculatedValue = 3;
-                    break;
-                case 'CGV':
-                    calculatedValue = 268;
-                    break;
-                case 'Megabox':
-                    calculatedValue = 24;
-                    break;
-            }
-            break;
-        case 'format':
-            switch (selectedValue) {
-                case 'Total':
-                    calculatedValue = 295;
-                    break;
-                case '2D':
-                    calculatedValue = 181;
-                    break;
-                case 'DolbyAtmos':
-                    calculatedValue = 7;
-                    break;
-                case 'IMAX2D':
-                    calculatedValue = 47;
-                    break;
-                case 'IMAX3D':
-                    calculatedValue = 21;
-                    break;
-                case '4DX':
-                    calculatedValue = 27;
-                    break;
-                case 'ScreenX':
-                    calculatedValue = 9;
-                    break;
-            }
-            break;
-        case 'with':
-            switch (selectedValue) {
-                case 'Total':
-                    calculatedValue = 295;
-                    break;
-                case 'Alone':
-                    calculatedValue = 126;
-                    break;
-                case 'Friend':
-                    calculatedValue = 126;
-                    break;
-                case 'Family':
-                    calculatedValue = 43;
-                    break;
-            }
-            break;
-        case 'feeling':
-            switch (selectedValue) {
-                case 'Total':
-                    calculatedValue = 295;
-                    break;
-                case 'Reasonable':
-                    calculatedValue = 223;
-                    break;
-                case 'Regrettable':
-                    calculatedValue = 72;
-                    break;
-            }
-            break;
-        default:
-            break;
-    }
-
-    circleValueContainer.textContent = calculatedValue;
-    circle.querySelector(".selected" + type.charAt(0).toUpperCase() + type.slice(1)).textContent = selectedValue;
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     const data = [
         {
@@ -93,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '180',
             'Time': '23-09-07',
             'Theater': 'AMC Lincoln Square',
-            'Format': 'IMAX 70mm Film 2D',
+            'Format': 'IMAX 70mm Film',
             'With': 'Alone',
             'Feeling': 'Reasonable'
         },
@@ -133,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '150',
             'Time': '23-05-10',
             'Theater': 'CGV Daegu',
-            'Format': 'ULTRA 4DX Screen X',
+            'Format': 'ULTRA 4DX',
             'With': 'Alone',
             'Feeling': 'Reasonable'
         },
@@ -143,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '150',
             'Time': '23-05-10',
             'Theater': 'Megabox Daegu',
-            'Format': '2D Dolby Atmos',
+            'Format': 'Dolby Atmos',
             'With': 'Alone',
             'Feeling': 'Reasonable'
         },
@@ -153,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '150',
             'Time': '23-05-03',
             'Theater': 'CGV Daegu',
-            'Format': 'IMAX 2D LASER',
+            'Format': 'IMAX LASER 2D',
             'With': 'Friend',
             'Feeling': 'Reasonable'
         },
@@ -193,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '122',
             'Time': '23-03-08',
             'Theater': 'CGV Apgujeong',
-            'Format': 'IMAX 2D LASER',
+            'Format': 'IMAX LASER 2D',
             'With': 'Alone',
             'Feeling': 'Regrettable'
         },
@@ -203,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '110',
             'Time': '23-03-05',
             'Theater': 'CGV Apgujeong',
-            'Format': 'IMAX 2D LASER',
+            'Format': 'IMAX LASER 2D',
             'With': 'Alone',
             'Feeling': 'Reasonable'
         },
@@ -233,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '192',
             'Time': '23-01-10',
             'Theater': 'CGV Apgujeong',
-            'Format': 'IMAX 3D LASER',
+            'Format': 'IMAX LASER 3D',
             'With': 'Alone',
             'Feeling': 'Reasonable'
         },
@@ -243,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '161',
             'Time': '22-11-13',
             'Theater': 'CGV Yongsan',
-            'Format': 'ULTRA 4DX Screen X',
+            'Format': 'ULTRA 4DX',
             'With': 'Alone',
             'Feeling': 'Regrettable'
         },
@@ -603,7 +516,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '114',
             'Time': '20-04-23',
             'Theater': 'CGV Gwanggyo',
-            'Format': 'IMAX 2D LASER',
+            'Format': 'IMAX LASER 2D',
             'With': 'Friend',
             'Feeling': 'Reasonable'
         },
@@ -613,7 +526,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '119',
             'Time': '20-03-26',
             'Theater': 'CGV Yongsan',
-            'Format': 'IMAX 2D LASER',
+            'Format': 'IMAX LASER 2D',
             'With': 'Friend',
             'Feeling': 'Reasonable'
         },
@@ -643,7 +556,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '142',
             'Time': '20-01-17',
             'Theater': 'CGV Yongsan',
-            'Format': 'IMAX 2D LASER',
+            'Format': 'IMAX LASER 2D',
             'With': 'Alone',
             'Feeling': 'Regrettable'
         },
@@ -703,7 +616,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '152',
             'Time': '19-12-09',
             'Theater': 'CGV Wangsimni',
-            'Format': 'ULTRA 4DX Screen X',
+            'Format': 'ULTRA 4DX',
             'With': 'Alone',
             'Feeling': 'Reasonable'
         },
@@ -843,7 +756,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '133',
             'Time': '19-07-22',
             'Theater': 'CGV Daegu',
-            'Format': 'Screen X',
+            'Format': 'SCREEN X',
             'With': 'Friend',
             'Feeling': 'Reasonable'
         },
@@ -923,8 +836,8 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '115',
             'Time': '19-06-14',
             'Theater': 'CGV Yongsan',
-            'Format': 'IMAX 2D LASER',
-            'With': 'Alone', 
+            'Format': 'IMAX LASER 2D',
+            'With': 'Alone',
             'Feeling': 'Regrettable'
         },
         {
@@ -963,7 +876,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '182',
             'Time': '19-05-16',
             'Theater': 'CGV Yongsan',
-            'Format': 'IMAX 2D LASER',
+            'Format': 'IMAX LASER 2D',
             'With': 'Alone',
             'Feeling': 'Reasonable'
         },
@@ -1113,7 +1026,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '111',
             'Time': '19-02-03',
             'Theater': 'Megabox Songdo',
-            'Format': '2D Dolby Atmos',
+            'Format': 'Dolby Atmos',
             'With': 'Friend',
             'Feeling': 'Reasonable'
         },
@@ -1143,7 +1056,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '129',
             'Time': '19-01-25',
             'Theater': 'CGV Yongsan',
-            'Format': 'IMAX 2D LASER',
+            'Format': 'IMAX LASER 2D',
             'With': 'Friend',
             'Feeling': 'Reasonable'
         },
@@ -1313,7 +1226,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'RunTime': '120',
             'Time': '18-05-22',
             'Theater': 'Megabox Daegu',
-            'Format': '2D Dolby Atmos',
+            'Format': 'Dolby Atmos',
             'With': 'Friend',
             'Feeling': 'Reasonable'
         },
@@ -1448,61 +1361,4 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         }
     ];
-
-    let currentData = [...data]; // 현재 화면에 표시되는 데이터
-
-    // 필터 및 정렬 이벤트 리스너 설정
-    document.querySelector("#theaterFilter").addEventListener("change", applyFilters);
-    document.querySelector("#formatFilter").addEventListener("change", applyFilters);
-    document.querySelector("#withFilter").addEventListener("change", applyFilters);
-    document.querySelector("#timeFilter").addEventListener("change", applyFilters);
-
-    function applyFilters() {
-        const theaterFilter = document.querySelector("#theaterFilter").value;
-        const formatFilter = document.querySelector("#formatFilter").value;
-        const withFilter = document.querySelector("#withFilter").value;
-        const timeFilter = document.querySelector("#timeFilter").value;
-    
-        currentData = data.filter(item => {
-            // 'Time' 필드에서 "YY" 연도 추출 ('YYYY-MM-DD' 포맷 가정 시)
-            const itemYear = `20${item.Time.split('-')[0]}`; // 데이터 포맷을 'YY-MM-DD'로 변경하고 'YYYY' 형태로 변환
-            // 연도 필터 조정: 추출된 연도와 사용자가 선택한 연도 비교
-            const yearMatch = timeFilter === 'all' || itemYear === timeFilter;
-    
-            return (theaterFilter === 'all' || item.Theater.includes(theaterFilter)) &&
-                   (formatFilter === 'all' || item.Format.includes(formatFilter)) &&
-                   (withFilter === 'all' || item.With.includes(withFilter)) &&
-                   yearMatch; // 수정된 연도 필터링 조건
-        });
-    
-        renderTable(currentData);
-    }
-    
-
-    function renderTable(filteredData) {
-        const tableBody = document.querySelector("#moviesTable tbody");
-        tableBody.innerHTML = ''; // 테이블 초기화
-
-        filteredData.forEach(item => {
-            const row = document.createElement('tr'); // createElement 사용
-            row.innerHTML = `
-                <td>${item.View}</td>
-                <td class="${item.Feeling.toLowerCase()}">${item.Title}</td>
-                <td>${item.RunTime}</td>
-                <td>${item.Time}</td>
-                <td>${item.Theater}</td>
-                <td>${item.Format}</td>
-                <td>${item.With}</td>
-            `;
-            // `Feeling` 값에 따른 색상 변경 로직을 여기에 포함
-            if (item.Feeling === "Reasonable") {
-                row.querySelector('td:nth-child(2)').style.color = "rgb(0, 255, 0)";
-            } else if (item.Feeling === "Regrettable") {
-                row.querySelector('td:nth-child(2)').style.color = "rgb(255, 0, 255)";
-            }
-            tableBody.appendChild(row);
-        });
-    }
-
-    renderTable(currentData); // 초기 데이터 렌더링
 });
