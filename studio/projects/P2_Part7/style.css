@@ -113,6 +113,7 @@ span.Regrettable {
 #subtitle {
   text-align: center;
   padding: 0px 0; /* 여기서 너무 많은 내부 패딩이 있습니다. */
+  font-size: 14px;
 }
 
 #subtitle hr {
@@ -619,6 +620,33 @@ tr:hover {
 }
 
 @media screen and (max-width: 375px) {
+
+  #minititle {
+    text-align: left;
+    padding: 0px 0; /* 여기서 너무 많은 내부 패딩이 있습니다. */
+    margin-left: 10px;
+    margin-top: -15px;
+    margin-bottom: -30px;
+    font-size: 5px;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+  }
+
+  #feelingtitle {
+    text-align: right;
+    padding: 0px 0; /* 여기서 너무 많은 내부 패딩이 있습니다. */
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: -14px;
+    font-size: 5px;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+  }
+
+  #subtitle {
+    text-align: center;
+    font-size: 10px;
+  }
 
   .body {
     text-align: center;
