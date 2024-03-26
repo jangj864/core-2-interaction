@@ -62,11 +62,52 @@ h1 {
   font-style: normal;
   font-weight: 100;
   text-align: center;
+  letter-spacing: -5px;
+}
+
+h4 {
+  color: #c4c4c4;
+  font-family: Helvetica, sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-top: -7%;
 }
 
 .stuff {
   text-align: center;
   margin: 70px 50px 60px 0; /* 여기서 마진값이 너무 크고 오른쪽에 공백이 생깁니다. */
+}
+
+#minititle {
+  text-align: left;
+  padding: 0px 0; /* 여기서 너무 많은 내부 패딩이 있습니다. */
+  margin-left: 10px;
+  font-size: 10px;
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+}
+
+#feelingtitle {
+  text-align: right;
+  padding: 0px 0; /* 여기서 너무 많은 내부 패딩이 있습니다. */
+  margin-right: 10px;
+  margin-top: -30px;
+  font-size: 11px;
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+}
+
+span.Reasonable {
+  color: rgb(0, 255, 0);
+  font-weight: lighter;
+}
+
+span.Regrettable {
+  color: rgb(255, 0, 255);
+  font-weight: lighter;
 }
 
 #subtitle {
@@ -89,26 +130,26 @@ h1 {
 }
 
 .value-container {
-  text-align: center;
-  margin: 30px;
-  padding: 10px;
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  border-radius: 50%; /* Keep your circle shape */
+  border: 5px solid white; /* Keep your border */
+  width: 180px; /* Your width */
+  height: 180px; /* Make height equal to width to maintain circle shape */
+  margin: auto; /* Auto margin for centering the whole container */
+  text-align: center; /* Center text */
+  padding: 20px; /* Your padding */
 }
 
-.value-container {
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  border: 5px solid white;
-  width: 180px;
-  margin: auto;
-  text-align: center;
-}
 
 .selectedValue {
-  font-size: 20px; /* 0의 폰트 크기 */
+  font-size: 30px; /* 0의 폰트 크기 */
 }
 
 .value-container span {
-  font-size: 80px; /* Hours의 폰트 크기 */
+  font-size: 90px; /* Hours의 폰트 크기 */
   margin: auto;
 }
 

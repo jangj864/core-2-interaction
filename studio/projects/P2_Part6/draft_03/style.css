@@ -94,12 +94,22 @@ h1 {
   padding: 10px;
 }
 
+.value-container {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 180px;
+  margin: auto;
+  text-align: center;
+}
+
 .selectedValue {
   font-size: 20px; /* 0의 폰트 크기 */
 }
 
 .value-container span {
-  font-size: 50px; /* Hours의 폰트 크기 */
+  font-size: 80px; /* Hours의 폰트 크기 */
+  margin: auto;
 }
 
 .circle-container {
@@ -112,7 +122,7 @@ h1 {
 
 .circle {
   position: relative;
-  padding: 20px 30px;
+  padding: 10px 10px;
   margin: 15px; /* 수정: 요소 간 간격을 좀 더 좁게 조정합니다. */
   flex: 1; /* 추가: 동일한 너비를 가지도록 설정합니다. */
   max-width: 300px; /* 추가: 요소의 최대 너비를 지정합니다. */
@@ -123,4 +133,31 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* table */
+
+table {
+  font-family: Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f200;
+}
+
+tr:hover {
+  background-color: #34343412;
+}
+
+
+.hide {
+  display: none;
 }

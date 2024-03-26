@@ -1,27 +1,86 @@
-// Links inside the dropdown
-const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+function updateCircleValue(link, selectedValue, type) {
+    // 현재 이벤트의 기본 동작을 중지합니다.
+    event.preventDefault();
+    
+    const circle = link.closest('.circle');
+    const circleValueContainer = circle.querySelector(".selectedValue");
+    let calculatedValue = 0;
 
-// Loop through all dropdown links and add click event listener
-dropdownLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        // Get the text content of the clicked link
-        const selectedValue = this.textContent;
-        // Update the value in the circle
-        updateCircleValue(selectedValue, 2);
-    });
-});
+    switch (type) {
+        case 'theater':
+            switch (selectedValue) {
+                case 'Total':
+                    calculatedValue = 295;
+                    break;
+                case 'AMC':
+                    calculatedValue = 3;
+                    break;
+                case 'CGV':
+                    calculatedValue = 268;
+                    break;
+                case 'Megabox':
+                    calculatedValue = 24;
+                    break;
+            }
+            break;
+        case 'format':
+            switch (selectedValue) {
+                case 'Total':
+                    calculatedValue = 295;
+                    break;
+                case '2D':
+                    calculatedValue = 181;
+                    break;
+                case 'DolbyAtmos':
+                    calculatedValue = 7;
+                    break;
+                case 'IMAX2D':
+                    calculatedValue = 47;
+                    break;
+                case 'IMAX3D':
+                    calculatedValue = 21;
+                    break;
+                case '4DX':
+                    calculatedValue = 27;
+                    break;
+                case 'ScreenX':
+                    calculatedValue = 9;
+                    break;
+            }
+            break;
+        case 'with':
+            switch (selectedValue) {
+                case 'Total':
+                    calculatedValue = 295;
+                    break;
+                case 'Alone':
+                    calculatedValue = 126;
+                    break;
+                case 'Friend':
+                    calculatedValue = 126;
+                    break;
+                case 'Family':
+                    calculatedValue = 43;
+                    break;
+            }
+            break;
+        case 'feeling':
+            switch (selectedValue) {
+                case 'Total':
+                    calculatedValue = 295;
+                    break;
+                case 'Reasonable':
+                    calculatedValue = 223;
+                    break;
+                case 'Regrettable':
+                    calculatedValue = 72;
+                    break;
+            }
+            break;
+        default:
+            break;
+    }
 
-// Update circle value function
-function updateCircleValue(selectedValue, index) {
-    const circleValueContainer = document.querySelector(`#analysis .circle:nth-child(${index}) .value-container span`);
-    // 예시로 설정한 값 대신에 선택된 값에 따라 적절한 값으로 설정할 수 있습니다.
-    let calculatedValue = selectedValue === 'Theater' ? 15041 : 0; 
-
-    // Calculate the value and update the circle
     circleValueContainer.textContent = calculatedValue;
-
-    // Apply styles to the SVG element
-    const circleSVG = document.querySelector(`#analysis .circle:nth-child(${index}) svg circle`);
-    circleSVG.setAttribute('stroke', 'white');
-    circleSVG.setAttribute('stroke-width', '3');
+    circle.querySelector(".selected" + type.charAt(0).toUpperCase() + type.slice(1)).textContent = selectedValue;
 }
