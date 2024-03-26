@@ -691,23 +691,21 @@ tr:hover {
     color: white;              /* White text */
     border: none;              /* No border */
     padding: 5px;              /* Smaller padding */
+    margin: auto;
     font-size: 15px;           /* Smaller font size */
     height: 0px;              /* Smaller height */
     width: 3px;               /* Auto width based on content */
     cursor: pointer;           /* Changes cursor to pointer */
 
-    /* Add a custom arrow indicator */
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path d="M7 12L0 0h14z" fill="%23FFF"/></svg>');
     background-repeat: no-repeat;
     background-position: center; /* Position the arrow to the right */
     background-size: 3px; /* Size of the arrow */
   }
 
-  /* Styling for when the select box is hovered over */
   #moviesTable th select:hover {
-    background-color: #333; /* Dark grey for hover state */
+    background-color: #333; 
   }
 
-  /* Other styles you want to apply only on narrow screens... */
 }
 
