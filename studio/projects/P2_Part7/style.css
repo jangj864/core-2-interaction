@@ -5,21 +5,20 @@
   padding: 0px;
   font-size: 1px;
   border: none;
-  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능한 것으로 보이도록 합니다. */
+  cursor: pointer; 
+  
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 50px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -32,19 +31,16 @@
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 
-/* Show the dropdown menu when the dropdown button is clicked */
 .dropdown.active .dropdown-content {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown.active .dropbtn {
-  background-color: #3e8e41;
+  background-color: #000000;
 }
 
 body {
@@ -78,12 +74,12 @@ h4 {
 
 .stuff {
   text-align: center;
-  margin: 70px 50px 60px 0; /* 여기서 마진값이 너무 크고 오른쪽에 공백이 생깁니다. */
+  margin: 70px 50px 60px 0; 
 }
 
 #minititle {
   text-align: left;
-  padding: 0px 0; /* 여기서 너무 많은 내부 패딩이 있습니다. */
+  padding: 0px 0;  
   margin-left: 10px;
   font-size: 10px;
   font-family: Helvetica, sans-serif;
@@ -92,7 +88,7 @@ h4 {
 
 #feelingtitle {
   text-align: right;
-  padding: 0px 0; /* 여기서 너무 많은 내부 패딩이 있습니다. */
+  padding: 0px 0;  
   margin-right: 10px;
   margin-top: -30px;
   font-size: 11px;
@@ -112,12 +108,12 @@ span.Regrettable {
 
 #subtitle {
   text-align: center;
-  padding: 0px 0; /* 여기서 너무 많은 내부 패딩이 있습니다. */
+  padding: 0px 0; 
   font-size: 14px;
 }
 
 #subtitle hr {
-  margin: 20px 0; /* 하위 요소인 hr 태그에도 여백을 조정해줍니다. */
+  margin: 20px 0;  
 }
 
 #header {
@@ -547,12 +543,8 @@ tr:hover {
 
 }
 
-@media screen and (max-width: 828px) {
+@media screen and (max-width: 859px) {
   
-  #moviesTable th, #moviesTable td {
-    font-size: 12px
-}
-
 .value-container {
   width: 100px; /* Your width */
   height: 100px; /* Make height equal to width to maintain circle shape */
@@ -575,6 +567,66 @@ tr:hover {
   padding: 10px 20px;
   margin: -25px;
 }
+
+}
+
+@media screen and (max-width: 849px) {
+  
+  .value-container {
+    width: 80px; /* Your width */
+    height: 80px; /* Make height equal to width to maintain circle shape */
+    padding: 10px; /* Your padding */
+    font-size: 15px;
+  }
+  
+  .value-container span {
+    font-size: 40px; /* 295 폰트 크기 */
+    margin-top: 10px;
+    margin-bottom: -15px;
+  }
+  
+  .circle {
+    padding: 2px -20px;
+    max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+    font-size: 13px;
+  }
+  
+  .circle-container {
+    padding: 20px -20px;
+    margin: -55px;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 12px
+}
+
+.value-container {
+  width: 80px; /* Your width */
+  height: 80px; /* Make height equal to width to maintain circle shape */
+  padding: 10px; /* Your padding */
+  font-size: 15px;
+}
+
+.value-container span {
+  font-size: 40px; /* 295 폰트 크기 */
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.circle {
+  padding: 2px -20px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 13px;
+}
+
+.circle-container {
+  padding: 20px -20px;
+  margin: -55px;
+}
+
 
 }
 
