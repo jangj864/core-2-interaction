@@ -206,6 +206,36 @@ tr:hover {
 }
 
 
+
+/* 셀렉트 디자인 */
+
+#moviesTable th select {
+  -webkit-appearance: none;  /* Removes default styling on webkit browsers */
+  -moz-appearance: none;     /* Removes default styling on Firefox browsers */
+  appearance: none;          /* Removes default styling */
+  background-color: rgba(0, 0, 0, 0.191);   /* Set the background to black */
+  color: white;              /* Set the text color to white */
+  border: 1px solid #333;    /* Set the border color */
+  border-radius: 4px;        /* Optional: Rounds the corners */
+  padding: 5px 10px;         /* Add some padding inside the select box */
+  font-size: 14px;           /* Set the font size */
+  cursor: pointer;           /* Changes the cursor to a pointer */
+
+  /* The following styles are optional if you want to add a custom arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path d="M7 12L0 0h14z" fill="%23FFF"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px 10px;
+}
+
+#moviesTable th select:hover {
+  background-color: #222; /* Slightly lighter black when hovered */
+  border-color: #555;     /* Slightly lighter border when hovered */
+}
+
+
+
+
 #moviesTable th:nth-child(1), #moviesTable td:nth-child(1) {
   width: 2%;
 }
@@ -596,7 +626,7 @@ tr:hover {
   }
   
   #moviesTable th, #moviesTable td {
-    font-size: 5px
+    font-size: 7px
 }
 
 .value-container {
@@ -624,4 +654,32 @@ tr:hover {
   font-size: 10px;
 }
 
+
+  #moviesTable th select {
+    -webkit-appearance: none;  /* Removes default styling for webkit browsers */
+    -moz-appearance: none;     /* Removes default styling for Firefox browsers */
+    appearance: none;          /* Removes default styling */
+    background-color: black;   /* Black background */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    padding: 5px;              /* Smaller padding */
+    font-size: 15px;           /* Smaller font size */
+    height: 0px;              /* Smaller height */
+    width: 3px;               /* Auto width based on content */
+    cursor: pointer;           /* Changes cursor to pointer */
+
+    /* Add a custom arrow indicator */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path d="M7 12L0 0h14z" fill="%23FFF"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center; /* Position the arrow to the right */
+    background-size: 3px; /* Size of the arrow */
+  }
+
+  /* Styling for when the select box is hovered over */
+  #moviesTable th select:hover {
+    background-color: #333; /* Dark grey for hover state */
+  }
+
+  /* Other styles you want to apply only on narrow screens... */
 }
+
