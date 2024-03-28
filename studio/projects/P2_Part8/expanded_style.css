@@ -1,0 +1,78 @@
+
+/* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .circle,
+  .value-container {
+    width: 50px; /* Smaller width for mobile */
+    height: 50px; /* Smaller height for mobile */
+    margin: 10px auto; /* Adjust margin for mobile */
+    padding: 5px; /* Adjust padding for mobile */
+  }
+
+  h1 {
+    font-size: 5vw; /* Dynamic font size for mobile */
+  }
+
+  h4, .subtitle {
+    font-size: 4vw;
+  }
+
+  .dropdown-content a {
+    padding: 8px 12px; /* Smaller padding for mobile links */
+  }
+
+  /* Other mobile specific styles */
+}
+
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .circle,
+  .value-container {
+    width: 80px; /* Adjusted width for tablets */
+    height: 80px; /* Adjusted height for tablets */
+    margin: 15px auto; /* Adjust margin for tablets */
+    padding: 10px; /* Adjust padding for tablets */
+  }
+
+  h1 {
+    font-size: 6vw; /* Dynamic font size for tablets */
+  }
+
+  h4, .subtitle {
+    font-size: 3vw;
+  }
+
+  /* Other tablet specific styles */
+}
+
+/* Desktop and larger devices */
+@media screen and (min-width: 1025px) {
+  .circle,
+  .value-container {
+    width: 120px; /* Larger width for desktop */
+    height: 120px; /* Larger height for desktop */
+    margin: 20px auto; /* Adjust margin for desktop */
+    padding: 15px; /* Adjust padding for desktop */
+  }
+
+  h1 {
+    font-size: 10vw; /* Larger font size for desktop */
+  }
+
+  h4, .subtitle {
+    font-size: 2vw;
+  }
+
+  /* Other desktop specific styles */
+}
+
+/* Additional styles remain unchanged */
+
+/* ... Rest of the CSS content ... */

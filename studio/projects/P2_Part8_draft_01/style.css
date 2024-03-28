@@ -1,0 +1,796 @@
+/* Dropdown Button */
+.dropbtn {
+  background-color: #00000000;
+  color: white;
+  padding: 0px;
+  font-size: 1px;
+  border: none;
+  cursor: pointer; 
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* This will center the dropdown */
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: auto; /* Adjust width as necessary */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: center; /* Center text within the dropdown links */
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+.dropdown.active .dropbtn {
+  background-color: #000000;
+}
+
+body {
+  background-color: #252525;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 15vw;
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: -5px;
+}
+
+h4 {
+  color: #c4c4c4;
+  font-family: Helvetica, sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-top: -7%;
+}
+
+.stuff {
+  text-align: center;
+  margin: 70px 50px 60px 0; 
+}
+
+#feelingtitle {
+  text-align: left;
+  padding: 0px 0;  
+  font-size: 11px;
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  margin-left: 10px;
+}
+
+span.Reasonable {
+  color: rgb(0, 255, 0);
+  font-weight: lighter;
+}
+
+span.Regrettable {
+  color: rgb(255, 0, 255);
+  font-weight: lighter;
+}
+
+
+/* 테이블 위 필터 */
+/* 테이블 위 필터 */
+/* 테이블 위 필터 */
+#filter {
+  text-align: right;
+  font-size: 13px;
+}
+
+/* 테이블 위 필터 버튼 디자인 */
+#filter select {
+  -webkit-appearance: none;  
+  -moz-appearance: none;    
+  appearance: none;         
+  background-color: rgba(0, 0, 0, 0.191);  
+  border-radius: 4px;        
+  padding: 3px 10px;      
+  font-size: 14px;           
+  cursor: pointer;         
+  color: #b1b1b1;
+  margin-bottom: 10px;
+  margin-right: 11px;
+  margin-left: 3px;
+
+  /* The following styles are optional if you want to add a custom arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="14" height="9" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path d="M7 12L0 0h14z" fill="%23FFF"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  color: #b1b1b1;
+  background-size: 12px 10px;
+}
+
+#moviesTable th select:hover {
+  background-color: #222; /* Slightly lighter black when hovered */
+  border-color: #555;     /* Slightly lighter border when hovered */
+}
+
+
+
+#subtitle {
+  text-align: center;
+  padding: 0px 0; 
+  font-size: 14px;
+}
+
+#subtitle hr {
+  margin: 20px 0;  
+}
+
+#header {
+  text-align: center;
+  padding: 0;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.value-container {
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  border-radius: 50%; /* Keep your circle shape */
+  border: 4px solid white; /* Keep your border */
+  width: 180px; /* Your width */
+  height: 180px; /* Make height equal to width to maintain circle shape */
+  margin: auto; /* Auto margin for centering the whole container */
+  text-align: center; /* Center text */
+  padding: 20px; /* Your padding */
+  font-size: 18px;
+}
+
+
+.value-container span {
+  font-size: 90px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  position: relative;
+  padding: 10px 10px;
+  margin: 17px; /* 수정: 요소 간 간격을 좀 더 좁게 조정합니다. */
+  flex: 1; /* 추가: 동일한 너비를 가지도록 설정합니다. */
+  max-width: 300px; /* 추가: 요소의 최대 너비를 지정합니다. */
+}
+
+.circle-container {
+  display: flex;
+  flex-wrap: wrap; /* 추가: 요소들을 여러 줄에 걸쳐 배치합니다. */
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 5px;
+  
+}
+
+/* table */
+
+table {
+  font-family: Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f200;
+}
+
+tr:hover {
+  background-color: #34343412;
+}
+
+
+.hide {
+  display: none;
+}
+
+#moviesTable {
+  table-layout: fixed;
+  width: 100%; /* Adjust the table width as needed */
+}
+
+#moviesTable th, #moviesTable td {
+  overflow: visible;
+  white-space: normal; 
+  text-overflow: clip; 
+}
+
+
+
+
+
+
+#moviesTable th:nth-child(1), #moviesTable td:nth-child(1) {
+  width: 2%;
+}
+
+#moviesTable th:nth-child(2), #moviesTable td:nth-child(2) {
+  width: 20%;
+}
+
+#moviesTable th:nth-child(3), #moviesTable td:nth-child(3) {
+  width: 3%;
+}
+
+#moviesTable th:nth-child(4), #moviesTable td:nth-child(4) {
+  width: 5%;
+}
+
+#moviesTable th:nth-child(5), #moviesTable td:nth-child(5) {
+  width: 10%;
+}
+
+#moviesTable th:nth-child(6), #moviesTable td:nth-child(6) {
+  width: 10%;
+}
+
+#moviesTable th:nth-child(7), #moviesTable td:nth-child(7) {
+  width: 5%;
+}
+
+/* Repeat for each column, adjusting widths as necessary */
+
+@media screen and (max-width: 1459px) {
+
+
+.value-container {
+  width: 140px; /* Your width */
+  height: 140px; /* Make height equal to width to maintain circle shape */
+  padding: 20px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 70px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: 3px;
+}
+
+}
+
+
+@media screen and (max-width: 1205px) {
+
+  #moviesTable th, #moviesTable td {
+    font-size: 14px
+}
+
+.value-container {
+  width: 120px; /* Your width */
+  height: 120px; /* Make height equal to width to maintain circle shape */
+  padding: 15px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 70px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: 3px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1071px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 14px
+}
+
+.value-container {
+  width: 120px; /* Your width */
+  height: 120px; /* Make height equal to width to maintain circle shape */
+  padding: 15px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 70px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: 3px;
+}
+
+}
+
+
+@media screen and (max-width: 1054px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 14px
+}
+
+.value-container {
+  width: 113px; /* Your width */
+  height: 113px; /* Make height equal to width to maintain circle shape */
+  padding: 16px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 60px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: 3px;
+}
+
+}
+
+@media screen and (max-width: 1209px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 14px
+}
+
+.value-container {
+  width: 110px; /* Your width */
+  height: 110px; /* Make height equal to width to maintain circle shape */
+  padding: 16px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 60px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: 3px;
+}
+
+}
+
+@media screen and (max-width: 1014px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 14px
+}
+
+.value-container {
+  width: 105px; /* Your width */
+  height: 105px; /* Make height equal to width to maintain circle shape */
+  padding: 15px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 50px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: 0px;
+}
+
+}
+
+@media screen and (max-width: 1005px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 14px
+}
+
+.value-container {
+  width: 105px; /* Your width */
+  height: 105px; /* Make height equal to width to maintain circle shape */
+  padding: 15px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 50px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: 0px;
+}
+
+}
+
+@media screen and (max-width: 974px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 14px
+}
+
+.value-container {
+  width: 100px; /* Your width */
+  height: 100px; /* Make height equal to width to maintain circle shape */
+  padding: 10px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 50px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: -10px;
+}
+
+}
+
+@media screen and (max-width: 894px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 13px
+}
+
+.value-container {
+  width: 100px; /* Your width */
+  height: 100px; /* Make height equal to width to maintain circle shape */
+  padding: 10px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 50px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: -20px;
+}
+
+}
+
+@media screen and (max-width: 859px) {
+  
+.value-container {
+  width: 100px; /* Your width */
+  height: 100px; /* Make height equal to width to maintain circle shape */
+  padding: 10px; /* Your padding */
+  font-size: 18px;
+}
+
+.value-container span {
+  font-size: 50px; /* 295 폰트 크기 */
+  margin: -10px;
+}
+
+.circle {
+  padding: 5px 5px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 17px;
+}
+
+.circle-container {
+  padding: 10px 20px;
+  margin: -25px;
+}
+
+}
+
+@media screen and (max-width: 849px) {
+  
+  .value-container {
+    width: 80px; /* Your width */
+    height: 80px; /* Make height equal to width to maintain circle shape */
+    padding: 10px; /* Your padding */
+    font-size: 15px;
+  }
+  
+  .value-container span {
+    font-size: 40px; /* 295 폰트 크기 */
+    margin-top: 10px;
+    margin-bottom: -15px;
+  }
+  
+  .circle {
+    padding: 2px -20px;
+    max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+    font-size: 13px;
+  }
+  
+  .circle-container {
+    padding: 20px -20px;
+    margin: -55px;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 12px
+}
+
+.value-container {
+  width: 80px; /* Your width */
+  height: 80px; /* Make height equal to width to maintain circle shape */
+  padding: 10px; /* Your padding */
+  font-size: 15px;
+}
+
+.value-container span {
+  font-size: 40px; /* 295 폰트 크기 */
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.circle {
+  padding: 2px -20px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 13px;
+}
+
+.circle-container {
+  padding: 20px -20px;
+  margin: -55px;
+}
+
+
+}
+
+
+/* ipad mini */
+
+
+@media screen and (max-width: 768px) {
+
+  .body {
+    text-align: center;
+    align-items: center; 
+  }
+  
+  #moviesTable th, #moviesTable td {
+    font-size: 10px
+}
+
+.value-container {
+  width: 80px; /* Your width */
+  height: 80px; /* Make height equal to width to maintain circle shape */
+  padding: 10px; /* Your padding */
+  font-size: 15px;
+}
+
+.value-container span {
+  font-size: 40px; /* 295 폰트 크기 */
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.circle {
+  padding: 2px -20px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 13px;
+}
+
+.circle-container {
+  padding: 20px -20px;
+  margin: -55px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  /* Hide the table header */
+
+
+.value-container {
+  width: 80px; /* Your width */
+  height: 80px; /* Make height equal to width to maintain circle shape */
+  padding: -10px; /* Your padding */
+  font-size: 15px;
+}
+
+.value-container span {
+  font-size: 40px; /* 295 폰트 크기 */
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.circle {
+  padding: 2px -20px;
+  max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
+  font-size: 13px;
+  margin: -5px;
+}
+
+.circle-container {
+  padding: 20px -20px;
+  margin: -55px;
+}
+
+
+  #moviesTable thead {
+    display: none;
+  }
+
+  /* Make table rows behave like containers (flexboxes) */
+  #moviesTable tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  /* Style for each cell to occupy about one-third of the space */
+  #moviesTable td {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0; /* Gives a little vertical space between cells */
+  }
+
+  /* Special styles for cells to make them look like headers */
+  #moviesTable td:nth-child(1) {
+    display: none;
+  }
+  
+  #moviesTable td:nth-child(2) {
+    font-weight: bold;
+    display: inline-block; /* Put them in one line */
+    width: calc(65% - 10px); /* Divide the line into 3 parts */
+    margin-right: 0px; /* Add some space between the blocks */
+    margin-left: 0px; /* Add some space between the blocks */
+    margin-top: 0px; /* Add some space between the blocks */
+    border: 1px solid white; /* Keep your border */
+    text-align: left;
+  }
+  #moviesTable td:nth-child(3) {
+    font-weight: lighter;
+    display: inline-block; /* Put them in one line */
+    width: calc(23% - 5px); /* Divide the line into 3 parts */
+    margin-right: 0px; /* Add some space between the blocks */
+    margin-left: 0px; /* Add some space between the blocks */
+    margin-top: 0px; /* Add some space between the blocks */
+    border: 1px solid white; /* Keep your border */
+    text-align: right;
+  }
+
+  #moviesTable td:nth-child(4) {
+    display: none;
+  }
+
+  #moviesTable td:nth-child(5) {
+    font-weight: lighter;
+    display: inline-block; /* Put them in one line */
+    width: calc(49% - 50px); /* Divide the line into 3 parts */
+    margin-right: 0px; /* Add some space between the blocks */
+    margin-left: 0px; /* Add some space between the blocks */
+    margin-top: 0px; /* Add some space between the blocks */
+    border: 1px solid rgba(255, 255, 255, 0.319); /* Keep your border */
+  }
+  #moviesTable td:nth-child(6) {
+    font-weight: lighter;
+    display: inline-block; /* Put them in one line */
+    width: calc(26% - 0px); /* Divide the line into 3 parts */
+    margin-right: 0px; /* Add some space between the blocks */
+    margin-top: 0px; /* Add some space between the blocks */
+    border: 1px solid rgba(255, 255, 255, 0.319); /* Keep your border */
+    text-align: center;
+  }
+  #moviesTable td:nth-child(7) {
+    font-weight: lighter;
+    display: inline-block; /* Put them in one line */
+    width: calc(24% - 7px); /* Divide the line into 3 parts */
+    margin-right: 0px; /* Add some space between the blocks */
+    margin-top: 0px; /* Add some space between the blocks */
+    border: 1px solid rgba(255, 255, 255, 0.319); /* Keep your border */
+    text-align: right;
+  }
+
+  /* Style adjustments for the filter dropdowns to disappear */
+  #dateFilter, #theaterFilter, #formatFilter, #withFilter {
+    display: none;
+
+  }
+}
+

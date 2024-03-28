@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>295HOURS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="header">
+        <h1>295HOURS</h1>
+        <h4>Total Amount of Time Watching a Movie</h4>
+    </div>
+
+    <br>
+    <ul class="stuff">
+        <br>
+        <i class="material-symbols-outlined">expand_more</i>
+    </ul>
+    <br>
+
+    <hr>
+    <div id="subtitle">
+        <h2>Analysis</h2>
+    <hr>
+    <br>
+    <br>
+        <div class="circle-container">
+            <div class="circle">         
+                <h2>Total</h2>
+                <div class="value-container">      
+                    <span class="selectedValue">295</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of time <br> watching a movie</p>
+            </div>
+
+            
+            <div class="circle">
+                <h2>Theater</h2>  
+                <div class="value-container">
+                    <span class="selectedValue">0</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of<br> time at</p>
+                <h3 class="selectedTheater">Theater</h3>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(this)">
+                        <i class="material-symbols-outlined">expand_more</i>
+                    </button>
+                    <div id="myDropdownTheater" class="dropdown-content">
+                        <a href="#" onclick="updateCircleValue(this, 'Total', 'theater')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'AMC', 'theater')">AMC</a>
+                        <a href="#" onclick="updateCircleValue(this, 'CGV', 'theater')">CGV</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Megabox', 'theater')">Megabox</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="circle">
+                <h2>Format</h2>
+                <div class="value-container">
+                    <span class="selectedValue">0</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of <br>time in</p>
+                <h3 class="selectedFormat">Format</h3>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(this)">
+                        <i class="material-symbols-outlined">expand_more</i>
+                    </button>
+                    <div id="myDropdownFormat" class="dropdown-content">
+                        <a href="#" onclick="updateCircleValue(this, 'Total', 'format')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, '2D', 'format')">2D</a>
+                        <a href="#" onclick="updateCircleValue(this, 'DolbyAtmos', 'format')">Dolby Atmos</a>
+                        <a href="#" onclick="updateCircleValue(this, 'IMAX2D', 'format')">IMAX 2D</a>
+                        <a href="#" onclick="updateCircleValue(this, 'IMAX3D', 'format')">IMAX 3D</a>
+                        <a href="#" onclick="updateCircleValue(this, '4DX', 'format')">4DX</a>
+                        <a href="#" onclick="updateCircleValue(this, 'ScreenX', 'format')">ScreenX</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="circle"> 
+                <h2>With</h2>
+                <div class="value-container">
+                    <span class="selectedValue">0</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of <br>time with</p>
+                <h3 class="selectedWith">With</h3>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(this)">
+                        <i class="material-symbols-outlined">expand_more</i>
+                    </button>
+                    <div id="myDropdownWith" class="dropdown-content">
+                        <a href="#" onclick="updateCircleValue(this, 'Total', 'with')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Alone', 'with')">Alone</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Friend', 'with')">Friend</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Family', 'with')">Family</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle">
+                <h2>Feeling</h2>
+                <div class="value-container">
+                    <span class="selectedValue">0</span>
+                    <br>
+                    Hours
+                </div>
+                <p>Total amount of <br>time of</p>
+                <h3 class="selectedFeeling">Feeling</h3>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(this)">
+                        <i class="material-symbols-outlined">expand_more</i>
+                    </button>
+                    <div id="myDropdownFeeling" class="dropdown-content">
+                        <a href="#" onclick="updateCircleValue(this, 'Total', 'feeling')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Reasonable', 'feeling')">Reasonable</a>
+                        <a href="#" onclick="updateCircleValue(this, 'Regrettable', 'feeling')">Regrettable</a>
+                    </div>
+                </div>
+         </div>
+        </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<div id="subtitle">
+    <h2>Movie Table</h2>
+    <hr>
+    <div id="feelingtitle">
+        <h2>
+            <span class="Reasonable">Reasonable</span>
+            <span class="Regrettable">Regrettable</span>
+        </h2>
+    </div>
+    <hr>
+    <div id="filter">
+    <thead>
+    <th>Date
+        <select id="dateFilter">
+            <option value="all">All</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+        </select>  
+    </th>
+    <th>Theater
+    <select id="theaterFilter">
+        <option value="all">All</option>
+        <option value="AMC">AMC</option>
+        <option value="CGV">CGV</option>
+        <option value="Megabox">Megabox</option>
+    </select>
+    </th>
+    <th>Format
+    <select id="formatFilter">
+        <option value="all">All</option>
+        <option value="2D">2D</option>
+        <option value="Dolby Atmos">Dolby Atmos</option>
+        <option value="IMAX">IMAX</option>
+        <option value="IMAX 2D">IMAX 2D</option>
+        <option value="IMAX 3D">IMAX 3D</option>
+        <option value="4DX">4DX</option>
+        <option value="Screen X">Screen X</option>
+    </select>
+    </th>
+    <th>With
+    <select id="withFilter">
+        <option value="all">All</option>
+        <option value="Alone">Alone</option>
+        <option value="Friend">Friend</option>
+        <option value="Family">Family</option>
+    </select>
+    </th>
+</thead>
+</div>
+
+
+    <table id="moviesTable">
+        <thead>
+            <tr>
+                <th>View
+                </th>
+                <th>Title</th>
+                <th>Time
+                </th>  
+                <th>Date
+                </th>
+                <th>Theater
+                </th>
+                <th>Format
+                </th>
+                <th>With
+                </th>
+            </tr>
+        </thead>
+            <tbody>
+                <!-- JavaScript가 동적으로 행을 추가할 부분 -->
+            </tbody>
+        </table>
+        <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+                <script src="script.js"></script>
+            </body>
+            </html>
+                
