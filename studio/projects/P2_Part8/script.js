@@ -88,9 +88,9 @@ function updateCircleValue(link, selectedValue, type) {
 document.addEventListener("DOMContentLoaded", function() {
     const data = [
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Oppenheimer",
-            'RunningTime': '3h',
+            'Length': '3h',
             'Date': '23-09-07',
             'Theater': 'AMC Lincoln Square',
             'Format': 'IMAX 70mm Film 2D',
@@ -98,9 +98,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Oppenheimer",
-            'RunningTime': '3h',
+            'Length': '3h',
             'Date': '23-08-15',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -108,9 +108,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Concrete Utopia",
-            'RunningTime': '2h 10m',
+            'Length': '2h 10m',
             'Date': '23-08-12',
             'Theater': 'CGV Gumi',
             'Format': '2D (Recliner)',
@@ -118,9 +118,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Spider-Man: Across the Spider-Verse",
-            'RunningTime': '2h 20m',
+            'Length': '2h 20m',
             'Date': '23-07-01',
             'Theater': 'CGV Gumi',
             'Format': '2D',
@@ -128,9 +128,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '3',
+            'Times': '3x',
             'Title': "Guardians of the Galaxy Vol. 3",
-            'RunningTime': '2h 30m',
+            'Length': '2h 30m',
             'Date': '23-05-10',
             'Theater': 'CGV Daegu',
             'Format': 'ULTRA 4DX Screen X',
@@ -138,9 +138,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Guardians of the Galaxy Vol. 3",
-            'RunningTime': '2h 30m',
+            'Length': '2h 30m',
             'Date': '23-05-10',
             'Theater': 'Megabox Daegu',
             'Format': '2D Dolby Atmos',
@@ -148,9 +148,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Guardians of the Galaxy Vol. 3",
-            'RunningTime': '2h 30m',
+            'Length': '2h 30m',
             'Date': '23-05-03',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 2D LASER',
@@ -158,9 +158,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Super Mario Bros. Movie",
-            'RunningTime': '1h 32m',
+            'Length': '1h 32m',
             'Date': '23-04-29',
             'Theater': 'CGV Gumi',
             'Format': '2D (Recliner)',
@@ -168,9 +168,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "John Wick: Chapter 4",
-            'RunningTime': '2h 49m',
+            'Length': '2h 49m',
             'Date': '23-04-27',
             'Theater': 'CGV Gumi',
             'Format': '2D (Recliner)',
@@ -178,9 +178,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Suzume",
-            'RunningTime': '2h 2m',
+            'Length': '2h 2m',
             'Date': '23-03-18',
             'Theater': 'CGV Gumi',
             'Format': '2D (Recliner)',
@@ -188,9 +188,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Suzume",
-            'RunningTime': '2h 2m',
+            'Length': '2h 2m',
             'Date': '23-03-08',
             'Theater': 'CGV Apgujeong',
             'Format': 'IMAX 2D LASER',
@@ -198,9 +198,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Kimetsu no Yaiba: Katanakaji no Sato-hen",
-            'RunningTime': '1h 50m',
+            'Length': '1h 50m',
             'Date': '23-03-05',
             'Theater': 'CGV Apgujeong',
             'Format': 'IMAX 2D LASER',
@@ -208,9 +208,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The First Slam Dunk",
-            'RunningTime': '2h 4m',
+            'Length': '2h 4m',
             'Date': '23-03-04',
             'Theater': 'CGV Apgujeong',
             'Format': '2D',
@@ -218,9 +218,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Ant-Man and the Wasp: Quantumania",
-            'RunningTime': '2h 5m',
+            'Length': '2h 5m',
             'Date': '23-02-18',
             'Theater': 'CGV Apgujeong',
             'Format': '2D',
@@ -228,9 +228,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Avatar: The Way of Water",
-            'RunningTime': '3h 12m',
+            'Length': '3h 12m',
             'Date': '23-01-10',
             'Theater': 'CGV Apgujeong',
             'Format': 'IMAX 3D LASER',
@@ -238,9 +238,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Black Panther: Wakanda Forever",
-            'RunningTime': '2h 41m',
+            'Length': '2h 41m',
             'Date': '22-11-13',
             'Theater': 'CGV Yongsan',
             'Format': 'ULTRA 4DX Screen X',
@@ -248,9 +248,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Decision to Leave",
-            'RunningTime': '2h 18m',
+            'Length': '2h 18m',
             'Date': '22-07-18',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -258,9 +258,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Thor: Love and Thunder",
-            'RunningTime': '1h 59m',
+            'Length': '1h 59m',
             'Date': '22-07-06',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -268,9 +268,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Top Gun: Maverick",
-            'RunningTime': '2h 11m',
+            'Length': '2h 11m',
             'Date': '22-07-05',
             'Theater': 'CGV Gimcheon',
             'Format': '2D',
@@ -278,9 +278,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Broker",
-            'RunningTime': '2h 9m',
+            'Length': '2h 9m',
             'Date': '22-06-08',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -288,9 +288,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Jurassic World Dominion",
-            'RunningTime': '2h 26m',
+            'Length': '2h 26m',
             'Date': '22-06-03',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -298,9 +298,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Roundup 2",
-            'RunningTime': '1h 46m',
+            'Length': '1h 46m',
             'Date': '22-05-24',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -308,9 +308,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Doctor Strange in the Multiverse of Madness",
-            'RunningTime': '2h 26m',
+            'Length': '2h 26m',
             'Date': '22-05-04',
             'Theater': 'CGV Daejeon',
             'Format': 'IMAX 2D',
@@ -318,9 +318,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Fantastic Beasts: The Secrets of Dumbledore",
-            'RunningTime': '2h 23m',
+            'Length': '2h 23m',
             'Date': '22-04-27',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -328,9 +328,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Batman",
-            'RunningTime': '2h 53m',
+            'Length': '2h 53m',
             'Date': '22-03-02',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -338,9 +338,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Kingmaker",
-            'RunningTime': '2h 3m',
+            'Length': '2h 3m',
             'Date': '22-02-09',
             'Theater': 'CGV Gimcheon',
             'Format': '2D',
@@ -348,9 +348,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '2',
+            'Times': '2',
             'Title': "Spider-Man: No Way Home",
-            'RunningTime': '2h 28m',
+            'Length': '2h 28m',
             'Date': '22-01-01',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -358,9 +358,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The King's Man",
-            'RunningTime': '2h 11m',
+            'Length': '2h 11m',
             'Date': '21-12-27',
             'Theater': 'CGV Gimcheon',
             'Format': '2D',
@@ -368,9 +368,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Eternals",
-            'RunningTime': '2h 36m',
+            'Length': '2h 36m',
             'Date': '21-11-03',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -378,9 +378,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Dune: Part One",
-            'RunningTime': '2h 35m',
+            'Length': '2h 35m',
             'Date': '21-10-27',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -388,9 +388,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Venom: Let There Be Carnage",
-            'RunningTime': '1h 37m',
+            'Length': '1h 37m',
             'Date': '21-10-16',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -398,9 +398,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Suicide Squad",
-            'RunningTime': '2h 12m',
+            'Length': '2h 12m',
             'Date': '21-08-22',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -408,9 +408,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Escape from Mogadishu",
-            'RunningTime': '2h 1m',
+            'Length': '2h 1m',
             'Date': '21-08-06',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -418,9 +418,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Black Widow",
-            'RunningTime': '2h 13m',
+            'Length': '2h 13m',
             'Date': '21-07-09',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -428,9 +428,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Hitman's Wife's Bodyguard",
-            'RunningTime': '1h 40m',
+            'Length': '1h 40m',
             'Date': '21-07-02',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -438,9 +438,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Cruella",
-            'RunningTime': '2h 14m',
+            'Length': '2h 14m',
             'Date': '21-05-28',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -448,9 +448,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "F9",
-            'RunningTime': '1h 23m',
+            'Length': '1h 23m',
             'Date': '21-05-19',
             'Theater': 'CGV Ansan',
             'Format': '2D (Laser)',
@@ -458,9 +458,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Kimetsu no Yaiba The Movie: Mugen Train",
-            'RunningTime': '1h 57m',
+            'Length': '1h 57m',
             'Date': '21-02-03',
             'Theater': 'CGV Cheonho',
             'Format': 'IMAX 2D',
@@ -468,9 +468,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Wonder Woman 1984",
-            'RunningTime': '2h 31m',
+            'Length': '2h 31m',
             'Date': '20-12-25',
             'Theater': 'CGV Ansan',
             'Format': '2D',
@@ -478,9 +478,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Capone",
-            'RunningTime': '1h 43m',
+            'Length': '1h 43m',
             'Date': '20-10-16',
             'Theater': 'CGV Ansan',
             'Format': '2D',
@@ -488,9 +488,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Tenet",
-            'RunningTime': '2h 30m',
+            'Length': '2h 30m',
             'Date': '20-09-05',
             'Theater': 'Megabox Ansan',
             'Format': '2D',
@@ -498,9 +498,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Tenet",
-            'RunningTime': '2h 30m',
+            'Length': '2h 30m',
             'Date': '20-09-04',
             'Theater': 'CGV Wangsimni',
             'Format': 'IMAX 2D',
@@ -508,9 +508,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Deliver Us from Evil",
-            'RunningTime': '1h 48m',
+            'Length': '1h 48m',
             'Date': '20-08-15',
             'Theater': 'CGV Daegu',
             'Format': '2D (Recliner)',
@@ -518,9 +518,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Peninsula",
-            'RunningTime': '1h 56m',
+            'Length': '1h 56m',
             'Date': '20-07-17',
             'Theater': 'CGV Ansan',
             'Format': '2D',
@@ -528,9 +528,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Dark Knight Rises",
-            'RunningTime': '2h 45m',
+            'Length': '2h 45m',
             'Date': '20-07-13',
             'Theater': 'CGV Wangsimni',
             'Format': 'IMAX 2D',
@@ -538,9 +538,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "#Alive",
-            'RunningTime': '1h 39m',
+            'Length': '1h 39m',
             'Date': '20-06-25',
             'Theater': 'CGV Ansan',
             'Format': '2D',
@@ -548,9 +548,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Onward",
-            'RunningTime': '1h 42m',
+            'Length': '1h 42m',
             'Date': '20-06-18',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -558,9 +558,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Mad Max: Fury Road",
-            'RunningTime': '2h',
+            'Length': '2h',
             'Date': '20-06-04',
             'Theater': 'CGV Ansan',
             'Format': '4DX',
@@ -568,9 +568,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '4',
+            'Times': '4x',
             'Title': "Avengers: Endgame",
-            'RunningTime': '3h 2m',
+            'Length': '3h 2m',
             'Date': '20-05-05',
             'Theater': 'CGV Ansan',
             'Format': '4DX',
@@ -578,9 +578,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '7',
+            'Times': '7x',
             'Title': "Avengers: Infinity War",
-            'RunningTime': '2h 29m',
+            'Length': '2h 29m',
             'Date': '20-05-02',
             'Theater': 'CGV Ansan',
             'Format': '4DX',
@@ -588,9 +588,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "The Avengers",
-            'RunningTime': '2h 23m',
+            'Length': '2h 23m',
             'Date': '20-04-23',
             'Theater': 'CGV Ansan',
             'Format': '4DX',
@@ -598,9 +598,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '4',
+            'Times': '4x',
             'Title': "Weathering with You",
-            'RunningTime': '1h 54m',
+            'Length': '1h 54m',
             'Date': '20-04-23',
             'Theater': 'CGV Gwanggyo',
             'Format': 'IMAX 2D LASER',
@@ -608,9 +608,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "<1917>",
-            'RunningTime': '1h 59m',
+            'Length': '1h 59m',
             'Date': '20-03-26',
             'Theater': 'CGV Yongsan',
             'Format': 'IMAX 2D LASER',
@@ -618,9 +618,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Liam Gallagher: As It Was",
-            'RunningTime': '1h 25m',
+            'Length': '1h 25m',
             'Date': '20-03-15',
             'Theater': 'CGV Pyeongchon',
             'Format': '2D',
@@ -628,9 +628,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Hitman: Agent Jun",
-            'RunningTime': '1h 50m',
+            'Length': '1h 50m',
             'Date': '20-01-27',
             'Theater': 'Megabox Gumi',
             'Format': '2D',
@@ -638,9 +638,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Star Wars: The Rise of Skywalker",
-            'RunningTime': '2h 22m',
+            'Length': '2h 22m',
             'Date': '20-01-17',
             'Theater': 'CGV Yongsan',
             'Format': 'IMAX 2D LASER',
@@ -648,9 +648,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Midway",
-            'RunningTime': '2h 18m',
+            'Length': '2h 18m',
             'Date': '20-01-10',
             'Theater': 'CGV Yongsan',
             'Format': '2D (Laser)',
@@ -658,9 +658,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Dolittle",
-            'RunningTime': '2h 21m',
+            'Length': '2h 21m',
             'Date': '20-01-08',
             'Theater': 'CGV Gumi',
             'Format': '2D',
@@ -668,9 +668,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Cats",
-            'RunningTime': '1h 50m',
+            'Length': '1h 50m',
             'Date': '19-12-25',
             'Theater': 'CGV Apgujeong',
             'Format': '2D',
@@ -678,9 +678,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Knives Out",
-            'RunningTime': '2h 10m',
+            'Length': '2h 10m',
             'Date': '19-12-21',
             'Theater': 'CGV Ansan',
             'Format': '2D',
@@ -688,9 +688,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Ford v Ferrari",
-            'RunningTime': '2h 32m',
+            'Length': '2h 32m',
             'Date': '19-12-14',
             'Theater': 'CGV Yongsan',
             'Format': '2D',
@@ -698,9 +698,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Ford v Ferrari",
-            'RunningTime': '2h 32m',
+            'Length': '2h 32m',
             'Date': '19-12-09',
             'Theater': 'CGV Wangsimni',
             'Format': 'ULTRA 4DX Screen X',
@@ -708,9 +708,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Frozen II",
-            'RunningTime': '1h 43m',
+            'Length': '1h 43m',
             'Date': '19-11-07',
             'Theater': 'Megabox Ansan',
             'Format': '2D',
@@ -718,9 +718,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '3',
+            'Times': '3x',
             'Title': "Weathering with You",
-            'RunningTime': '1h 54m',
+            'Length': '1h 54m',
             'Date': '19-11-09',
             'Theater': 'CGV Cheonho',
             'Format': 'IMAX 2D',
@@ -728,9 +728,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Joker",
-            'RunningTime': '2h 2m',
+            'Length': '2h 2m',
             'Date': '19-10-10',
             'Theater': 'CGV Ansan',
             'Format': '2D',
@@ -738,9 +738,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Missing Link",
-            'RunningTime': '1h 35m',
+            'Length': '1h 35m',
             'Date': '19-10-09',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -748,9 +748,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Once Upon a Date... in Hollywood",
-            'RunningTime': '2h 40m',
+            'Length': '2h 40m',
             'Date': '19-09-28',
             'Theater': 'Megabox Ansan',
             'Format': '2D',
@@ -758,9 +758,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Current War",
-            'RunningTime': '1h 48m',
+            'Length': '1h 48m',
             'Date': '19-08-28',
             'Theater': 'CGV Cheonho',
             'Format': '2D',
@@ -768,9 +768,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Metamorphosis",
-            'RunningTime': '1h 53m',
+            'Length': '1h 53m',
             'Date': '19-08-25',
             'Theater': 'Megabox Ansan',
             'Format': '2D',
@@ -778,9 +778,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Fast & Furious Presents: Hobbs & Shaw",
-            'RunningTime': '2h 16m',
+            'Length': '2h 16m',
             'Date': '19-08-23',
             'Theater': 'CGV Gangbyeon',
             'Format': '4DX',
@@ -788,9 +788,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Secret Life of Pets 2",
-            'RunningTime': '1h 26m',
+            'Length': '1h 26m',
             'Date': '19-08-18',
             'Theater': 'CGV Gimcheon',
             'Format': '2D',
@@ -798,9 +798,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Fast & Furious Presents: Hobbs & Shaw",
-            'RunningTime': '2h 16m',
+            'Length': '2h 16m',
             'Date': '19-08-14',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -808,9 +808,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Divine Fury",
-            'RunningTime': '2h 9m',
+            'Length': '2h 9m',
             'Date': '19-08-08',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -818,9 +818,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Exit",
-            'RunningTime': '1h 44m',
+            'Length': '1h 44m',
             'Date': '19-08-07',
             'Theater': 'Megabox Daegu',
             'Format': '2D',
@@ -828,9 +828,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Red Shoes and the Seven Dwarfs",
-            'RunningTime': '1h 32m',
+            'Length': '1h 32m',
             'Date': '19-07-28',
             'Theater': 'CGV Gumi',
             'Format': '2D',
@@ -838,9 +838,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '3',
+            'Times': '3x',
             'Title': "Spider-Man: Far From Home",
-            'RunningTime': '2h 13m',
+            'Length': '2h 13m',
             'Date': '19-07-22',
             'Theater': 'CGV Daegu',
             'Format': 'Screen X',
@@ -848,9 +848,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Lion King",
-            'RunningTime': '1h 58m',
+            'Length': '1h 58m',
             'Date': '19-07-19',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 3D',
@@ -858,9 +858,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Midsommar",
-            'RunningTime': '2h 28m',
+            'Length': '2h 28m',
             'Date': '19-07-19',
             'Theater': 'CGV Daegu',
             'Format': '2D (Recliner)',
@@ -868,9 +868,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Toy Story 4",
-            'RunningTime': '1h 40m',
+            'Length': '1h 40m',
             'Date': '19-07-07',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -878,9 +878,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Spider-Man: Far From Home",
-            'RunningTime': '2h 13m',
+            'Length': '2h 13m',
             'Date': '19-07-02',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 3D',
@@ -888,9 +888,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Spider-Man: Far From Home",
-            'RunningTime': '2h 13m',
+            'Length': '2h 13m',
             'Date': '19-07-01',
             'Theater': 'CGV Daegu',
             'Format': '4DX 3D',
@@ -898,9 +898,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "John Wick: Chapter 3 – Parabellum",
-            'RunningTime': '2h 11m',
+            'Length': '2h 11m',
             'Date': '19-06-30',
             'Theater': 'Megabox Gimcheon',
             'Format': '2D',
@@ -908,9 +908,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "John Wick: Chapter 3 – Parabellum",
-            'RunningTime': '2h 11m',
+            'Length': '2h 11m',
             'Date': '19-06-28',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -918,9 +918,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Men in Black: International",
-            'RunningTime': '1h 55m',
+            'Length': '1h 55m',
             'Date': '19-06-14',
             'Theater': 'CGV Yongsan',
             'Format': 'IMAX 2D LASER',
@@ -928,9 +928,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Oasis: Supersonic",
-            'RunningTime': '2h 2m',
+            'Length': '2h 2m',
             'Date': '19-06-08',
             'Theater': 'CGV Myeongdong',
             'Format': '2D',
@@ -938,9 +938,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Aladdin",
-            'RunningTime': '2h 8m',
+            'Length': '2h 8m',
             'Date': '19-06-03',
             'Theater': 'CGV Gimcheon',
             'Format': '2D',
@@ -948,9 +948,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Parasite",
-            'RunningTime': '2h 12m',
+            'Length': '2h 12m',
             'Date': '19-06-01',
             'Theater': 'Megabox Gimcheon',
             'Format': '2D',
@@ -958,9 +958,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '3',
+            'Times': '3x',
             'Title': "Avengers: Endgame",
-            'RunningTime': '3h 2m',
+            'Length': '3h 2m',
             'Date': '19-05-16',
             'Theater': 'CGV Yongsan',
             'Format': 'IMAX 2D LASER',
@@ -968,9 +968,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Avengers: Endgame",
-            'RunningTime': '3h 2m',
+            'Length': '3h 2m',
             'Date': '19-04-28',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 2D',
@@ -978,9 +978,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Avengers: Endgame",
-            'RunningTime': '3h 2m',
+            'Length': '3h 2m',
             'Date': '19-04-24',
             'Theater': 'CGV Sopoong',
             'Format': 'IMAX 2D',
@@ -988,9 +988,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '3',
+            'Times': '3x',
             'Title': "Bohemian Rhapsody",
-            'RunningTime': '2h 14m',
+            'Length': '2h 14m',
             'Date': '19-04-15',
             'Theater': 'CGV Yongsan',
             'Format': 'SCREEN X',
@@ -998,9 +998,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Vice",
-            'RunningTime': '2h 12m',
+            'Length': '2h 12m',
             'Date': '19-04-12',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1008,9 +1008,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Shazam!",
-            'RunningTime': '2h 12m',
+            'Length': '2h 12m',
             'Date': '19-04-07',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1018,9 +1018,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Guilty",
-            'RunningTime': '1h 30m',
+            'Length': '1h 30m',
             'Date': '19-03-29',
             'Theater': 'CGV Gumi',
             'Format': '2D',
@@ -1028,9 +1028,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Us",
-            'RunningTime': '2h 1m',
+            'Length': '2h 1m',
             'Date': '19-03-27',
             'Theater': 'CGV Ansan',
             'Format': '2D',
@@ -1038,9 +1038,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Captain Marvel",
-            'RunningTime': '2h 4m',
+            'Length': '2h 4m',
             'Date': '19-03-07',
             'Theater': 'CGV Ansan',
             'Format': 'SCREEN X',
@@ -1048,9 +1048,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Bohemian Rhapsody",
-            'RunningTime': '2h 14m',
+            'Length': '2h 14m',
             'Date': '19-03-02',
             'Theater': 'CGV Yongsan',
             'Format': '2D',
@@ -1058,9 +1058,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Papillon",
-            'RunningTime': '2h 31m',
+            'Length': '2h 31m',
             'Date': '19-03-02',
             'Theater': 'CGV Yongsan',
             'Format': '2D',
@@ -1068,9 +1068,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Svaha: The Sixth Finger",
-            'RunningTime': '1h 58m',
+            'Length': '1h 58m',
             'Date': '19-02-22',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 2D',
@@ -1078,9 +1078,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Harry Potter and the Chamber of Secrets",
-            'RunningTime': '2h 41m',
+            'Length': '2h 41m',
             'Date': '19-02-22',
             'Theater': 'CGV Daegu',
             'Format': '4DX 2D',
@@ -1088,9 +1088,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Happy Death Day 2U",
-            'RunningTime': '2h 2m',
+            'Length': '2h 2m',
             'Date': '19-02-16',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1098,9 +1098,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Alita: Battle Angel",
-            'RunningTime': '1h 40m',
+            'Length': '1h 40m',
             'Date': '19-02-09',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 3D',
@@ -1108,9 +1108,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Extreme Job",
-            'RunningTime': '1h 51m',
+            'Length': '1h 51m',
             'Date': '19-02-03',
             'Theater': 'Megabox Songdo',
             'Format': '2D Dolby Atmos',
@@ -1118,9 +1118,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Hit-and-Run Squad",
-            'RunningTime': '2h 12m',
+            'Length': '2h 12m',
             'Date': '19-01-30',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1128,9 +1128,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Extreme Job",
-            'RunningTime': '1h 51m',
+            'Length': '1h 51m',
             'Date': '19-01-29',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1138,9 +1138,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Glass",
-            'RunningTime': '2h 9m',
+            'Length': '2h 9m',
             'Date': '19-01-25',
             'Theater': 'CGV Yongsan',
             'Format': 'IMAX 2D LASER',
@@ -1148,9 +1148,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Oasis: Supersonic",
-            'RunningTime': '2h 2m',
+            'Length': '2h 2m',
             'Date': '19-01-13',
             'Theater': 'CGV Daegu',
             'Format': '2D',
@@ -1158,9 +1158,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Ralph Breaks the Internet",
-            'RunningTime': '1h 52m',
+            'Length': '1h 52m',
             'Date': '19-01-10',
             'Theater': 'CGV Daegu',
             'Format': '2D',
@@ -1168,9 +1168,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Crayon Shin-chan: Burst Serving! Kung Fu Boys",
-            'RunningTime': '1h 44m',
+            'Length': '1h 44m',
             'Date': '18-12-23',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1178,9 +1178,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Aquaman",
-            'RunningTime': '2h 23m',
+            'Length': '2h 23m',
             'Date': '18-12-19',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1188,9 +1188,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Nutcracker and the Four Realms",
-            'RunningTime': '1h 40m',
+            'Length': '1h 40m',
             'Date': '18-12-16',
             'Theater': 'CGV Gumi',
             'Format': '2D',
@@ -1198,9 +1198,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Spider-Man: Into the Spider-Verse",
-            'RunningTime': '1h 56m',
+            'Length': '1h 56m',
             'Date': '18-12-16',
             'Theater': 'CGV Gumi',
             'Format': '2D (Recliner)',
@@ -1208,9 +1208,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '3',
+            'Times': '3x',
             'Title': "Bohemian Rhapsody",
-            'RunningTime': '2h 14m',
+            'Length': '2h 14m',
             'Date': '18-11-25',
             'Theater': 'CGV Daegu',
             'Format': 'SCREEN X',
@@ -1218,9 +1218,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Fantastic Beasts: The Crimes of Grindelwald",
-            'RunningTime': '2h 14m',
+            'Length': '2h 14m',
             'Date': '18-11-18',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 2D',
@@ -1228,9 +1228,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Harry Potter and the Sorcerer's Stone",
-            'RunningTime': '2h 32m',
+            'Length': '2h 32m',
             'Date': '18-10-28',
             'Theater': 'CGV Daegu',
             'Format': '4DX 2D',
@@ -1238,9 +1238,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "A Star is Born",
-            'RunningTime': '2h 15m',
+            'Length': '2h 15m',
             'Date': '18-10-15',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1248,9 +1248,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Searching",
-            'RunningTime': '2h 22m',
+            'Length': '2h 22m',
             'Date': '18-09-09',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1258,9 +1258,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "The Haunted House: The Secret of the Cave",
-            'RunningTime': '1h 8m',
+            'Length': '1h 8m',
             'Date': '18-07-29',
             'Theater': 'Megabox Gimcheon',
             'Format': '2D',
@@ -1268,9 +1268,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Incredibles 2",
-            'RunningTime': '2h 6m',
+            'Length': '2h 6m',
             'Date': '18-07-22',
             'Theater': 'CGV Daegu',
             'Format': '4DX 2D',
@@ -1278,9 +1278,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Ant-Man and the Wasp",
-            'RunningTime': '1h 58m',
+            'Length': '1h 58m',
             'Date': '18-07-07',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 3D',
@@ -1288,9 +1288,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Hereditary",
-            'RunningTime': '2h 7m',
+            'Length': '2h 7m',
             'Date': '18-06-11',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1298,9 +1298,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Jurassic World: Fallen Kingdom",
-            'RunningTime': '2h 9m',
+            'Length': '2h 9m',
             'Date': '18-06-06',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1308,9 +1308,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Deadpool 2",
-            'RunningTime': '2h',
+            'Length': '2h',
             'Date': '18-05-22',
             'Theater': 'Megabox Daegu',
             'Format': '2D Dolby Atmos',
@@ -1318,9 +1318,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '6',
+            'Times': '6x',
             'Title': "Avengers: Infinity War",
-            'RunningTime': '2h 29m',
+            'Length': '2h 29m',
             'Date': '18-05-14',
             'Theater': 'CGV Daegu',
             'Format': '4DX 3D',
@@ -1328,9 +1328,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '5',
+            'Times': '5x',
             'Title': "Avengers: Infinity War",
-            'RunningTime': '2h 29m',
+            'Length': '2h 29m',
             'Date': '18-05-14',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 2D',
@@ -1338,9 +1338,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '4',
+            'Times': '4x',
             'Title': "Avengers: Infinity War",
-            'RunningTime': '2h 29m',
+            'Length': '2h 29m',
             'Date': '18-05-07',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 3D',
@@ -1348,9 +1348,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '3',
+            'Times': '3x',
             'Title': "Avengers: Infinity War",
-            'RunningTime': '2h 29m',
+            'Length': '2h 29m',
             'Date': '18-04-28',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 3D',
@@ -1358,9 +1358,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Avengers: Infinity War",
-            'RunningTime': '2h 29m',
+            'Length': '2h 29m',
             'Date': '18-04-28',
             'Theater': 'CGV Daegu',
             'Format': '2D',
@@ -1368,9 +1368,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Avengers: Infinity War",
-            'RunningTime': '2h 29m',
+            'Length': '2h 29m',
             'Date': '18-04-25',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 3D',
@@ -1378,9 +1378,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Lady Bird",
-            'RunningTime': '1h 33m',
+            'Length': '1h 33m',
             'Date': '18-04-09',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1388,9 +1388,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Three Billboards Outside Ebbing, Missouri",
-            'RunningTime': '1h 55m',
+            'Length': '1h 55m',
             'Date': '18-03-25',
             'Theater': 'CGV Daegu',
             'Format': '2D (Recliner)',
@@ -1398,9 +1398,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '2',
+            'Times': '2',
             'Title': "Black Panther",
-            'RunningTime': '2h 15m',
+            'Length': '2h 15m',
             'Date': '18-02-26',
             'Theater': 'CGV Daegu',
             'Format': '4DX 2D',
@@ -1408,9 +1408,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Black Panther",
-            'RunningTime': '2h 15m',
+            'Length': '2h 15m',
             'Date': '18-02-18',
             'Theater': 'CGV Daegu',
             'Format': 'IMAX 3D',
@@ -1418,9 +1418,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Keys to the Heart",
-            'RunningTime': '2h',
+            'Length': '2h',
             'Date': '18.01.21',
             'Theater': 'CGV Daegu',
             'Format': '2D (Recliner)',
@@ -1428,9 +1428,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Reasonable'
         },
         {
-            'View': '1',
+            'Times': '1',
             'Title': "Downsizing",
-            'RunningTime': '2h 15m',
+            'Length': '2h 15m',
             'Date': '18-01-15',
             'Theater': 'CGV Gimcheon',
             'Format': '2D (Laser)',
@@ -1438,9 +1438,9 @@ document.addEventListener("DOMContentLoaded", function() {
             'Feeling': 'Regrettable'
         },
         {
-            'View': '2',
+            'Times': '2x',
             'Title': "Your Name.",
-            'RunningTime': '1h 52m',
+            'Length': '1h 52m',
             'Date': '18-01-04',
             'Theater': 'CGV Gumi',
             'Format': '2D',
@@ -1486,9 +1486,9 @@ document.addEventListener("DOMContentLoaded", function() {
         filteredData.forEach(item => {
             const row = document.createElement('tr'); // createElement 사용
             row.innerHTML = `
-                <td>${item.View}</td>
+                <td>${item.Times}</td>
                 <td class="${item.Feeling.toLowerCase()}">${item.Title}</td>
-                <td>${item.RunningTime}</td>
+                <td>${item.Length}</td>
                 <td>${item.Date}</td>
                 <td>${item.Theater}</td>
                 <td>${item.Format}</td>
