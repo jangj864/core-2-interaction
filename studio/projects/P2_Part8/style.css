@@ -193,11 +193,12 @@ span.Regrettable {
 }
 
 .circle-container {
-  display: flex;
-  flex-wrap: wrap; /* 추가: 요소들을 여러 줄에 걸쳐 배치합니다. */
+  display: grid;
   justify-content: center;
   padding: 10px 20px;
   margin: 5px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /* table */
@@ -274,8 +275,20 @@ tr:hover {
 
 /* Repeat for each column, adjusting widths as necessary */
 
+@media screen and (max-width: 430px) {
+
+.circle-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
 /* Mobile styles */
 @media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 15vw;
+  }
+  
   .circle,
   .value-container {
     width: 80px; /* Smaller width for mobile */
@@ -295,7 +308,9 @@ tr:hover {
     padding: 2px -20px;
     max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
     font-size: 8px;
-    margin: 5px;
+    margin-bottom: 155px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   #filter select {     
@@ -310,7 +325,7 @@ tr:hover {
   }
 
   h4, .subtitle {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .dropdown-content a {
@@ -345,6 +360,11 @@ tr:hover {
 
 /* Tablet styles */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  h1 {
+    font-size: 15vw;
+  }
+
   .circle,
   .value-container {
     width: 130px; /* Adjusted width for tablets */
@@ -364,10 +384,6 @@ tr:hover {
     max-width: auto; /* 추가: 요소의 최대 너비를 지정합니다. */
     font-size: 15px;
     margin-bottom: 135px;
-  }
-
-  h1 {
-    font-size: 6vw; /* Dynamic font size for tablets */
   }
 
   h4, .subtitle {

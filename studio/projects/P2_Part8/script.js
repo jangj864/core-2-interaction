@@ -9,70 +9,70 @@ function updateCircleValue(link, selectedValue, type) {
     switch (type) {
         case 'theater':
             switch (selectedValue) {
-                case 'Total':
+                case 'across all theaters.':
                     calculatedValue = 295;
                     break;
-                case 'AMC':
+                case 'at AMC theaters.':
                     calculatedValue = 3;
                     break;
-                case 'CGV':
+                case 'at CGV theaters.':
                     calculatedValue = 268;
                     break;
-                case 'Megabox':
+                case 'at Megabox theaters.':
                     calculatedValue = 24;
                     break;
             }
             break;
         case 'format':
             switch (selectedValue) {
-                case 'Total':
+                case 'across all formats.':
                     calculatedValue = 295;
                     break;
-                case '2D':
+                case 'watching 2D movies.':
                     calculatedValue = 181;
                     break;
-                case 'DolbyAtmos':
+                case 'watching Dolby Atmos movies.':
                     calculatedValue = 7;
                     break;
-                case 'IMAX2D':
+                case 'watching IMAX 2D movies.':
                     calculatedValue = 47;
                     break;
-                case 'IMAX3D':
+                case 'watching IMAX 3D movies.':
                     calculatedValue = 21;
                     break;
-                case '4DX':
+                case 'watching 4DX movies.':
                     calculatedValue = 27;
                     break;
-                case 'ScreenX':
+                case 'watching ScreenX movies.':
                     calculatedValue = 9;
                     break;
             }
             break;
         case 'with':
             switch (selectedValue) {
-                case 'Total':
+                case 'in any company.':
                     calculatedValue = 295;
                     break;
-                case 'Alone':
+                case 'watching movies alone.':
                     calculatedValue = 126;
                     break;
-                case 'Friend':
+                case ' watching movies with friends.':
                     calculatedValue = 126;
                     break;
-                case 'Family':
+                case 'watching movies with family.':
                     calculatedValue = 43;
                     break;
             }
             break;
         case 'feeling':
             switch (selectedValue) {
-                case 'Total':
+                case 'with Feeling':
                     calculatedValue = 295;
                     break;
-                case 'Reasonable':
+                case 'watching movies that felt Reasonable.':
                     calculatedValue = 223;
                     break;
-                case 'Regrettable':
+                case 'watching movies that felt Regrettable.':
                     calculatedValue = 72;
                     break;
             }

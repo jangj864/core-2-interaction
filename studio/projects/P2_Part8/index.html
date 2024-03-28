@@ -10,7 +10,7 @@
 <body>
     <div id="header">
         <h1>295HOURS</h1>
-        <h4>Total Amount of Time Watching a Movie</h4>
+        <h4>Total amount of time I watched movies in theater.</h4>
     </div>
 
     <br>
@@ -34,7 +34,7 @@
                     <br>
                     Hours
                 </div>
-                <p>Total amount of time <br> watching a movie</p>
+                <h3>Total hours spent<br> watching movies</h3>
             </div>
 
             
@@ -45,17 +45,17 @@
                     <br>
                     Hours
                 </div>
-                <p>Total amount of<br> time at</p>
-                <h3 class="selectedTheater">Theater</h3>
+                <p>Total hours spent</p>
+                <p class="selectedTheater">at the Theater</p>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="toggleDropdown(this)">
                         <i class="material-symbols-outlined">expand_more</i>
-                    </button>
+                    </button> 
                     <div id="myDropdownTheater" class="dropdown-content">
-                        <a href="#" onclick="updateCircleValue(this, 'Total', 'theater')">Total</a>
-                        <a href="#" onclick="updateCircleValue(this, 'AMC', 'theater')">AMC</a>
-                        <a href="#" onclick="updateCircleValue(this, 'CGV', 'theater')">CGV</a>
-                        <a href="#" onclick="updateCircleValue(this, 'Megabox', 'theater')">Megabox</a>
+                        <a href="#" onclick="updateCircleValue(this, 'across all theaters.', 'theater')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'at AMC theaters.', 'theater')">AMC</a>
+                        <a href="#" onclick="updateCircleValue(this, 'at CGV theaters.', 'theater')">CGV</a>
+                        <a href="#" onclick="updateCircleValue(this, 'at Megabox theaters.', 'theater')">Megabox</a>
                     </div>
                 </div>
             </div>
@@ -67,20 +67,20 @@
                     <br>
                     Hours
                 </div>
-                <p>Total amount of <br>time in</p>
-                <h3 class="selectedFormat">Format</h3>
+                <p>Total hours spent</p>
+                <p class="selectedFormat">watching different formats.</p>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="toggleDropdown(this)">
                         <i class="material-symbols-outlined">expand_more</i>
                     </button>
                     <div id="myDropdownFormat" class="dropdown-content">
-                        <a href="#" onclick="updateCircleValue(this, 'Total', 'format')">Total</a>
-                        <a href="#" onclick="updateCircleValue(this, '2D', 'format')">2D</a>
-                        <a href="#" onclick="updateCircleValue(this, 'DolbyAtmos', 'format')">Dolby Atmos</a>
-                        <a href="#" onclick="updateCircleValue(this, 'IMAX2D', 'format')">IMAX 2D</a>
-                        <a href="#" onclick="updateCircleValue(this, 'IMAX3D', 'format')">IMAX 3D</a>
-                        <a href="#" onclick="updateCircleValue(this, '4DX', 'format')">4DX</a>
-                        <a href="#" onclick="updateCircleValue(this, 'ScreenX', 'format')">ScreenX</a>
+                        <a href="#" onclick="updateCircleValue(this, 'across all formats.', 'format')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching 2D movies.', 'format')">2D</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching Dolby Atmos movies.', 'format')">Dolby Atmos</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching IMAX 2D movies.', 'format')">IMAX 2D</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching IMAX 3D movies.', 'format')">IMAX 3D</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching 4DX movies.', 'format')">4DX</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching ScreenX movies.', 'format')">ScreenX</a>
                     </div>
                 </div>
             </div>
@@ -92,17 +92,17 @@
                     <br>
                     Hours
                 </div>
-                <p>Total amount of <br>time with</p>
-                <h3 class="selectedWith">With</h3>
+                <p>Total hours spent</p>
+                <p class="selectedWith">with others</p>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="toggleDropdown(this)">
                         <i class="material-symbols-outlined">expand_more</i>
                     </button>
                     <div id="myDropdownWith" class="dropdown-content">
-                        <a href="#" onclick="updateCircleValue(this, 'Total', 'with')">Total</a>
-                        <a href="#" onclick="updateCircleValue(this, 'Alone', 'with')">Alone</a>
-                        <a href="#" onclick="updateCircleValue(this, 'Friend', 'with')">Friend</a>
-                        <a href="#" onclick="updateCircleValue(this, 'Family', 'with')">Family</a>
+                        <a href="#" onclick="updateCircleValue(this, 'in any company.', 'with')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching movies alone.', 'with')">Alone</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching movies with friends.', 'with')">Friend</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching movies with family.', 'with')">Family</a>
                     </div>
                 </div>
             </div>
@@ -114,16 +114,16 @@
                     <br>
                     Hours
                 </div>
-                <p>Total amount of <br>time of</p>
-                <h3 class="selectedFeeling">Feeling</h3>
+                <p>Total hours spent</p>
+                <p class="selectedFeeling">categorized by Feeling</p>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="toggleDropdown(this)">
                         <i class="material-symbols-outlined">expand_more</i>
                     </button>
                     <div id="myDropdownFeeling" class="dropdown-content">
-                        <a href="#" onclick="updateCircleValue(this, 'Total', 'feeling')">Total</a>
-                        <a href="#" onclick="updateCircleValue(this, 'Reasonable', 'feeling')">Reasonable</a>
-                        <a href="#" onclick="updateCircleValue(this, 'Regrettable', 'feeling')">Regrettable</a>
+                        <a href="#" onclick="updateCircleValue(this, 'with Feeling', 'feeling')">Total</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching movies that felt Reasonable.', 'feeling')">Reasonable</a>
+                        <a href="#" onclick="updateCircleValue(this, 'watching movies that felt Regrettable.', 'feeling')">Regrettable</a>
                     </div>
                 </div>
          </div>
