@@ -56,7 +56,7 @@ function updateCircleValue(link, selectedValue, type) {
                 case 'watching movies alone.':
                     calculatedValue = 126;
                     break;
-                case ' watching movies with friends.':
+                case 'watching movies with friends.':
                     calculatedValue = 126;
                     break;
                 case 'watching movies with family.':
