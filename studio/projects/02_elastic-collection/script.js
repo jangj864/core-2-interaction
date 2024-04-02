@@ -1517,4 +1517,12 @@ function scrollToAnalysis() {
     document.getElementById('subtitle').scrollIntoView({
         behavior: 'smooth'
     });
-}    
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+  
