@@ -1,15 +1,24 @@
-const dayList = ['sun', 'mon', 'tues', 'wed', 'thurs', 'fri', 'sat'];
+function getClimateData() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            // Mock data
+            resolve({
+                ozone: 300, // Ozone level in Dobson Units
+                co2: 415, // CO2 level in ppm
+                waterVapor: 'Moderate', // Simplified representation of water vapor
+                temperature: 35 // Temperature in Celsius
+            });
+        }, 1000);
+    });
+}
 
-// Get Elements
-// -----------------------------------------------------------
-var dateObject = new Date();
-var day =  dayList[dateObject.getDay()];
-console.log('day:',day);
+function updatePageClimate(data) {
+    document.getElementById('ozone').textContent = `${data.ozone} DU`;
+    document.getElementById('co2').textContent = `${data.co2} ppm`;
+    document.getElementById('waterVapor').textContent = data.waterVapor;
+    document.getElementById('temperature').textContent = `${data.temperature}°C`;
+}
 
-// Get Day
-// -----------------------------------------------------------
-
-var dayElement = document.querySelector('.day');
-console.log('dayElement:',dayElement);
-
-dayElement.innerHTML = day;
+document.addEventListener('DOMContentLoaded', function() {
+    getClimateData().then(updatePageClimate);
+});
