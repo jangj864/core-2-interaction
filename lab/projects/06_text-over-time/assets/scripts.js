@@ -1,6 +1,6 @@
 function fetchAirQualityAndWeatherData() {
-    const latitude = 52.40001; // 위도
-    const longitude = 13.600006; // 경도
+    const latitude = 40.7128; // 뉴욕의 위도
+    const longitude = -74.0060; // 뉴욕의 경도
     const airQualityURL = `https://api.open-meteo.com/v1/airquality?latitude=${latitude}&longitude=${longitude}`;
     const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=1ced56361485dba64a972cfb589add52`;
 
@@ -9,8 +9,8 @@ function fetchAirQualityAndWeatherData() {
         .then(response => response.json())
         .then(data => {
             const airQualityData = {
-                ozone: data.current.ozone, // 오존 데이터
-                co: data.current.carbon_monoxide // 일산화탄소 데이터
+                ozone: data.pm25, // 초미세먼지(PM2.5) 데이터를 사용
+                co: data.pm10 // 미세먼지(PM10) 데이터를 사용
             };
             updatePageWithAirQualityData(airQualityData);
         })
