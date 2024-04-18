@@ -65,34 +65,3 @@ function setColor(elementId, value, normalRange, lowRiskRange, moderateRiskRange
     }
 }
 
-function updateWaterLevel(precipitation) {
-    const overlay = document.getElementById('waterOverlay');
-    if (precipitation <= 5) {
-        overlay.style.height = '10%'; // Normal to Low-risk
-    } else if (precipitation <= 10) {
-        overlay.style.height = '25%'; // Moderate-risk
-    } else if (precipitation <= 20) {
-        overlay.style.height = '50%'; // High-risk
-    } else {
-        overlay.style.height = '100%'; // Very-high-risk
-    }
-}
-
-function updatePageWithWeatherData(data) {
-    document.getElementById('temperature').textContent = `${data.temperature}°C`;
-    document.getElementById('humidity').textContent = `${data.humidity}%`;
-    document.getElementById('wind_speed').textContent = `${data.windSpeed} m/s`;
-    document.getElementById('precipitation').textContent = `${data.precipitation} mm`;
-
-    // Set color based on value ranges
-    setColor('temperature', data.temperature, [15, 25], [10, 15, 25, 30], [5, 10, 30, 35], [0, 5, 35, 40], [-5, 40]);
-    setColor('humidity', data.humidity, [30, 50], [50, 60], [60, 70], [70, 80], [80, 100]);
-    setColor('wind_speed', data.windSpeed, [0, 10], [10, 15], [15, 20], [20, 25], [25, Infinity]);
-    setColor('precipitation', data.precipitation, [0], [0, 5], [5, 10], [10, 20], [20, Infinity]);
-
-    // Update water level based on precipitation
-    updateWaterLevel(data.precipitation);
-}
-
-
-

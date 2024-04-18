@@ -12,20 +12,6 @@ body, html {
 .high-risk { color: orange; }
 .very-high-risk { color: red; }
 
-#waterOverlay {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 105, 255, 0.6); /* Light blue to simulate water */
-    z-index: 10;
-    transition: height 0.5s ease-in-out;
-}
-
-/* Initial minimal height to not cover the page */
-#waterOverlay { height: 0%; }
-
-
 
 .stuff {
     text-align: center;
@@ -86,22 +72,4 @@ h5 {
     font-style: normal;
 	font-weight: 100;
 	text-align: center;
-}
-
-h6 {
-	font-size: 1vw;
-	font-style: bold;
-	font-weight: 800;
-	text-align: center;
-    color: rgba(255, 255, 255, 0.744);
-}
-
-footer {
-	font-size: 1vw;
-	font-style: bold;
-	font-weight: 800;
-	text-align: center;
-    color: rgba(255, 255, 255, 0.744);
-    margin-top: 20%;
-    margin-bottom: 100%;
 }
