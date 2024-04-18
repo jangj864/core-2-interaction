@@ -35,3 +35,33 @@ function scrollToclimateData() {
     const element = document.getElementById('climateData');
     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+function updatePageWithWeatherData(data) {
+    document.getElementById('temperature').textContent = `${data.temperature}°C`;
+    setColor('temperature', data.temperature, [15, 25], [10, 15, 25, 30], [5, 10, 30, 35], [0, 5, 35, 40], [-5, 40]);
+
+    document.getElementById('humidity').textContent = `${data.humidity}%`;
+    setColor('humidity', data.humidity, [30, 50], [50, 60], [60, 70], [70, 80], [80, 100]);
+
+    document.getElementById('wind_speed').textContent = `${data.windSpeed} m/s`;
+    setColor('wind_speed', data.windSpeed, [0, 10], [10, 15], [15, 20], [20, 25], [25, Infinity]);
+
+    document.getElementById('precipitation').textContent = `${data.precipitation} mm`;
+    setColor('precipitation', data.precipitation, [0], [0, 5], [5, 10], [10, 20], [20, Infinity]);
+}
+
+function setColor(elementId, value, normalRange, lowRiskRange, moderateRiskRange, highRiskRange, veryHighRiskRange) {
+    const element = document.getElementById(elementId);
+    if (value >= normalRange[0] && value <= normalRange[1]) {
+        element.className = 'normal';
+    } else if (value >= lowRiskRange[0] && value <= lowRiskRange[1]) {
+        element.className = 'low-risk';
+    } else if (value >= moderateRiskRange[0] && value <= moderateRiskRange[1]) {
+        element.className = 'moderate-risk';
+    } else if (value >= highRiskRange[0] && value <= highRiskRange[1]) {
+        element.className = 'high-risk';
+    } else if (value >= veryHighRiskRange[0] && value <= veryHighRiskRange[1]) {
+        element.className = 'very-high-risk';
+    }
+}
+

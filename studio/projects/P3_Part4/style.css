@@ -6,6 +6,13 @@ body, html {
     background-color: #333; 
 }
 
+.normal { color: green; }
+.low-risk { color: blue; }
+.moderate-risk { color: yellow; }
+.high-risk { color: orange; }
+.very-high-risk { color: red; }
+
+
 .stuff {
     text-align: center;
     margin-bottom: 30%;
@@ -40,5 +47,27 @@ h2 {
 	font-style: normal;
 	font-weight: 100;
 	margin-bottom: 10%;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1vw;
+	font-weight: 800;
+	text-align: center;
+}
+
+h4 {
+	font-size: 2vw;
+    font-style: normal;
+	font-weight: 100;
+	text-align: center;
+    margin-top: 20%;
+    color: rgba(255, 255, 255, 0.744);
+}
+
+h5 {
+	font-size: 2vw;
+    font-style: normal;
+	font-weight: 100;
 	text-align: center;
 }
