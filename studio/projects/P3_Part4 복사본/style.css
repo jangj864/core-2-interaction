@@ -12,6 +12,20 @@ body, html {
 .high-risk { color: orange; }
 .very-high-risk { color: red; }
 
+#waterOverlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 105, 255, 0.6); /* Light blue to simulate water */
+    z-index: 10;
+    transition: height 0.5s ease-in-out;
+}
+
+/* Initial minimal height to not cover the page */
+#waterOverlay { height: 0%; }
+
+
 
 .stuff {
     text-align: center;
