@@ -87,3 +87,21 @@ h5 {
 	font-weight: 100;
 	text-align: center;
 }
+
+h6 {
+	font-size: 1vw;
+	font-style: bold;
+	font-weight: 800;
+	text-align: center;
+    color: rgba(255, 255, 255, 0.744);
+}
+
+footer {
+	font-size: 1vw;
+	font-style: bold;
+	font-weight: 800;
+	text-align: center;
+    color: rgba(255, 255, 255, 0.744);
+    margin-top: 20%;
+    margin-bottom: 100%;
+}
