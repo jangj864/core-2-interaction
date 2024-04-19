@@ -1,0 +1,117 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: #333; 
+}
+
+/* Shake animations */
+@keyframes shake-1 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-1px); }
+}
+
+@keyframes shake-2 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-2px); }
+}
+
+@keyframes shake-3 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-3px); }
+}
+
+@keyframes shake-4 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-4px); }
+}
+
+@keyframes shake-5 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+}
+
+/* Shake effects */
+.shake-1 { animation: shake-1 0.5s linear infinite !important; }
+.shake-2 { animation: shake-2 0.5s linear infinite !important; }
+.shake-3 { animation: shake-3 0.5s linear infinite !important; }
+.shake-4 { animation: shake-4 0.5s linear infinite !important; }
+.shake-5 { animation: shake-5 0.5s linear infinite !important; }
+
+/* Color coding for risk levels */
+.normal { color: green; }
+.low-risk { color: blue; }
+.moderate-risk { color: yellow; }
+.high-risk { color: orange; }
+.very-high-risk { color: red; }
+
+/* Overlay to simulate water effect */
+#waterOverlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 105, 255, 0.6);
+    z-index: 10;
+    transition: height 0.5s ease-in-out;
+    height: 0%; /* Initial minimal height to not cover the page */
+}
+
+
+
+.stuff {
+    text-align: center;
+    margin-bottom: 30%;
+}
+
+#climateData {
+    margin-bottom: 30%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#contentArea {
+    padding: 20px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 3vw;
+}
+
+h1, h4 {
+    font-size: 3vw;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20%;
+    color: rgba(255, 255, 255, 0.744);
+}
+
+h3 {
+    font-size: 2.5vw;
+    font-weight: 100;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.744);
+}
+
+
+h2, h5, h6 {
+    font-size: 2vw;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 10%;
+    color: rgba(255, 255, 255, 0.744);
+}
+
+footer {
+    font-size: 1vw;
+    font-weight: 800;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.744);
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+}

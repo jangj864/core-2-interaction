@@ -67,11 +67,11 @@ function setColor(elementId, value, normalRange, lowRiskRange, moderateRiskRange
 
 function updateWaterLevel(precipitation) {
     const overlay = document.getElementById('waterOverlay');
-    if (precipitation <= 5) {
+    if (precipitation <= 5) { //mm
         overlay.style.height = '10%'; // Normal to Low-risk
-    } else if (precipitation <= 10) {
+    } else if (precipitation <= 10) { //mm
         overlay.style.height = '25%'; // Moderate-risk
-    } else if (precipitation <= 20) {
+    } else if (precipitation <= 20) { //mm
         overlay.style.height = '50%'; // High-risk
     } else {
         overlay.style.height = '100%'; // Very-high-risk
