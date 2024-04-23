@@ -4,6 +4,7 @@ body, html {
     font-family: Helvetica, sans-serif;
     color: white;
     background-color: #333; 
+    text-align: center;
 }
 
 /* Shake animations */
@@ -39,14 +40,6 @@ body, html {
 .shake-4 { animation: shake-4 0.5s linear infinite !important; }
 .shake-5 { animation: shake-5 0.5s linear infinite !important; }
 
-/* Color coding for risk levels */
-.normal { color: green; }
-.low-risk { color: blue; }
-.moderate-risk { color: yellow; }
-.high-risk { color: orange; }
-.very-high-risk { color: red; }
-
-
 /* Overlay to simulate water effect */
 #waterOverlay {
     position: fixed;
@@ -60,6 +53,27 @@ body, html {
 }
 
 
+#Title {
+    padding: 20px;
+    margin-top: 15%;
+}
+
+            h1{
+                font-size: 3vw;
+                font-weight: 800;
+                text-align: center;
+
+            }
+
+            h2{
+                font-size: 2vw;
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: 10%;
+
+                margin-left: 3%;
+                margin-right: 3%;
+            }
 
 .stuff {
     text-align: center;
@@ -67,13 +81,18 @@ body, html {
 }
 
 #climateData {
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     margin-left: 3%;
     margin-right: 3%;
+    color: #8f8f8f;
 }
 
-#contentArea {
-    padding: 20px;
+#explanation {
+    font-size: 2vw;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 13%;
+    margin-bottom: 5%;
 }
 
 .data-row {
@@ -83,44 +102,72 @@ body, html {
     font-size: 2vw;
 }
 
-h1, h4 {
-    font-size: 3vw;
-    font-weight: 800;
-    text-align: center;
-    margin-top: 20%;
-    color: rgba(255, 255, 255, 0.744);
+#contentArea {
+    padding: 20px;
 }
 
-h3 {
-    font-size: 2.5vw;
-    font-weight: 100;
-    text-align: left;
-    color: rgba(255, 255, 255, 0.744);
-    margin-left: 3%;
-    margin-right: 3%;
-}
+            #contentArea h1 {
+                padding: 20px;
+                font-size: 2vw;
+                font-weight: 800;
+                text-align: center;
+                color: #8f8f8f;
+                margin-top: 11%;
+            }
+
+            #contentArea h2 {
+                font-size: 1vw;
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: 10%;
+
+                margin-left: 3%;
+                margin-right: 3%;
+            }
+
+            #contentArea h3 {
+                font-size: 1vw;
+                font-weight: 100;
+                text-align: center;
+
+                margin-left: 25%;
+                margin-right: 25%;
+
+            }
+
+            #contentArea h4 {
+                font-size: 1.5vw;
+                font-weight: 500;
+                text-align: center;
+
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+
+            #contentArea h5 {
+                font-size: 1.5vw;
+                font-weight: 100;
+                text-align: center;
+
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+
+            #contentArea h6 {
+                font-size: 1vw;
+                font-weight: 100;
+                text-align: center;
+
+                margin-top: 10%;
+                margin-left: 25%;
+                margin-right: 25%;
+            }
 
 
-h2, h5, h6 {
-    font-size: 2vw;
-    font-weight: 100;
-    text-align: center;
-    margin-bottom: 10%;
-    color: rgba(255, 255, 255, 0.744);
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-#explanation {
-    color: rgb(255, 255, 255);
-    font-size: 1vw;
-    font-weight: 100;
-    text-align: center;
-}
 
 footer {
     font-size: 1vw;
-    font-weight: 800;
+    font-weight: 100;
     text-align: center;
     color: rgba(255, 255, 255, 0.744);
     margin-top: 20%;
