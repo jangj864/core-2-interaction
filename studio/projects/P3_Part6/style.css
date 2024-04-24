@@ -228,34 +228,7 @@ body, html {
                 margin-right: 3%;
             }
 
-            #contentArea h3 {
-                font-size: 1vw;
-                font-weight: 100;
-                text-align: center;
-
-                margin-left: 25%;
-                margin-right: 25%;
-
-            }
-
-            #contentArea h4 {
-                font-size: 1.5vw;
-                font-weight: 500;
-                text-align: center;
-
-                margin-left: 2%;
-                margin-right: 2%;
-            }
-
-            #contentArea h5 {
-                font-size: 1.5vw;
-                font-weight: 100;
-                text-align: center;
-
-                margin-left: 15%;
-                margin-right: 15%;
-            }
-
+            
             #contentArea h6 {
                 font-size: 1vw;
                 font-weight: 100;
