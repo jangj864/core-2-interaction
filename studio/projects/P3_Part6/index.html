@@ -17,36 +17,41 @@
 
 
         <div id="Title">
-            <h1>Advancing Equitable and Resilient Futures in NYC</h1>
+            <h1>Advancing Equitable and Resilient Futures <span class="title-innyc">IN NYC</span></h1>
             <h2>: Science and Policy for Climate Justice</h2>
         </div>
+        
         <ul class="stuff">
             <br>
             <i class="material-symbols-outlined" onclick="scrollToclimateData()">expand_more</i>
         </ul>
 
-        <div id="climateData">
-            <div class="data-row"><span>Wind Speed:</span> <span id="wind_speed"></span></div>
-            <div class="data-row"><span>Precipitation:</span> <span id="precipitation"></span></div>
-            <div class="data-row"><span>Humidity:</span> <span id="humidity"></span></div>
-            <div class="data-row"><span>Temperature:</span> <span id="temperature"></span></div>
+        <div class="container">
+            <div id="explanation" class="box">
+                <div class="header">
+                    <div class="arrow left" onclick="previousData()">&#9664;</div>
+                    <div class="title" id="dataTitle">WIND SPEED</div>
+                    <div class="arrow right" onclick="nextData()">&#9654;</div>
+                </div>
+                <p id="descriptionText">
+                    Click a data point on the right to see more information.
+                </p>
+                <div class="indicators">
+                    <span class="dot" onclick="updateText('wind')"></span>
+                    <span class="dot" onclick="updateText('precip')"></span>
+                    <span class="dot" onclick="updateText('humid')"></span>
+                    <span class="dot" onclick="updateText('temp')"></span>
+                </div>
+            </div>
+            <div id="climateData">
+                <div class="data-row" onclick="selectData('wind')">Wind Speed: <span id="wind_speed"></span></div>
+                <div class="data-row" onclick="selectData('precip')">Precipitation: <span id="precipitation"></span></div>
+                <div class="data-row" onclick="selectData('humid')">Humidity: <span id="humidity"></span></div>
+                <div class="data-row" onclick="selectData('temp')">Temperature: <span id="temperature"></span></div>
+            </div>
         </div>
-
-        <div id="explanation">
-        <p>
-            The entire text shakes depending on the <b>Wind Speed</b>. <br>
-            As the Wind Speed increases, the shaking speed faster. <br>
-            <br>
-            The amount of blue water visible on the page varies depending on the amount of <b>Precipitation</b>. <br>
-            As Precipitation increases, the level increases and fills the page. <br>
-            <br>   
-            Depending on the level of <b>Humidity</b>, moisture accumulates on the page. <br>
-            As the Humidity rises, a hazy moisture fills the page. <br>
-            <br>
-            The color of the text changes depending on the <b>Temperature</b>. <br>
-            They are White, Pale Yellow, Yellow, Orange, and Red. <br>
-        </p>
-         </div>
+        
+        
 
 
         <div id="contentArea">

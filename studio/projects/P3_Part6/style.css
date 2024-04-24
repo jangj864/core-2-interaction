@@ -1,0 +1,271 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: #000000; 
+    text-align: center;
+}
+
+/* Shake animations */
+@keyframes shake-1 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-1px); }
+}
+
+@keyframes shake-2 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-2px); }
+}
+
+@keyframes shake-3 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-3px); }
+}
+
+@keyframes shake-4 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-4px); }
+}
+
+@keyframes shake-5 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+}
+
+/* Shake effects */
+.shake-1 { animation: shake-1 0.5s linear infinite !important; }
+.shake-2 { animation: shake-2 0.5s linear infinite !important; }
+.shake-3 { animation: shake-3 0.5s linear infinite !important; }
+.shake-4 { animation: shake-4 0.5s linear infinite !important; }
+.shake-5 { animation: shake-5 0.5s linear infinite !important; }
+
+/* Overlay to simulate water effect */
+#waterOverlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 105, 255, 0.6);
+    z-index: 10;
+    transition: height 0.5s ease-in-out;
+    height: 0%; /* Initial minimal height to not cover the page */
+}
+
+
+#Title {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+            h1 {
+                font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
+                text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
+                font-weight: 400;
+                text-align: left; /* 왼쪽 정렬로 변경 */
+                font-size: 10vw;
+                line-height: 9vw;
+                margin-bottom: -4%;
+            }
+
+
+            h2{
+                font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
+                text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
+                font-size: 3.8vw;
+                font-weight: 100;
+                text-align: left;
+                margin-bottom: 10%;
+                color: #8f8f8f;
+            }
+
+            .title-innyc {
+                font-size: 5vw;
+            }
+            
+
+.stuff {
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+/* 박스 두개 */
+.container {
+    display: flex;
+    align-items: stretch; /* 컨테이너 내 아이템의 높이를 동일하게 늘림 */
+    justify-content: space-between; /* 내용을 좌우로 나누어 배치 */
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* 상하 컨텐츠의 간격을 균등하게 배분 */
+    align-items: center; /* 수평 중앙 정렬 */
+    position: relative; /* 상대 위치 설정으로 indicators의 기준점 제공 */
+    min-height: 200px; /* 박스의 최소 높이를 설정 */
+    /* 나머지 스타일은 그대로 유지 */
+}
+
+.box, #climateData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
+    flex: 1 1 50%; /* flex-grow, flex-shrink, and flex-basis 설정 */
+    padding: 20px;
+    background-color: #333; /* box 배경색 */
+    border-radius: 15px;
+    color: white;
+    margin-right: 10px; /* 박스 사이의 여백 */
+}
+
+/* 마지막 아이템의 여백을 제거 */
+.container > :last-child {
+    margin-right: 0;
+}
+
+#climateData {
+    background-color: #444; /* climateData 배경색 */
+    color: #8f8f8f;
+}
+
+            .data-row {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 2vw;
+            }
+
+            .data-row.active {
+                color: white; /* 선택된 데이터 행의 색상 변경 */
+            }
+
+            /* 새로 추가된 스타일 */
+            .header {
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            .header .title {
+                margin: 0 20px;
+                border: 1px solid white;
+                padding: 5px 20px;
+                border-radius: 10px; /* 타이틀의 테두리를 둥글게 */
+            }
+
+            .header .arrow {
+                cursor: pointer; /* 화살표 클릭 가능 표시 */
+                padding: 0 10px;
+                user-select: none; /* 텍스트 선택 방지 */
+            }
+
+            #descriptionText {
+                text-align: center;
+                padding: 10px 0; /* 텍스트 위아래의 패딩을 추가하여 간격을 조정 */
+                font-size: 2vw;
+                /* ... */
+            }
+
+            .indicators {
+                position: static;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .indicators .dot {
+                height: 10px;
+                width: 10px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 0 5px;
+                cursor: pointer; /* 점 클릭 가능 표시 */
+            }
+
+            .indicators .dot.active {
+                background-color: #fff; /* 활성화된 점의 색상 변경 */
+            }
+
+            /* 나머지 스타일을 유지하면서 새로운 스타일을 추가합니다. */
+
+
+
+
+#contentArea {
+    padding: 20px;
+}
+
+            #contentArea h1 {
+                padding: 20px;
+                font-size: 2vw;
+                font-weight: 800;
+                text-align: center;
+                color: #8f8f8f;
+                margin-top: 11%;
+            }
+
+            #contentArea h2 {
+                font-size: 1vw;
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: 10%;
+
+                margin-left: 3%;
+                margin-right: 3%;
+            }
+
+            #contentArea h3 {
+                font-size: 1vw;
+                font-weight: 100;
+                text-align: center;
+
+                margin-left: 25%;
+                margin-right: 25%;
+
+            }
+
+            #contentArea h4 {
+                font-size: 1.5vw;
+                font-weight: 500;
+                text-align: center;
+
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+
+            #contentArea h5 {
+                font-size: 1.5vw;
+                font-weight: 100;
+                text-align: center;
+
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+
+            #contentArea h6 {
+                font-size: 1vw;
+                font-weight: 100;
+                text-align: center;
+
+                margin-top: 10%;
+                margin-left: 25%;
+                margin-right: 25%;
+            }
+
+
+
+footer {
+    font-size: 1vw;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.744);
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+}
