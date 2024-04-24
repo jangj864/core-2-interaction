@@ -5,6 +5,7 @@ body, html {
     color: white;
     background-color: #000000; 
     text-align: center;
+    font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
 }
 
 /* Shake animations */
@@ -58,7 +59,7 @@ body, html {
     margin-right: 20px;
 }
 
-            h1 {
+            #Title h1 {
                 font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
                 text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
                 font-weight: 400;
@@ -69,18 +70,19 @@ body, html {
             }
 
 
-            h2{
+            #Title h2{
                 font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
                 text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
                 font-size: 3.8vw;
                 font-weight: 100;
                 text-align: left;
                 margin-bottom: 10%;
-                color: #8f8f8f;
+                color: #777;
             }
 
             .title-innyc {
                 font-size: 5vw;
+                color: #888;
             }
             
 
@@ -117,6 +119,7 @@ body, html {
     border-radius: 15px;
     color: white;
     margin-right: 10px; /* 박스 사이의 여백 */
+    margin-left: 10px; 
 }
 
 /* 마지막 아이템의 여백을 제거 */
@@ -201,21 +204,26 @@ body, html {
     padding: 20px;
 }
 
-            #contentArea h1 {
-                padding: 20px;
-                font-size: 2vw;
-                font-weight: 800;
-                text-align: center;
-                color: #8f8f8f;
-                margin-top: 11%;
-            }
+                #contentArea h1 {
+                    padding: 12px;
+                    font-size: 2.1vw;
+                    font-weight: 500;
+                    text-align: center;
+                    color: #ffffff;
+                    margin-top: 11%;
+                    background-color: rgb(0, 0, 0)fff; /* 배경색 */
+                    display: flex;
+                    border-radius: 15px; /* 둥근 테두리 */
+                    border: 2px solid #fff; /* 테두리 색상 */
+                    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
+                    text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
+                }
 
             #contentArea h2 {
-                font-size: 1vw;
+                font-size: 2vw;
                 font-weight: 100;
-                text-align: center;
-                margin-bottom: 10%;
-
+                text-align: left;
+                margin-bottom: 0%;
                 margin-left: 3%;
                 margin-right: 3%;
             }
