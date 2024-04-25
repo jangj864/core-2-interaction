@@ -6,6 +6,9 @@ body, html {
     background-color: #000000; 
     text-align: center;
     font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
 }
 
 /* Shake animations */
@@ -64,20 +67,23 @@ body, html {
                 text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
                 font-weight: 400;
                 text-align: left; /* 왼쪽 정렬로 변경 */
-                font-size: 10vw;
-                line-height: 9vw;
+                font-size: 8vw;
+                line-height: 7vw;
                 margin-bottom: -4%;
+                max-width: 100%;
+                margin-top: 10px;
             }
 
 
             #Title h2{
                 font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
                 text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
-                font-size: 3.8vw;
+                font-size: 4vw;
                 font-weight: 100;
                 text-align: left;
                 margin-bottom: 10%;
                 color: #777;
+                max-width: 100%;
             }
 
             .title-innyc {
@@ -157,6 +163,7 @@ body, html {
                 border: 1px solid white;
                 padding: 5px 20px;
                 border-radius: 10px; /* 타이틀의 테두리를 둥글게 */
+                font-size: 2vw;
             }
 
             .header .arrow {
@@ -239,13 +246,11 @@ body, html {
                 margin-right: 25%;
             }
 
-
-
 footer {
     font-size: 1vw;
     font-weight: 100;
     text-align: center;
-    color: rgba(255, 255, 255, 0.744);
+    color: rgba(120, 120, 120, 0.744);
     margin-top: 20%;
     margin-bottom: 10%;
     padding-bottom: 10%;
