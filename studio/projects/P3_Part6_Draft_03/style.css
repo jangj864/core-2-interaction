@@ -56,18 +56,6 @@ body, html {
     height: 0%; /* Initial minimal height to not cover the page */
 }
 
-#contentArea {
-    --mask-x: 50%;  /* Initial mask X position */
-    --mask-y: 50%;  /* Initial mask Y position */
-    mask-image: radial-gradient(circle at var(--mask-x) var(--mask-y), transparent 0, transparent 70px, rgba(0,0,0,0.5) 80px, black 100px);
-    mask-mode: alpha;
-    -webkit-mask-image: radial-gradient(circle at var(--mask-x) var(--mask-y), transparent 0, transparent 70px, rgba(0,0,0,0.5) 80px, black 100px);
-    -webkit-mask-mode: alpha;
-}
-
-
-
-
 #Title {
     margin-left: 20px;
     margin-right: 20px;

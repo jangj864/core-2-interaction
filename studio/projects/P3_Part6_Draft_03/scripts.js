@@ -176,32 +176,18 @@ function applyBlurEffect(humidity) {
     const contentArea = document.getElementById('contentArea');
     let blurValue = 0;  // 블러 값 초기화
 
-    if (humidity <= 20) {
+    if (humidity <= 50) {
         blurValue = 0;
-    } else if (humidity <= 40) {
-        blurValue = 2;  // 약한 블러
     } else if (humidity <= 60) {
-        blurValue = 4;  // 중간 블러
+        blurValue = 1;  // 약한 블러
+    } else if (humidity <= 70) {
+        blurValue = 2;  // 중간 블러
     } else if (humidity <= 80) {
-        blurValue = 6;  // 강한 블러
+        blurValue = 3;  // 강한 블러
     } else {
-        blurValue = 8;  // 매우 강한 블러
+        blurValue = 4;  // 매우 강한 블러
     }
 
     contentArea.style.filter = `blur(${blurValue}px)`;
 }
 
-
-document.getElementById('contentArea').addEventListener('mousemove', function(e) {
-    const rect = this.getBoundingClientRect();
-    const x = e.clientX - rect.left; // 마우스 포인터의 X 좌표
-    const y = e.clientY - rect.top;  // 마우스 포인터의 Y 좌표
-    this.style.setProperty('--mask-x', `${x}px`);
-    this.style.setProperty('--mask-y', `${y}px`);
-});
-
-
-document.getElementById('contentArea').addEventListener('mouseleave', function(e) {
-    this.style.removeProperty('--mask-x');
-    this.style.removeProperty('--mask-y');
-});

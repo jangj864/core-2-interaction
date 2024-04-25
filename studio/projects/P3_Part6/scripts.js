@@ -159,3 +159,34 @@ function scrollToclimateData() {
     const element = document.getElementById('climateData');
     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+function updatePageWithWeatherData(data) {
+    document.getElementById('temperature').textContent = `${data.temperature}°C`;
+    document.getElementById('humidity').textContent = `${data.humidity}%`;
+    document.getElementById('wind_speed').textContent = `${data.windSpeed} m/s`;
+    document.getElementById('precipitation').textContent = `${data.precipitation} mm`;
+
+    updateContentAreaColor(data.temperature);
+    updateWaterLevel(data.precipitation);
+    applyShakeEffect(data.windSpeed);
+    applyBlurEffect(data.humidity);  // 습도에 따른 블러 효과 추가
+}
+
+function applyBlurEffect(humidity) {
+    const contentArea = document.getElementById('contentArea');
+    let blurValue = 0;  // 블러 값 초기화
+
+    if (humidity <= 50) {
+        blurValue = 0;
+    } else if (humidity <= 60) {
+        blurValue = 1;  // 약한 블러
+    } else if (humidity <= 70) {
+        blurValue = 2;  // 중간 블러
+    } else if (humidity <= 80) {
+        blurValue = 3;  // 강한 블러
+    } else {
+        blurValue = 4;  // 매우 강한 블러
+    }
+
+    contentArea.style.filter = `blur(${blurValue}px)`;
+}
