@@ -33,7 +33,7 @@ function updatePageWithWeatherData(data) {
 }
 
 var descriptions = {
-    wind: "The entire text shakes depending on the Wind Speed. As the Wind Speed increases, the shaking speed faster.",
+    wind: "The entire text shakes depending on the Wind Speed. As the Wind Speed increases, the shaking speed faster.Wind Speed",
     precip: "The amount of blue water visible on the page varies with precipitation. As precipitation increases, the water level rises, filling the page.",
     humid: "Depending on the level of Humidity, moisture accumulates on the page. As the Humidity rises, a hazy moisture fills the page.",
     temp: "The color of the text changes depending on the Temperature. They are White, Pale Yellow, Yellow, Orange, and Red."
