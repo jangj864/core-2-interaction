@@ -272,7 +272,7 @@ footer {
     }
 
     .data-row {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .header .title {
@@ -282,7 +282,7 @@ footer {
     #descriptionText {
         text-align: center;
         padding: 10px 0; /* 텍스트 위아래의 패딩을 추가하여 간격을 조정 */
-        font-size: 5vw;
+        font-size: 4vw;
         /* ... */
     }
 
