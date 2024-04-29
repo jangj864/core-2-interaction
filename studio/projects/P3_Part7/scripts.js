@@ -180,13 +180,13 @@ function applyBlurEffect(humidity) {
     if (humidity <= 50) {
         blurValue = 0;
     } else if (humidity <= 60) {
-        blurValue = 1;  // 약한 블러
+        blurValue = 0.5;  // 약한 블러
     } else if (humidity <= 70) {
-        blurValue = 2;  // 중간 블러
+        blurValue = 1;  // 중간 블러
     } else if (humidity <= 80) {
-        blurValue = 3;  // 강한 블러
+        blurValue = 1.5;  // 강한 블러
     } else {
-        blurValue = 4;  // 매우 강한 블러
+        blurValue = 2;  // 매우 강한 블러
     }
 
     blurOverlay.style.filter = `blur(${blurValue}px)`;
