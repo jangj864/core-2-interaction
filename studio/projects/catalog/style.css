@@ -2,16 +2,46 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: rgb(172, 255, 255);
+}
+
+.buttons {
+  position: absolute;
+  width: 100%;
+  top: 40%;            /* 화면의 중간 높이 */
+  transform: translateY(-50%); /* Y축 중심으로 이동 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  z-index: 1000;
+}
+
+.studio-btn {
+  position: relative;
+  left: -20%;          /* 왼쪽으로 이동 */
+  padding: 10px 20px;  /* 패딩 조정 */
+  background-color: #4CAF50; /* 배경색 */
+  color: white;        /* 글자색 */
+  border: none;        /* 테두리 제거 */
+  cursor: pointer;     /* 커서 스타일 */
+}
+
+.lab-btn {
+  position: relative;
+  right: -20%;         /* 오른쪽으로 이동 */
+  padding: 10px 20px;  /* 패딩 조정 */
+  background-color: #008CBA; /* 배경색 */
+  color: white;        /* 글자색 */
+  border: none;        /* 테두리 제거 */
+  cursor: pointer;     /* 커서 스타일 */
 }
 
 
 /*Car*/
 .car {
   position: absolute;
-  width: 150px;
-  height: 100px;
+  width: 250px;
+  height: 200px;
   top: 40%;
-  left: 50%;
+  left: 60%;
   z-index: 9;
 }
 
@@ -31,28 +61,19 @@ body {
 
 
 /*Ground*/
-#ground {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  display: block;
-  top: 50%;
-}
 .ground {
   position: absolute;
   width: 100%;
-  height: 50%;
-  top: 60%;
-  background: #d0ae56;
+  height: 40%;   /* 화면의 하단 절반을 차지 */
+  bottom: 0;     /* 화면의 하단에 맞춤 */
+  background: #71b90d;  /* 갈색 ground */
 }
 
-
-/*Road*/
 .road {
   position: relative;
   width: 300px;
   height: 100%;
-  bottom: 0;
+  bottom: 26%; /* This ensures that the top of the road aligns with the top of the ground */
   margin: auto;
   background: #354852;
   border-left: 8px solid #ddd;
@@ -60,6 +81,8 @@ body {
   overflow: hidden;
   display: block;
 }
+
+
 .lines {
   position: relative;
   width: 0;
@@ -98,30 +121,28 @@ body {
   background-size: 129px;
 }
 
-
-/*Sky*/
-#sky {
-  position: absolute;
-  width: 100%;
-  height: 200%;
-  top: 0;
-  background: url('http://lesliebakermft.com/wp-content/uploads/2015/05/Sky-BG.png') no-repeat;
-  background-size: cover;
-}
-#sky p {
-  padding: 0 20px;  
-  color: #333;
-  font-weight: bold;
-}
+/*
 .mountain {
   position: absolute;
   width: 1024px;
   height: 720px;
   top: 40%;
   left: 30%;  
-  background: url(http://www.pngall.com/wp-content/uploads/2016/06/Castle-Transparent.png) no-repeat;
+  background: url(/Users/ddoazoo/Sites/core-2-interaction/studio/projects/catalog/new-york-5216120.png) no-repeat;
   background-size: 1024px 720px;
       -ms-transform: scale(0.5);
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
+}
+*/
+
+.mountain {
+  position: absolute;
+  width: 1080px;
+  height: 524px;     /* 높이는 고정값을 유지하거나 적절한 비율로 조정 */
+  top: 50%;        /* 중앙 정렬을 위해 상단을 50%로 설정 */
+  left: 50%;       /* 중앙 정렬을 위해 왼쪽을 50%로 설정 */
+  transform: translate(-50%, -50%); /* 중앙 정렬을 완벽하게 맞추기 위해 변환 사용 */
+  background: url(/Users/ddoazoo/Sites/core-2-interaction/studio/projects/catalog/new-york-5216120.png) no-repeat;
+  background-size: cover; /* 배경 크기를 div에 맞춤 */
 }

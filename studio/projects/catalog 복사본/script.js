@@ -50,8 +50,8 @@ $(document).ready(function() {
   //Background Mountain Animation
   TweenMax.to($mountain, 50, {
     yPercent: -100,
-    //xPercent: 50,
-    scale: 1.5,
+    xPercent: 50,
+    scale: 0.5,
     ease: Linear.easeNone
   });
 
