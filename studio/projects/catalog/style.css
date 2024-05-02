@@ -5,33 +5,172 @@ body {
   background-color: rgb(172, 255, 255);
 }
 
+.responsive-image{
+  width: 100%;
+  margin: auto;
+  top: 10%;
+  max-width: 900px; /* 이미지 최대 너비 지정 */
+  display: flex;
+  position: relative; /* z-index를 적용하기 위해 position 설정 */
+  z-index: 3000; /* 높은 z-index 값으로 다른 요소들 위에 위치 */
+}
+
+#mainlogo {
+  width: 100%;
+  margin: auto;
+  top: 10%;
+  max-width: 900px; /* 이미지 최대 너비 지정 */
+  display: flex;
+  position: relative; /* z-index를 적용하기 위해 position 설정 */
+  z-index: 3000; /* 높은 z-index 값으로 다른 요소들 위에 위치 */
+}
+
 .buttons {
   position: absolute;
   width: 100%;
-  top: 40%;            /* 화면의 중간 높이 */
+  top: 45%;            /* 화면의 중간 높이 */
   transform: translateY(-50%); /* Y축 중심으로 이동 */
   text-align: center; /* 텍스트 중앙 정렬 */
   z-index: 1000;
 }
 
-.studio-btn {
+.studio-btn.main {
   position: relative;
-  left: -20%;          /* 왼쪽으로 이동 */
-  padding: 10px 20px;  /* 패딩 조정 */
-  background-color: #4CAF50; /* 배경색 */
-  color: white;        /* 글자색 */
-  border: none;        /* 테두리 제거 */
+  right: 10%;         
   cursor: pointer;     /* 커서 스타일 */
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+
+    background-color: #D35359; /* 배경색 */
+    color: white;        /* 글자색 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    height: 48px;
+}
+.studio-btn.main:hover{
+  color: #fff;
+  background-color: #6a2a2d; /* 배경색 */
 }
 
-.lab-btn {
+.lab-btn.main {
   position: relative;
-  right: -20%;         /* 오른쪽으로 이동 */
-  padding: 10px 20px;  /* 패딩 조정 */
+  left: 10%;          
+  cursor: pointer;     /* 커서 스타일 */
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+
+    background-color: #008CBA; /* 배경색 */
+    color: white;        /* 글자색 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    height: 48px;
+}
+.lab-btn.main:hover{
+  color: #fff;
+  background-color: #001c25;;
+}
+
+/*content page buttons*/
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 0.5%; /* 좌측 상단 배치 */
+  padding: 8px 16px;
+  border: none;
+  background-color: #FFF;
+  color: #000;
+  cursor: pointer;
+}
+
+.studio-btn.right {
+  position: absolute;
+  top: 20px;
+  right: 0.5%; /* 우측 상단 배치 */
+  padding: 8px 16px;
+  border: none;
+  background-color: #D35359; /* 배경색 */
+  color: white;        /* 글자색 */
+  cursor: pointer;
+}
+
+.lab-btn.right {
+  position: absolute;
+  top: 20px;
+  right: 0.5%; /* 우측 상단 배치 */
+  padding: 8px 16px;
+  border: none;
   background-color: #008CBA; /* 배경색 */
   color: white;        /* 글자색 */
-  border: none;        /* 테두리 제거 */
-  cursor: pointer;     /* 커서 스타일 */
+  cursor: pointer;
+}
+
+
+/*studio page*/
+#studio-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2000;
+}
+
+#studio-content h1, #studio-content h2 {
+  color: #fff;
+}
+
+/*studio page*/
+#lab-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2000;
+}
+
+#lab-content h1, #lab-content h2 {
+  color: #fff;
+}
+
+/*content bottons*/
+.content-btn {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #4CAF50; /* 진한 녹색 배경 */
+  color: white; /* 텍스트 색상은 흰색 */
+  border: none; /* 테두리 없음 */
+  cursor: pointer; /* 커서는 포인터 */
 }
 
 
@@ -92,34 +231,6 @@ body {
   border-left: 8px dashed #bf9000;
 }
 
-/*Road Side*/
-.road-object {
-  
-}
-.road-object,
-.shadow {
-  position: absolute;
-  bottom: -180px;
-  width: 70%;
-  height: 129px;
-  z-index: 1;
-  left: 15%;
-}
-.shadow {
-  top: 100%;
-  z-index: -1;
-  opacity: 0;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.cactus {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  right: auto;
-  background: url(https://openclipart.org/image/2400px/svg_to_png/201901/cactus.png) no-repeat;
-  background-size: 129px;
-}
 
 /*
 .mountain {
@@ -138,11 +249,11 @@ body {
 
 .mountain {
   position: absolute;
-  width: 1080px;
+  width: 1600px;
   height: 524px;     /* 높이는 고정값을 유지하거나 적절한 비율로 조정 */
   top: 50%;        /* 중앙 정렬을 위해 상단을 50%로 설정 */
   left: 50%;       /* 중앙 정렬을 위해 왼쪽을 50%로 설정 */
   transform: translate(-50%, -50%); /* 중앙 정렬을 완벽하게 맞추기 위해 변환 사용 */
-  background: url(/Users/ddoazoo/Sites/core-2-interaction/studio/projects/catalog/new-york-5216120.png) no-repeat;
+  background: url(background.png) no-repeat;
   background-size: cover; /* 배경 크기를 div에 맞춤 */
 }
