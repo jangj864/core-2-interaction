@@ -126,9 +126,9 @@ function updateContentAreaColor(temperature) {
     if (temperature < 10) {
         color = 'white'; // Cold
     } else if (temperature >= 10 && temperature < 20) {
-        color = '#ffffe0'; // Cool
+        color = '#LightYellow'; // Cool
     } else if (temperature >= 20 && temperature < 30) {
-        color = 'yellow'; // Normal
+        color = 'Yellow'; // Normal
     } else if (temperature >= 30 && temperature < 40) {
         color = 'orange'; // Warm
     } else {
