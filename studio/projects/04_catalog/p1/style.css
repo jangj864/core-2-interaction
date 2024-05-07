@@ -346,6 +346,13 @@ iframe {
             height: auto; 
 }
 
+
+.mobile {
+    width: 50%; 
+    height: auto; 
+}
+
+
 .image-text {
     padding: 20px;
     text-align: center;
