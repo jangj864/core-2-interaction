@@ -19,7 +19,8 @@ iframe {
     align-items: center;
     justify-content: space-between;
     width: 100%; 
-    max-width: 100%;
+    max-width: 80%;
+    margin: auto;
   }
   
 /* Title */
