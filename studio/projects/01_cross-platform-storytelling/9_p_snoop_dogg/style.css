@@ -5,6 +5,10 @@ body {
   font-size: 20px;
 }
 
+body, html {
+  background-color: #ffffff;
+}
+
 .container {
   max-width: 935px;
   margin: auto;
